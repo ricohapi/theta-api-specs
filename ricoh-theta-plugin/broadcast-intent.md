@@ -8,6 +8,7 @@ Plugin can send Broadcast Intent to control several hardware feature, such as co
 <li><a href="#supported-by-plugin-library" onclick="ga('send','event','link','click','Supported_by_Plugin_Library');">Supported by Plugin Library</a></li>
 <li><a href="#receiving-button-events" onclick="ga('send','event','link','click','Receiving_Button_Events');">Receiving Button Events</a></li>
 <li><a href="#control-the-leds" onclick="ga('send','event','link','click','Control_the_LEDs');">Control the LEDs</a></li>
+<li><a href="#control-the-oled" onclick="ga('send','event','link','click','Control_the_OLED');">Control the OLED</a></li>
 <li><a href="#control-the-leds-and-oled-brightness" onclick="ga('send','event','link','click','Control_the_LEDs_and_OLED_Brightness');">Control the LEDs and OLED Brightness</a></li>
 <li><a href="#control-the-screen-brightness" onclick="ga('send','event','link','click','Control_the_Screen_Brightness');">Control the Screen Brightness</a></li>
 <li><a href="#sound-effect" onclick="ga('send','event','link','click','Sound_Effect');">Sound Effect</a></li>
