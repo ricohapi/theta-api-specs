@@ -62,7 +62,6 @@ See [Photo Sphere XMP Metadata](https://developers.google.com/streetview/spheric
 |:--|:--|:--|
 | ProjectionType | Open Choice of Text | Projection type. Google currently only supports equirectangular. |
 | UsePanoramaViewer | Boolean | Whether to display using the panorama viewer |
-| PoseHeadingDegrees | Real | Compass heading, for the center the image.<br>RICOH THETA X is not supported |
 | CroppedAreaImageWidthPixels | Integer | Width of actual image (px) |
 | CroppedAreaImageHeightPixels | Integer | Height of actual image (px) |
 | FullPanoWidthPixels | Integer | Width (px) when the actual image size is based on a panoramic image |
