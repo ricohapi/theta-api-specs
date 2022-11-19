@@ -38,14 +38,14 @@
 [camera._cancelVideoConvert](./commands/camera._cancel_video_convert.md)  
 [camera._setBluetoothDevice](./commands/camera._set_bluetooth_device.md)  
 [camera._listAccessPoints](./commands/camera._list_access_points.md)  
-[camera._setAccessPoint](./commands/camera._set_access_point.md)
+[camera._setAccessPoint](./commands/camera._set_access_point.md)  
 [camera._deleteAccessPoint](./commands/camera._delete_access_point.md)  
 [camera._listPlugins](./commands/camera._list_plugins.md)  
 [camera._setPlugin](./commands/camera._set_plugin.md)  
 [camera._pluginControl](./commands/camera._plugin_control.md)  
 [camera._getPluginLicense](./commands/camera._get_plugin_license.md)  
-[camera._getPluginOrders](./commands/camera._set_plugin_orders.md)  
-[camera._setPluginOrders](./commands/camera._get_plugin_orders.md)  
+[camera._getPluginOrders](./commands/camera._get_plugin_orders.md)  
+[camera._setPluginOrders](./commands/camera._set_plugin_orders.md)  
 [camera._deleteMySetting](./commands/camera._delete_mysetting.md)  
 
 #### Options
