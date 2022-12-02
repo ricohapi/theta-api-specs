@@ -15,4 +15,4 @@ Acquires the Live View. Can only be executed in still image capture mode.
 
 Binary data (MotionJPEG) for Live View.   
  Binary data is transferred by Content-Type: multipart/x-mixed-replace.  
-See [Introduction](../../theta-api-introduction/README.md) for details on the image format.
+See [here](../../ricoh-theta-api/README.md) for details on the image format.

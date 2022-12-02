@@ -15,4 +15,4 @@ None.
 
 Binary data of live view (MotionJPEG).   
 Binary data is transferred as Content-Type: multipart/x-mixed-replace.   
-Refer to [Introduction](../../theta-api-introduction/README.md) for the image format.
+Refer to [here](../../ricoh-theta-api/README.md) for the image format.
