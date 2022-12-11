@@ -29,8 +29,10 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 | fluorescent | Fluorescent light 3 (white) |
 | _bulbFluorescent | Fluorescent light 4 (light bulb color) |
 | _colorTemperature | CT settings (specified by the <a href="_color_temperature.md">_colorTemperature</a> option) \*1 |
-| _underwater | Underwater \*2 |
+| _underwater | Underwater \*2 \*3 |
 
 \*1 RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v01.10 or later
 
 \*2 RICOH THETA V firmware v3.21.1 or later
+
+\*3 With RICOH THETA X, stitching process will be optimized for underwater setting when whiteBalance is set to _underwater.

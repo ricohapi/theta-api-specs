@@ -7,6 +7,7 @@ Plugin can send Broadcast Intent to control several hardware feature, such as co
 <ul>
 <li><a href="#supported-by-plugin-library" onclick="ga('send','event','link','click','Supported_by_Plugin_Library');">Supported by Plugin Library</a></li>
 <li><a href="#receiving-button-events" onclick="ga('send','event','link','click','Receiving_Button_Events');">Receiving Button Events</a></li>
+<li><a href="#disable-power-button-feature" onclick="ga('send','event','link','click','Disable_Power_Button_Feature');">Disable Power Button Feature</a></li>
 <li><a href="#control-the-leds" onclick="ga('send','event','link','click','Control_the_LEDs');">Control the LEDs</a></li>
 <li><a href="#control-the-oled" onclick="ga('send','event','link','click','Control_the_OLED');">Control the OLED</a></li>
 <li><a href="#control-the-leds-and-oled-brightness" onclick="ga('send','event','link','click','Control_the_LEDs_and_OLED_Brightness');">Control the LEDs and OLED Brightness</a></li>
@@ -38,6 +39,15 @@ The button type when pressed down or pushed up is listed below in the Broadcast 
 |:-|:-|:-|
 |"keyCode"|int|(RICOH THETA V) <br/> 27: Shutter Button, 130: Mode Button, 284: Wireless Button can be specified <br/><br/> (RICOH THETA Z1) <br/> 27: Shutter Button, 119: Fn Button, 130: Mode Button, 284: Wireless Button can be specified <br/><br/> (RICOH THETA X) <br/> 27: Shutter Button, 130: Mode Button can be specified|
 |"KeyEvent"|KeyEvent|KeyEvent object received from OS|
+
+## Disable Power Button Feature
+
+Plugin can disable power button feature to enter to sleep mode, and to power off the device. Even if disabling it, plugin can receive the key event with KEYCODE_POWER (26). This Broadcast Intent is available with RICOH THETA X firmware v1.40.0 and RICOH THETA Z1 firmware v2.10.3 or later.
+
+|Intent|Description|
+|:-|:-|
+|com.theta360.plugin.ACTION_ENABLE_POWER_BUTTON | enable power button feature(default)|
+|com.theta360.plugin.ACTION_DISABLE_POWER_BUTTON|disable power button feature|
 
 ## Control the LEDs
 
