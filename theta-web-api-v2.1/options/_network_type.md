@@ -18,18 +18,15 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 
 | Value | Description |
 |:--|:--|
+| OFF | Network is off. This value can be gotten only by plugin. (firmware v1.40.0 or later)|
 | AP | Direct mode |
 | CL | Client mode |
 
 #### RICOH THETA V, Z1
 
-#### The case when some access point is set to [camera.\_setAccessPoint](../commands/camera._set_access_point.md)
-
 | Value | Description |
 |:--|:--|
+| OFF | Network is off. This value can be gotten only by plugin.|
 | AP | Direct mode |
-| CL | Client mode |
-
-#### The case when no access point is set
-
-"AP" only
+| CL | Client mode via WLAN, see also [camera.\_setAccessPoint](../commands/camera._set_access_point.md). |
+| ETHERNET | Client mode via Ethernet cable |

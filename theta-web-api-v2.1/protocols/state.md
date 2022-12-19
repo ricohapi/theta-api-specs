@@ -88,8 +88,11 @@ Error information of the camera
 | 0x08000000 | INTERNAL\_MEM\_ACCESS\_FAIL | Internal memory access error |
 | 0x20000000 | UNEXPECTED\_ERROR | Undefined error |
 | 0x40000000 | BATTERY\_CHARGE\_FAIL | Charging error |
+| 0x00100000 \*1 | HIGH\_TEMPERATURE\_WARNING | (Board) temperature warning |
 | 0x80000000 | HIGH\_TEMPERATURE | (Board) temperature error |
 | 0x00200000 | BATTERY\_HIGH\_TEMPERATURE | Battery temperature error |
+
+\*1 RICOH THETA X firmware v1.40.0 or later
 
 #### RICOH THETA Z1 or prior
 

@@ -30,5 +30,11 @@ It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 or later
 | 0x8004 | Fluorescent light 2 (natural white) |
 | 0x8005 | Fluorescent light 3 (white) |
 | 0x8006 | Fluorescent light 4 (light bulb color) |
-| 0x8007 | CT settings (specified by [ColorTemperature](color_temperature.md)) (RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v1.10 or later) |
-| 0x8008 | Underwater (RICOH THETA V firmware v3.21.1 or later) |
+| 0x8007 | CT settings (specified by [ColorTemperature](color_temperature.md)) \*1 |
+| 0x8008 | Underwater \*2 \*3 |
+
+\*1 RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v01.10 or later
+
+\*2 RICOH THETA V firmware v3.21.1 or later
+
+\*3 With RICOH THETA X, stitching process will be optimized for underwater setting when 0x5005 WhiteBalance is set to 0x8008 Underwater.

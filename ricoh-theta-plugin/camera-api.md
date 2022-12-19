@@ -204,6 +204,31 @@ To set stitching, set the value (String type) for "RIC_PROC_STITCHING".
     </tbody>
   </table>  
 
+To optimize stitching process with using water housing TW-2, set the value (int type) for "RIC_WATER_HOUSING". This is available for RICOH THETA X firmware v1.40.0 or later.
+
+<table>
+  <thead>
+    <tr>
+      <th width="40%">Value</th>
+      <th width="60%">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>not use TW-2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>use TW-2 in underwater</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>use TW-2 on land</td>
+  </tr>
+  </tbody>
+</table>
+
 ## Zenith Correction
 
 Set the zenith correction method using "RIC_PROC_ZENITH_CORRECTION".

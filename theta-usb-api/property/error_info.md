@@ -114,6 +114,11 @@ Acquires error information.
         <td>Issued when the a USB charging error has been detected. The camera is powered off when this error occurs.</td>
       </tr>
       <tr>
+        <td>0x00100000 *1</td>
+        <td>(Board) temperature warning</td>
+        <td>Issued when the internal temperature of the camera is close to the upper limit temperature.</td>
+      </tr>
+      <tr>
         <td>0x80000000</td>
         <td>(Board) temperature error</td>
         <td>Issued when the internal temperature of the camera is higher than the upper limit temperature. The camera is powered off when this error occurs.</td>
@@ -125,6 +130,8 @@ Acquires error information.
       </tr>
     </tbody>
   </table>  
+
+\*1 RICOH THETA X firmware v1.40.0 or later
 
 #### RICOH THETA Z1 or prior
 
