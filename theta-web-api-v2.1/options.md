@@ -23,7 +23,7 @@ Supported properties are listed below.
 </thead>
 <tbody>
   <tr>
-    <td><a href="_ai_auto_thumbnail.md">_aiAutoThumbnail</a> <span class="mintext">*31</span></td>
+    <td><a href="./options/_ai_auto_thumbnail.md">_aiAutoThumbnail</a> <span class="mintext">*31</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -31,7 +31,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="aperture.md">aperture</a></td>
+    <td><a href="./options/aperture.md">aperture</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"><span class="mintext">*25</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -39,7 +39,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/partially-supported.png" alt="partially supported" title="partially supported" class="support-mark"> <span class="mintext">*21</span></td>
   </tr>
   <tr>
-    <td><a href="_auto_bracket.md">_autoBracket</a> <span class="mintext">*01</span></td>
+    <td><a href="./options/_auto_bracket.md">_autoBracket</a> <span class="mintext">*01</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/partially-supported.png" alt="partially supported" title="partially supported" class="support-mark"></td>
@@ -47,7 +47,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_bitrate.md">_bitrate</a> <span class="mintext">*14*21</span></td>
+    <td><a href="./options/_bitrate.md">_bitrate</a> <span class="mintext">*14*21</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -55,7 +55,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_bluetooth_classic_enable.md">_bluetoothClassicEnable</a> <span class="mintext">*16*23</span></td>
+    <td><a href="./options/_bluetooth_classic_enable.md">_bluetoothClassicEnable</a> <span class="mintext">*16*23</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -63,7 +63,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_bluetooth_power.md">_bluetoothPower</a> <span class="mintext">*11</span></td>
+    <td><a href="./options/_bluetooth_power.md">_bluetoothPower</a> <span class="mintext">*11</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -71,7 +71,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_burst_mode.md">_burstMode</a> <span class="mintext">*17*26*32</span></td>
+    <td><a href="./options/_burst_mode.md">_burstMode</a> <span class="mintext">*17*26*32</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -79,7 +79,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_burst_option.md">_burstOption</a> <span class="mintext">*17*26*32</span></td>
+    <td><a href="./options/_burst_option.md">_burstOption</a> <span class="mintext">*17*26*32</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
@@ -87,7 +87,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="capture_interval.md">captureInterval</a></td>
+    <td><a href="./options/capture_interval.md">captureInterval</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -95,7 +95,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="capture_mode.md">captureMode</a></td>
+    <td><a href="./options/capture_mode.md">captureMode</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -103,7 +103,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_camera_mode.md">_cameraMode</a> <span class="mintext">*31</span></td>
+    <td><a href="./options/_camera_mode.md">_cameraMode</a> <span class="mintext">*31</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -111,7 +111,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_camera_control_source.md">_cameraControlSource</a> <span class="mintext">*31</span></td>
+    <td><a href="./options/_camera_control_source.md">_cameraControlSource</a> <span class="mintext">*31</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -119,7 +119,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="capture_number.md">captureNumber</a></td>
+    <td><a href="./options/capture_number.md">captureNumber</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -127,7 +127,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="client_version.md">clientVersion</a></td>
+    <td><a href="./options/client_version.md">clientVersion</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
@@ -135,7 +135,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_color_temperature.md">_colorTemperature</a> <span class="mintext">*01</span></td>
+    <td><a href="./options/_color_temperature.md">_colorTemperature</a> <span class="mintext">*01</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -143,7 +143,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_composite_shooting_output_interval.md">_compositeShootingOutputInterval</a> <span class="mintext">*01*17*32</span></td>
+    <td><a href="./options/_composite_shooting_output_interval.md">_compositeShootingOutputInterval</a> <span class="mintext">*01*17*32</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -151,7 +151,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_composite_shooting_time.md">_compositeShootingTime</a> <span class="mintext">*01*17*32</span></td>
+    <td><a href="./options/_composite_shooting_time.md">_compositeShootingTime</a> <span class="mintext">*01*17*32</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -159,7 +159,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="continuous_number.md">continuousNumber</a> <span class="mintext">*31</span></td>
+    <td><a href="./options/continuous_number.md">continuousNumber</a> <span class="mintext">*31</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -167,7 +167,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="date_time_zone.md">dateTimeZone</a></td>
+    <td><a href="./options/date_time_zone.md">dateTimeZone</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
@@ -175,7 +175,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="exposure_compensation.md">exposureCompensation</a></td>
+    <td><a href="./options/exposure_compensation.md">exposureCompensation</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -183,7 +183,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
   </tr>
   <tr>
-  <td><a href="exposure_delay.md">exposureDelay</a></td>
+  <td><a href="./options/exposure_delay.md">exposureDelay</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -191,7 +191,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/partially-supported.png" alt="partially supported" title="partially supported" class="support-mark"> <span class="mintext">*15</span></td>
   </tr>
   <tr>
-    <td><a href="exposure_program.md">exposureProgram</a></td>
+    <td><a href="./options/exposure_program.md">exposureProgram</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -199,7 +199,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/partially-supported.png" alt="partially supported" title="partially supported" class="support-mark"> <span class="mintext">*15</span></td>
   </tr>
   <tr>
-    <td><a href="_face_detect.md">_faceDetect</a> <span class="mintext">*31</span></td>
+    <td><a href="./options/_face_detect.md">_faceDetect</a> <span class="mintext">*31</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -207,7 +207,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="file_format.md">fileFormat</a></td>
+    <td><a href="./options/file_format.md">fileFormat</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -215,7 +215,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/partially-supported.png" alt="partially supported" title="partially supported" class="support-mark"> <span class="mintext">*15</span></td>
   </tr>
   <tr>
-    <td><a href="_filter.md">_filter</a></td>
+    <td><a href="./options/_filter.md">_filter</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -223,7 +223,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_function.md">_function</a> <span class="mintext">*21</span></td>
+    <td><a href="./options/_function.md">_function</a> <span class="mintext">*21</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -231,7 +231,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_gain.md">_gain</a> <span class="mintext">*11</span></td>
+    <td><a href="./options/_gain.md">_gain</a> <span class="mintext">*11</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -239,7 +239,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="gps_info.md">gpsInfo</a></td>
+    <td><a href="./options/gps_info.md">gpsInfo</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
@@ -247,7 +247,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_gps_tag_recording.md">_gpsTagRecording</a> <span class="mintext">*31</span></td>
+    <td><a href="./options/_gps_tag_recording.md">_gpsTagRecording</a> <span class="mintext">*31</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -255,7 +255,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_hdmi_reso.md">_HDMIreso</a> <span class="mintext">*17*24*32</span></td>
+    <td><a href="./options/_hdmi_reso.md">_HDMIreso</a> <span class="mintext">*17*24*32</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -263,7 +263,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_image_stitching.md">_imageStitching</a> <span class="mintext">*15</span></td>
+    <td><a href="./options/_image_stitching.md">_imageStitching</a> <span class="mintext">*15</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -271,7 +271,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="iso.md">iso</a></td>
+    <td><a href="./options/iso.md">iso</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -279,7 +279,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/partially-supported.png" alt="partially supported" title="partially supported" class="support-mark"> <span class="mintext">*15</span></td>
   </tr>
   <tr>
-    <td><a href="iso_auto_high_limit.md">isoAutoHighLimit</a> <span class="mintext">*15</span></td>
+    <td><a href="./options/iso_auto_high_limit.md">isoAutoHighLimit</a> <span class="mintext">*15</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -287,7 +287,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/partially-supported.png" alt="partially supported" title="partially supported" class="support-mark"> <span class="mintext">*15</span></td>
   </tr>
   <tr>
-  <td><a href="_language.md">_language</a> <span class="mintext">*11</span></td>
+  <td><a href="./options/_language.md">_language</a> <span class="mintext">*11</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -295,7 +295,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-  <td><a href="_latest_enabled_exposure_delay_time.md">_latestEnabledExposureDelayTime</a></td>
+  <td><a href="./options/_latest_enabled_exposure_delay_time.md">_latestEnabledExposureDelayTime</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
@@ -303,7 +303,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_max_recordable_time.md">_maxRecordableTime</a> <span class="mintext">*11</span></td>
+    <td><a href="./options/_max_recordable_time.md">_maxRecordableTime</a> <span class="mintext">*11</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -311,7 +311,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/partially-supported.png" alt="partially supported" title="partially supported" class="support-mark"> <span class="mintext">*15</span></td>
   </tr>
   <tr>
-    <td><a href="_microphone.md">_microphone</a> <span class="mintext">*11</span></td>
+    <td><a href="./options/_microphone.md">_microphone</a> <span class="mintext">*11</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -319,7 +319,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_microphone_channel.md">_microphoneChannel</a> <span class="mintext">*11</span></td>
+    <td><a href="./options/_microphone_channel.md">_microphoneChannel</a> <span class="mintext">*11</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -327,7 +327,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_network_type.md">_networkType</a> <span class="mintext">*11</span></td>
+    <td><a href="./options/_network_type.md">_networkType</a> <span class="mintext">*11</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -335,7 +335,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="off_delay.md">offDelay</a></td>
+    <td><a href="./options/off_delay.md">offDelay</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -343,7 +343,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_power_saving.md">_powerSaving</a> <span class="mintext">*31</span></td>
+    <td><a href="./options/_power_saving.md">_powerSaving</a> <span class="mintext">*31</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -351,7 +351,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_password.md">_password</a> <span class="mintext">*12</span></td>
+    <td><a href="./options/_password.md">_password</a> <span class="mintext">*12</span></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
@@ -359,7 +359,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="preview_format.md">previewFormat</a></td>
+    <td><a href="./options/preview_format.md">previewFormat</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -367,7 +367,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="remaining_pictures.md">remainingPictures</a></td>
+    <td><a href="./options/remaining_pictures.md">remainingPictures</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
@@ -375,7 +375,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="remaining_space.md">remainingSpace</a></td>
+    <td><a href="./options/remaining_space.md">remainingSpace</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
@@ -383,7 +383,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="remaining_video_seconds.md">remainingVideoSeconds</a></td>
+    <td><a href="./options/remaining_video_seconds.md">remainingVideoSeconds</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
@@ -391,7 +391,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_shooting_method.md">_shootingMethod</a> <span class="mintext">*21</span></td>
+    <td><a href="./options/_shooting_method.md">_shootingMethod</a> <span class="mintext">*21</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -399,7 +399,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="shutter_speed.md">shutterSpeed</a></td>
+    <td><a href="./options/shutter_speed.md">shutterSpeed</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -407,7 +407,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/partially-supported.png" alt="partially supported" title="partially supported" class="support-mark"> <span class="mintext">*15</span></td>
   </tr>
   <tr>
-    <td><a href="_shutter_volume.md">_shutterVolume</a></td>
+    <td><a href="./options/_shutter_volume.md">_shutterVolume</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -415,7 +415,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="sleep_delay.md">sleepDelay</a></td>
+    <td><a href="./options/sleep_delay.md">sleepDelay</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -423,7 +423,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_time_shift.md">_timeShift</a> <span class="mintext">*15</span></td>
+    <td><a href="./options/_time_shift.md">_timeShift</a> <span class="mintext">*15</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -431,7 +431,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_top_bottom_correction.md">_topBottomCorrection</a> <span class="mintext">*15</span></td>
+    <td><a href="./options/_top_bottom_correction.md">_topBottomCorrection</a> <span class="mintext">*15</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -439,7 +439,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_top_bottom_correction_rotation.md">_topBottomCorrectionRotation</a> <span class="mintext">*33</span></td>
+    <td><a href="./options/_top_bottom_correction_rotation.md">_topBottomCorrectionRotation</a> <span class="mintext">*33</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -447,7 +447,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="total_space.md">totalSpace</a></td>
+    <td><a href="./options/total_space.md">totalSpace</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
@@ -455,7 +455,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_username.md">_username</a> <span class="mintext">*12</span></td>
+    <td><a href="./options/_username.md">_username</a> <span class="mintext">*12</span></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
@@ -463,7 +463,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="video_stitching.md">videoStitching</a> <span class="mintext">*11</span></td>
+    <td><a href="./options/video_stitching.md">videoStitching</a> <span class="mintext">*11</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -471,7 +471,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_visibility_reduction.md">_visibilityReduction</a> <span class="mintext">*22</span></td>
+    <td><a href="./options/_visibility_reduction.md">_visibilityReduction</a> <span class="mintext">*22</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -479,7 +479,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="white_balance.md">whiteBalance</a></td>
+    <td><a href="./options/white_balance.md">whiteBalance</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -487,7 +487,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_wlan_channel.md">_wlanChannel</a></td>
+    <td><a href="./options/_wlan_channel.md">_wlanChannel</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
@@ -495,7 +495,7 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
-    <td><a href="_wlan_frequency.md">_wlanFrequency</a> <span class="mintext">*11</span></td>
+    <td><a href="./options/_wlan_frequency.md">_wlanFrequency</a> <span class="mintext">*11</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -507,7 +507,7 @@ Supported properties are listed below.
 
 ![supported](./assets/img/supported.png "supported"): Supported  
 ![partially supported](./assets/img/partially-supported.png "partially supported"): Partially supported  
-![not supported](./assets/img/not-supported.png "not supported"): Not supported
+![not supported](./assets/img/not-supported.png "not supported"): Not supported  
 
 \*01 RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v1.10 or later  
 \*11 RICOH THETA V or later  
@@ -526,4 +526,3 @@ Supported properties are listed below.
 \*31 RICOH THETA X or later  
 \*32 RICOH THETA X is not supported  
 \*33 RICOH THETA X firmware v1.20.0 or later  
-
