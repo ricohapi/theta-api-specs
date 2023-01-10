@@ -32,7 +32,7 @@ Options are supported as follows:
 | Shooting mode | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|:--|
 | Interval shooting | All | All | All | All | All |
-| Malti bracket shooting | All | All | All | v1.10 or later | v01.82 or later |
+| Multi bracket shooting | All | All | All | v1.10 or later | v01.82 or later |
 | Interval composite shooting | All | All | --- | v1.10 or later | v01.82 or later |
 | Burst shooting | --- | v2.10.1 or later | --- | --- | --- |
 | Continuous shooting | All | --- | --- | --- | --- |

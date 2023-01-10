@@ -32,7 +32,7 @@
 [0x99A3 GetAccessPointHandles](./operation/get_access_point_handles.md)  
 [0x99A4 GetAccessPointInfo](./operation/get_access_point_info.md)  
 [0x99A5 SetAccessPoint](./operation/set_access_point.md)  
-[0x99A6 DeleteAccessPoint](./operation/_delete_access_point.md)  
+[0x99A6 DeleteAccessPoint](./operation/delete_access_point.md)  
 [0x99A7 ConvertVideoFormats](./operation/convert_video_formats.md)  
 [0x99A8 GetPluginHandles](./operation/get_plugin_handles.md)  
 [0x99A9 GetPluginInfo](./operation/get_plugin_info.md)  
