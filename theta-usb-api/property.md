@@ -67,7 +67,7 @@ Supported properties are listed below.
 | [0xD834 Image Stitching](./property/image_stitching.md) \*31 | ![supported](./assets/img/supported.png "supported") | ![supported](./assets/img/supported.png "supported") |
 | [0xD837 CameraMode](./property/camera_mode.md) \*31 | ![supported](./assets/img/supported.png "supported") | ![supported](./assets/img/supported.png "supported") |
 | [0xD839 BurstOption](./property/burst_option.md) \*23 | ![supported](./assets/img/supported.png "supported") | ![supported](./assets/img/supported.png "supported") |
-| [0xD83A White Balance Auto Strength](white_balance_auto_strength.md) \*24\*32 | ![supported](./assets/img/supported.png "supported") | ![supported](./assets/img/supported.png "supported") |
+| [0xD83A White Balance Auto Strength](./property/white_balance_auto_strength.md) \*24\*32 | ![supported](./assets/img/supported.png "supported") | ![supported](./assets/img/supported.png "supported") |
 
 ![supported](./assets/img/supported.png "supported"): Supported  
 ![not supported](./assets/img/not-supported.png "not supported"): Not supported  
