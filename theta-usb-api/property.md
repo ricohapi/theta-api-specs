@@ -67,6 +67,7 @@ Supported properties are listed below.
 | [0xD834 Image Stitching](image_stitching.md) \*31 | ![supported](./assets/img/supported.png "supported") | ![supported](./assets/img/supported.png "supported") |
 | [0xD837 CameraMode](camera_mode.md) \*31 | ![supported](./assets/img/supported.png "supported") | ![supported](./assets/img/supported.png "supported") |
 | [0xD839 BurstOption](burst_option.md) \*23 | ![supported](./assets/img/supported.png "supported") | ![supported](./assets/img/supported.png "supported") |
+| [0xD83A White Balance Auto Strength](white_balance_auto_strength.md) \*24\*32 | ![supported](./assets/img/supported.png "supported") | ![supported](./assets/img/supported.png "supported") |
 
 ![supported](./assets/img/supported.png "supported"): Supported  
   ![not supported](./assets/img/not-supported.png "not supported"): Not supported
@@ -92,6 +93,8 @@ Supported properties are listed below.
 \*22 Supported by RICOH THETA Z1 firmware v1.31.1 or later
 
 \*23 Supported by RICOH THETA Z1 firmware v2.10.1 or later
+
+\*24 Supported by RICOH THETA Z1 firmware v2.20.3 or later
 
 \*31 Supported by RICOH THETA X or later
 

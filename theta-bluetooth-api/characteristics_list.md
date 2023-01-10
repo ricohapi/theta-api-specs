@@ -394,7 +394,7 @@ Supported characteristics are listed below.
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
     </tr>
-    <tr><th rowspan="10">Shooting Control Command v2 *2</th>
+    <tr><th rowspan="11">Shooting Control Command v2 *2</th>
       <td><a href="shooting_control_command_v2/aperture.md">Aperture</a></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
@@ -464,6 +464,13 @@ Supported characteristics are listed below.
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+    </tr><tr>
+      <td><a href="shooting_control_command_v2/white_balance_auto_strength.md">White Balance Auto Strength *3*5</a></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
     </tr>
     <tr><th rowspan="1">GPS Control Command</th>
       <td><a href="gps_control_command/gps_information.md">GPS Information</a></td>
@@ -542,3 +549,4 @@ Supported characteristics are listed below.
 \*2 RICOH THETA V firmware v3.00.1 or later  
 \*3 RICOH THETA V is not supported  
 \*4 RICOH THETA Z1 firmware v2.10.1 or later  
+\*5 RICOH THETA Z1 firmware v2.20.3 or later  

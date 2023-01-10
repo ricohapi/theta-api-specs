@@ -88,6 +88,7 @@
 [Iso Auto High Limit](./shooting_control_command_v2/iso_auto_high_limit.md)  
 [Shooting Method](./shooting_control_command_v2/shooting_method.md)  
 [Top Bottom Correction](./shooting_control_command_v2/top_bottom_correction.md)  
+[White Balance Auto Strength](./shooting_control_command_v2/white_balance_auto_strength.md)  
 
 #### GPS Control Command
 
