@@ -43,8 +43,10 @@ Errors in detail
 | 18 | (Board) temperature error<br>Issued when the internal temperature of the camera is higher than the upper limit temperature. The camera is powered off when this error occurs. |
 | 19 \*1 | Battery temperature error<br>Issued when the battery temperature of the camera is higher than the upper limit temperature. The camera is powered off when this error occurs. |
 | 21 \*1 | Plugin boot error<br>Plugin start warning. (IoT technical standards compliance) |
+| 24 \*2 | (Board) temperature warning<br>Issued when the internal temperature of the camera is close to the upper limit temperature. |
 
-\*1 RICOH THETA Z1 or later
+\*1 RICOH THETA Z1 or later  
+\*2 RICOH THETA Z1 v2.20.3 or later  
 
 ### Properties
 

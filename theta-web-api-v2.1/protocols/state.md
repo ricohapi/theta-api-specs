@@ -103,6 +103,7 @@ Error information of the camera
 | 0x00000008 | NO\_DATE\_SETTING | Camera clock not set |
 | 0x00000010 | COMPASS\_CALIBRATION | Electronic compass error |
 | 0x00000800 \*1 | PLUGIN\_BOOT\_ERROR | Plugin start warning (IoT technical standards compliance) |
+| 0x00100000 \*2 | HIGH\_TEMPERATURE\_WARNING | (Board) temperature warning |
 | 0x00400000 | CAPTURE\_HW\_FAILED | Shooting hardware failure |
 | 0x08000000 | INTERNAL\_MEM\_ACCESS\_FAIL | Internal memory access error |
 | 0x20000000 | UNEXPECTED\_ERROR | Undefined error |
@@ -110,7 +111,8 @@ Error information of the camera
 | 0x80000000 | HIGH\_TEMPERATURE | (Board) temperature error |
 | 0x00200000 \*1 | BATTERY\_HIGH\_TEMPERATURE | Battery temperature error |
 
-\*1 RICOH THETA Z1 or later
+\*1 RICOH THETA Z1 or later  
+\*2 RICOH THETA Z1 v2.20.3 or later  
 
 ### Example
 

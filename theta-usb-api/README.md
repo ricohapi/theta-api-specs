@@ -108,6 +108,7 @@
 [0xD834 Image Stitching](./property/image_stitching.md)  
 [0xD837 CameraMode](./property/camera_mode.md)  
 [0xD839 BurstOption](./property/burst_option.md)  
+[0xD83A White Balance Auto Strength](./property/white_balance_auto_strength.md)  
 [0xD83B Water Housing](./property/water_housing.md)  
 [0xD83C Water Housing Stitching](./property/water_housing_stitching.md)  
 
