@@ -4,21 +4,19 @@ Plugin can send Broadcast Intent to control several hardware feature, such as co
 
 ### Contents
 
-<ul>
-<li><a href="#supported-by-plugin-library">Supported by Plugin Library</a></li>
-<li><a href="#receiving-button-events">Receiving Button Events</a></li>
-<li><a href="#disable-power-button-feature">Disable Power Button Feature</a></li>
-<li><a href="#control-the-leds">Control the LEDs</a></li>
-<li><a href="#control-the-oled">Control the OLED</a></li>
-<li><a href="#control-the-leds-and-oled-brightness">Control the LEDs and OLED Brightness</a></li>
-<li><a href="#control-the-screen-brightness">Control the Screen Brightness</a></li>
-<li><a href="#sound-effect">Sound Effect</a></li>
-<li><a href="#control-wlan">Control WLAN</a></li>
-<li><a href="#updating-the-database">Updating the Database</a></li>
-<li><a href="#notifying-occurrences-of-errors">Notifying Occurrences of Errors</a></li>
-<li><a href="#notifying-completion-of-plugin">Notifying Completion of Plugin</a></li>
-<li><a href="#notifying-camera-device-control">Notifying Camera Device Control</a></li>
-</ul>
+* [Supported by Plugin Library](#supported-by-plugin-library)
+* [Receiving Button Events](#receiving-button-events)
+* [Disable Power Button Feature](#disable-power-button-feature)
+* [Control the LEDs](#control-the-leds)
+* [Control the OLED](#control-the-oled)
+* [Control the LEDs and OLED Brightness](#control-the-leds-and-oled-brightness)
+* [Control the Screen Brightness](#control-the-screen-brightness)
+* [Sound Effect](#sound-effect)
+* [Control WLAN](#control-wlan)
+* [Updating the Database](#updating-the-database)
+* [Notifying Occurrences of Errors](#notifying-occurrences-of-errors)
+* [Notifying Completion of Plugin](#notifying-completion-of-plugin)
+* [Notifying Camera Device Control](#notifying-camera-device-control)
 
 ## Supported by Plugin Library
 

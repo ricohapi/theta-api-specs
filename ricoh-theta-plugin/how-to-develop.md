@@ -2,17 +2,15 @@
 
 ### Contents
 
-<ul>
-<li><a href="#preparation-of-development-environment-and-debugging">Preparation of development environment and debugging</a></li>
-<li><a href="#names-of-camera-parts">Names of Camera Parts</a></li>
-<li><a href="#controlling-the-camera">Controlling the Camera</a></li>
-<li><a href="#device-control">Device Control</a></li>
-<li><a href="#open-source-licenses">Open Source Licenses</a></li>
-<li><a href="#version-information">Version Information</a></li>
-<li><a href="#specify-camera-model-support">Specify Camera Model Support</a></li>
-<li><a href="#warnings-when-developing-plugins">Warnings When Developing Plugins</a></li>
-<li><a href="#enablesdisables-the-output-of-the-debug-log-logcat">Enables/Disables the output of the debug log (logcat)</a></li>
-</ul>
+* [Preparation of development environment and debugging](#preparation-of-development-environment-and-debugging)
+* [Names of Camera Parts](#names-of-camera-parts)
+* [Controlling the Camera](#controlling-the-camera)
+* [Device Control](#device-control)
+* [Open Source Licenses](#open-source-licenses)
+* [Version Information](#version-information)
+* [Specify Camera Model Support](#specify-camera-model-support)
+* [Warnings When Developing Plugins](#warnings-when-developing-plugins)
+* [Enables/Disables the output of the debug log (logcat)](#enablesdisables-the-output-of-the-debug-log-logcat)
 
 ## Preparation of development environment and debugging 
 
