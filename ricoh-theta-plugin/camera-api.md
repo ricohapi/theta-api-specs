@@ -13,25 +13,23 @@ RICOH THETA V, Z1, and X define original parameters as listed below. They can be
 
 ### Contents
 
-<ul>
-<li><a href="#shooting-mode" onclick="ga('send','event','link','click','Shooting_Mode');">Shooting Mode</a></li>
-<li><a href="#stitching" onclick="ga('send','event','link','click','Stitching');">Stitching</a></li>
-<li><a href="#zenith-correction" onclick="ga('send','event','link','click','Zenith_Correction');">Zenith Correction</a></li>
-<li><a href="#exposure-program" onclick="ga('send','event','link','click','Exposure_Program');">Exposure Program</a></li>
-<li><a href="#auto-exposure-lock" onclick="ga('send','event','link','click','Auto_Exposure_Lock');">Auto Exposure Lock</a></li>
-<li><a href="#shutter-speed" onclick="ga('send','event','link','click','Shutter_Speed');">Shutter Speed</a></li>
-<li><a href="#iso-sensitivity" onclick="ga('send','event','link','click','ISO_Sensitivity');">ISO Sensitivity</a></li>
-<li><a href="#iso-sensitivity-upper-limit" onclick="ga('send','event','link','click','ISO_Sensitivity_Upper_Limit');">ISO Sensitivity Upper Limit</a></li>
-<li><a href="#aperture" onclick="ga('send','event','link','click','Aperture');">Aperture</a></li>
-<li><a href="#white-balance" onclick="ga('send','event','link','click','White_Balance');">White Balance</a></li>
-<li><a href="#color-temperature" onclick="ga('send','event','link','click','Color_Temperature');">Color Temperature</a></li>
-<li><a href="#exposure-compensation" onclick="ga('send','event','link','click','Exposure_Compensation');">Exposure Compensation</a></li>
-<li><a href="#activate-image-file-size-specification" onclick="ga('send','event','link','click','Activate_Image_File_Size_Specification');">Activate Image File Size Specification</a></li>
-<li><a href="#image-file-size" onclick="ga('send','event','link','click','Image_File_Size');">Image File Size</a></li>
-<li><a href="#switching-dng-output" onclick="ga('send','event','link','click','Switching_DNG_Output');">Switching DNG Output</a></li>
-<li><a href="#burst-capture-mode" onclick="ga('send','event','link','click','Burst_Capture_Mode');">Burst Capture Mode</a></li>
-<li><a href="#face-detection" onclick="ga('send','event','link','click','Face_Detection');">Face Detection</a></li>
-</ul>
+* [Shooting Mode](#shooting-mode)
+* [Stitching](#stitching)
+* [Zenith Correction](#zenith-correction)
+* [Exposure Program](#exposure-program)
+* [Auto Exposure Lock](#auto-exposure-lock)
+* [Shutter Speed](#shutter-speed)
+* [ISO Sensitivity](#iso-sensitivity)
+* [ISO Sensitivity Upper Limit](#iso-sensitivity-upper-limit)
+* [Aperture](#aperture)
+* [White Balance](#white-balance)
+* [Color Temperature](#color-temperature)
+* [Exposure Compensation](#exposure-compensation)
+* [Activate Image File Size Specification](#activate-image-file-size-specification)
+* [Image File Size](#image-file-size)
+* [Switching DNG Output](#switching-dng-output)
+* [Burst Capture Mode](#burst-capture-mode)
+* [Face Detection](#face-detection)
 
 ## Shooting Mode
 To set shooting mode, set value (String type) for "RIC_SHOOTING_MODE". 
