@@ -4,21 +4,19 @@ Plugin can send Broadcast Intent to control several hardware feature, such as co
 
 ### Contents
 
-<ul>
-<li><a href="#supported-by-plugin-library" onclick="ga('send','event','link','click','Supported_by_Plugin_Library');">Supported by Plugin Library</a></li>
-<li><a href="#receiving-button-events" onclick="ga('send','event','link','click','Receiving_Button_Events');">Receiving Button Events</a></li>
-<li><a href="#disable-power-button-feature" onclick="ga('send','event','link','click','Disable_Power_Button_Feature');">Disable Power Button Feature</a></li>
-<li><a href="#control-the-leds" onclick="ga('send','event','link','click','Control_the_LEDs');">Control the LEDs</a></li>
-<li><a href="#control-the-oled" onclick="ga('send','event','link','click','Control_the_OLED');">Control the OLED</a></li>
-<li><a href="#control-the-leds-and-oled-brightness" onclick="ga('send','event','link','click','Control_the_LEDs_and_OLED_Brightness');">Control the LEDs and OLED Brightness</a></li>
-<li><a href="#control-the-screen-brightness" onclick="ga('send','event','link','click','Control_the_Screen_Brightness');">Control the Screen Brightness</a></li>
-<li><a href="#sound-effect" onclick="ga('send','event','link','click','Sound_Effect');">Sound Effect</a></li>
-<li><a href="#control-wlan" onclick="ga('send','event','link','click','Control_WLAN');">Control WLAN</a></li>
-<li><a href="#updating-the-database" onclick="ga('send','event','link','click','Updating_the_Database');">Updating the Database</a></li>
-<li><a href="#notifying-occurrences-of-errors" onclick="ga('send','event','link','click','Notifying_Occurrences_of_Errors');">Notifying Occurrences of Errors</a></li>
-<li><a href="#notifying-completion-of-plugin" onclick="ga('send','event','link','click','Notifying_Completion_of_Plugin');">Notifying Completion of Plugin</a></li>
-<li><a href="#notifying-camera-device-control" onclick="ga('send','event','link','click','Notifying_Camera_Device_Control');">Notifying Camera Device Control</a></li>
-</ul>
+* [Supported by Plugin Library](#supported-by-plugin-library)
+* [Receiving Button Events](#receiving-button-events)
+* [Disable Power Button Feature](#disable-power-button-feature)
+* [Control the LEDs](#control-the-leds)
+* [Control the OLED](#control-the-oled)
+* [Control the LEDs and OLED Brightness](#control-the-leds-and-oled-brightness)
+* [Control the Screen Brightness](#control-the-screen-brightness)
+* [Sound Effect](#sound-effect)
+* [Control WLAN](#control-wlan)
+* [Updating the Database](#updating-the-database)
+* [Notifying Occurrences of Errors](#notifying-occurrences-of-errors)
+* [Notifying Completion of Plugin](#notifying-completion-of-plugin)
+* [Notifying Camera Device Control](#notifying-camera-device-control)
 
 ## Supported by Plugin Library
 
