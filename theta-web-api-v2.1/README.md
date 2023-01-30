@@ -112,5 +112,6 @@
 [_waterHousing](./options/_water_housing.md)  
 [_waterHousingStitching](./options/_water_housing_stitching.md)  
 [whiteBalance](./options/white_balance.md)  
+[_whiteBalanceAutoStrength](./options/_white_balance_auto_strength.md)  
 [_wlanChannel](./options/_wlan_channel.md)  
 [_wlanFrequency](./options/_wlan_frequency.md)  

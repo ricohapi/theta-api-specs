@@ -170,6 +170,11 @@ Acquires error information.
         <td>Plugin start warning. (IoT technical standards compliance)</td>
       </tr>
       <tr>
+        <td>0x00100000 *2</td>
+        <td>(Board) temperature warning</td>
+        <td>Issued when the internal temperature of the camera is close to the upper limit temperature.</td>
+      </tr>
+      <tr>
         <td>0x00400000</td>
         <td>Shooting hardware failure detection</td>
         <td>Issued when a failure has been detected with hardware used for shooting.</td>
@@ -202,4 +207,5 @@ Acquires error information.
     </tbody>
   </table>  
 
-\*1 RICOH THETA Z1 or later
+\*1 RICOH THETA Z1 or later  
+\*2 RICOH THETA Z1 v2.20.3 or later  

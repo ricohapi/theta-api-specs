@@ -487,6 +487,14 @@ Supported properties are listed below.
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
   </tr>
   <tr>
+    <td><a href="./options/_white_balance_auto_strength.md">_whiteBalanceAutoStrength</a> <span class="mintext">*27</span></td>
+    <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
+    <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
+    <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
+    <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
+    <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
+  </tr>
+  <tr>
     <td><a href="./options/_wlan_channel.md">_wlanChannel</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -523,6 +531,7 @@ Supported properties are listed below.
 \*24 RICOH THETA Z1 is not supported  
 \*25 RICOH THETA Z1 only    
 \*26 RICOH THETA Z1 firmware v2.10.1 or later  
+\*27 RICOH THETA Z1 firmware v2.20.3 or later  
 \*31 RICOH THETA X or later  
 \*32 RICOH THETA X is not supported  
 \*33 RICOH THETA X firmware v1.20.0 or later  

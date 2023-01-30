@@ -33,6 +33,7 @@ If [My Setting Capture Mode](my_setting_capture_mode.md) is video capture mode, 
 | [Color Temperature](color_temperature.md) | sint16 | Color Temperature |
 | [Filter](filter.md) | sint8 | Image Processing Filter<br>Set OFF when [My Setting Capture Mode](my_setting_capture_mode.md) is set movie shooting mode |
 | [Exposure Delay](exposure_delay.md) | sint8 | Self-timer Time |
+| [White Balance Auto Strength](../shooting_control_command_v2/white_balance_auto_strength.md) | sint8 | To set the strength of white balance auto for low color temperature scene. |
 | [Max Recordable Time](max_recordable_time.md) | sint8 | Maximum recordable time<br>Set if [My Setting Capture Mode](my_setting_capture_mode.md) is set movie shooting mode |
 
 #### Add below with respect to Shooting Method
