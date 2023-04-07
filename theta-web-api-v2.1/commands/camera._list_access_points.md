@@ -33,3 +33,4 @@ None.
 | ipAddress | String | IP address assigned to camera<br>This setting can be acquired when "ipAddressAllocation" is "static" |
 | subnetMask | String | Subnet Mask<br>This setting can be acquired when "ipAddressAllocation" is "static" |
 | defaultGateway | String | Default Gateway<br>This setting can be acquired when "ipAddressAllocation" is "static" |
+| _proxy | Object | Proxy information to be used for the access point. |

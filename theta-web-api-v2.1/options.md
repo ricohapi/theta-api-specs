@@ -366,6 +366,14 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
+    <tr>
+    <td><a href="./options/_proxy.md">_proxy</a> <span class="mintext">*27*34</span></td>
+    <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
+    <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
+    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
+    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
+    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
+  </tr>
   <tr>
     <td><a href="./options/remaining_pictures.md">remainingPictures</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -535,3 +543,4 @@ Supported properties are listed below.
 \*31 RICOH THETA X or later  
 \*32 RICOH THETA X is not supported  
 \*33 RICOH THETA X firmware v1.20.0 or later  
+\*34 RICOH THETA X firmware v2.00.0 or later  

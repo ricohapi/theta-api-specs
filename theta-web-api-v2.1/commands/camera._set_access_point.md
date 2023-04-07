@@ -24,6 +24,7 @@ Up to five access points can be registered. The access points registered with th
 | ipAddress | String | (Optional)<br>IP address assigned to camera<br>This setting can be set when ipAddressAllocation is "static" |
 | subnetMask | String | (Optional)<br>Subnet mask<br>This setting can be set when ipAddressAllocation is "static" |
 | defaultGateway | String | (Optional)<br>Default gateway<br>This setting can be set when ipAddressAllocation is "static" |
+| _proxy | Object | Proxy information to be used for the access point. |
 
 \*1 Excluding THETA X.
 
