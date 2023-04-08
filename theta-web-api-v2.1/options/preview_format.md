@@ -16,10 +16,6 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 
 #### For RICOH THETA X
 
-{"width": 5760, "height": 2880, "framerate": 30}
-
-{"width": 3840, "height": 1920, "framerate": 30}
-
 {"width": 1024, "height": 512, "framerate": 30}
 
 {"width": 512, "height": 512, "framerate": 30}

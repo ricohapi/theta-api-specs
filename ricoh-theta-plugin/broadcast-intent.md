@@ -13,6 +13,8 @@ Plugin can send Broadcast Intent to control several hardware feature, such as co
 * [Control the Screen Brightness](#control-the-screen-brightness)
 * [Sound Effect](#sound-effect)
 * [Control WLAN](#control-wlan)
+* [Control Bluetooth](#control-bluetooth)
+* [Control GPS](#control-gps)
 * [Updating the Database](#updating-the-database)
 * [Notifying Occurrences of Errors](#notifying-occurrences-of-errors)
 * [Notifying Completion of Plugin](#notifying-completion-of-plugin)
@@ -381,6 +383,40 @@ When using the THETA Plugin library:
 *Each Intent has its own method.
 ```
 notificationWlanOff();
+```
+
+## Control Bluetooth
+
+Supported by THETA X Version 2.00.0 or later.  
+Bluetooth can be turned on/off by following Broadcast Intent. 
+
+|Operation Mode|Intent|
+|:-|:-|
+|OFF|"com.theta360.plugin.ACTION_BLUETOOTH_OFF"|
+|ON |"com.theta360.plugin.ACTION_BLUETOOTH_ON"|
+
+THETA Plugin library supports a method to send broadcast.
+
+```
+notificationBluetoothOff();
+notificationBluetoothOn();
+```
+
+## Control GPS
+
+Supported by THETA X Version 2.00.0 or later.  
+GPS can be turned on/off by following Broadcast Intent. 
+
+|Operation Mode|Intent|
+|:-|:-|
+|OFF|"com.theta360.plugin.ACTION_GPS_TAG_RECORDING_OFF"|
+|ON |"com.theta360.plugin.ACTION_GPS_TAG_RECORDING_ON"|
+
+THETA Plugin library supports a method to send broadcast.
+
+```
+notificationGpsOff();
+notificationGpsOn();
 ```
 
 ## Updating the Database

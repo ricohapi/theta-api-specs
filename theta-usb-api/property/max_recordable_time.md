@@ -17,4 +17,6 @@ Acquires or sets the maximum shooting time (sec) of the camera.
 
 ### Support value
 
-300, 1500
+300, 1500, 7200 (*1)
+
+(*1) THETA X Version 2.00.0 or later, only for 5.7K 2/5/10fps and 8K 2/5/10fps.
