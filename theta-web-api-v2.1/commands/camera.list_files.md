@@ -15,6 +15,7 @@ Acquires a list of still image files and movie files.
 | maxThumbSize | Integer | Thumbnail.<br>(640: Acquire thumbnail, 0: Do not acquire thumbnail)<br>Be sure to specify this parameter regardless of the value of \_detail. |
 | \_detail | Boolean | (Optional)<br>Specifies whether or not to acquire the file details.<br>Default is "true".<br>If set to "false", "name", "fileUrl", "size", "dateTime", "isProcessed", "previewUrl", and "\_favorite" can only be acquired. |
 | \_sort | String | (Optional)<br>Specifies the sort order.<br>Choose from "newest" (in the descending order of the shooting date/time) and "oldest" (in the ascending order of the shooting date/time).<br>Default is "newest". |
+| \_storage | String | (Optional)<br>Specifies the srorage.<br>"IN" : internal storage<br>"SD" : external storage (SD card)<br>"Default" : current storage<br>Default is "Default".<br>(RICOH THETA X Version 2.00.0 or later) |
 
 ### Results
 
@@ -50,6 +51,7 @@ Acquires a list of still image files and movie files.
 | \_frameRate | Integer | Frame rate.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA X or later) |
 | \_favorite | Boolean | Favorite.<br>(RICOH THETA X or later) |
 | \_imageDescription | String | Image description.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA X or later) |
+| \_storageID | String | Storage ID.<br />Can be acquired when "\_detail" is "true".<br>(RICOH THETA X Version 2.00.0 or later) |
 
 ### Restriction
 

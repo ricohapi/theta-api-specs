@@ -95,6 +95,7 @@
 [_password](./options/_password.md)  
 [_powerSaving](./options/_power_saving.md)  
 [previewFormat](./options/preview_format.md)  
+[_proxy](./options/_proxy.md)  
 [remainingPictures](./options/remaining_pictures.md)  
 [remainingSpace](./options/remaining_space.md)  
 [remainingVideoSeconds](./options/remaining_video_seconds.md)  

@@ -33,3 +33,7 @@ None.
 | ipAddress | String | IP address assigned to camera<br>This setting can be acquired when "ipAddressAllocation" is "static" |
 | subnetMask | String | Subnet Mask<br>This setting can be acquired when "ipAddressAllocation" is "static" |
 | defaultGateway | String | Default Gateway<br>This setting can be acquired when "ipAddressAllocation" is "static" |
+| _proxy | Object | Proxy information to be used for the access point. *2 *3<br>Also refer to [_proxy](../options/_proxy.md) option spec to get each parameter.  |
+
+*2 THETA Z1 Version 2.20.3 or later  
+*3 THETA X Version 2.00.0 or later
