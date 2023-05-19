@@ -775,7 +775,8 @@ When the model of the camera is RICOH THETA X, in image shooting mode or video r
 
 ## Aperture
 
-To set aperture, set the value (int type) for "RIC_MANUAL_EXPOSURE_AV_FRONT" and "RIC_MANUAL_EXPOSURE_AV_REAR". When "RIC_EXPOSURE_MODE" is "RicAutoExposureP", "RicAutoExposureT",  "RicAutoExposureS", or "RicAutoExposureWDR", only AUTO can be set. It is recommended that the same value be set for "RIC_MANUAL_EXPOSURE_AV_FRONT" and "RIC_MANUAL_EXPOSURE_AV_REAR". There is no guarantee of the action if different values are set. 
+To set aperture, set the value (int type) for "RIC_MANUAL_EXPOSURE_AV_FRONT" and "RIC_MANUAL_EXPOSURE_AV_REAR". This parameter is valid only when "RIC_EXPOSURE_MODE" is set to "RicAutoExposureA" or "RicManualExposure". It is recommended that the same value be set for "RIC_MANUAL_EXPOSURE_AV_FRONT" and "RIC_MANUAL_EXPOSURE_AV_REAR". There is no guarantee of the action if different values are set.  
+This KEY is available only with RICOH THETA Z1.
 
 <table>
     <thead>
@@ -787,18 +788,14 @@ To set aperture, set the value (int type) for "RIC_MANUAL_EXPOSURE_AV_FRONT" and
     <tbody>
       <tr>
         <td>0</td>
-        <td>Auto</td>
-      </tr>
-      <tr>
-        <td>1</td>
         <td>F2.1</td>
       </tr>
       <tr>
-        <td>2</td>
+        <td>1</td>
         <td>F3.5</td>
       </tr>
       <tr>
-        <td>3</td>
+        <td>2</td>
         <td>F5.6</td>
       </tr>
     </tbody>
