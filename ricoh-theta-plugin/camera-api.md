@@ -249,7 +249,7 @@ The format of RIC_ZENITH_DIRECTION is "%.02f_%.02f_%.02f" as String. For example
       </tr>
       <tr>
         <td>"RicZenithCorrectionOnAuto"</td>
-        <td>Auto Zenith Correction</td>
+        <td>Auto Zenith Correction (*1)</td>
       </tr>
       <tr>
         <td>"RicZenithCorrectionOnManual"</td>
@@ -257,6 +257,8 @@ The format of RIC_ZENITH_DIRECTION is "%.02f_%.02f_%.02f" as String. For example
       </tr>
     </tbody>
   </table>  
+
+(*1) THETA V and Z1 must send this [Broadcast Intent](./broadcast-intent.md#control-imu-sensor) to start IMU sensor, before capturing via Camera API.
 
 ## Exposure Program
 To set the exposure program, set the value (String type) for "RIC_EXPOSURE_MODE".

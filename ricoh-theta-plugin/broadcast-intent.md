@@ -15,6 +15,7 @@ Plugin can send Broadcast Intent to control several hardware feature, such as co
 * [Control WLAN](#control-wlan)
 * [Control Bluetooth](#control-bluetooth)
 * [Control GPS](#control-gps)
+* [Control IMU Sensor](#control-imu-sensor)
 * [Updating the Database](#updating-the-database)
 * [Notifying Occurrences of Errors](#notifying-occurrences-of-errors)
 * [Notifying Completion of Plugin](#notifying-completion-of-plugin)
@@ -417,6 +418,24 @@ THETA Plugin library supports a method to send broadcast.
 ```
 notificationGpsOff();
 notificationGpsOn();
+```
+
+## Control IMU Sensor
+
+Supported by THETA V and Z1 only.  
+IMU Sensor can be turned on/off by following Broadcast Intent.  
+This is mandatory to execute zenith correction if plugin uses Camera API.
+
+|Operation Mode|Intent|
+|:-|:-|
+|STOP|"com.theta360.plugin.ACTION_MOTION_SENSOR_STOP"|
+|START |"com.theta360.plugin.ACTION_MOTION_SENSOR_START"|
+
+THETA Plugin library supports a method to send broadcast.
+
+```
+notificationSensorStop();
+notificationSensorStart();
 ```
 
 ## Updating the Database
