@@ -46,9 +46,9 @@ Acquires a list of still image files and movie files.
 | isProcessed | Boolean | Whether or not image processing has been completed. |
 | previewUrl | String | URL of the file being processed. |
 | \_codec | String | Codec.<br>"H.264/MPEG-4 AVC"<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA V or later) |
-| \_projectionType | String | Projection type of movie file.<br>"Equirectangular" or "Dual-Fisheye".<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA V or later) |
+| \_projectionType | String | Projection type of movie file.<br>"Equirectangular", "Dual-Fisheye" or "Fisheye".<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA V or later) |
 | \_continuousShootingGroupId | String | continuousShootingGroupId.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA X or later) |
-| \_frameRate | Integer | Frame rate.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA X or later) |
+| \_frameRate | Integer | Frame rate.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA Z1 Version 3.01.1 or later, RICOH THETA X or later) |
 | \_favorite | Boolean | Favorite.<br>(RICOH THETA X or later) |
 | \_imageDescription | String | Image description.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA X or later) |
 | \_storageID | String | Storage ID.<br />Can be acquired when "\_detail" is "true".<br>(RICOH THETA X Version 2.00.0 or later) |

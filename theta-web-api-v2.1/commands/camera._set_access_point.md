@@ -21,9 +21,9 @@ Up to five access points can be registered. The access points registered with th
 | password | String | (Optional)<br>Password<br>This can be set when security is not "none" |
 | connectionPriority | Number | (Optional)<br>(RICOH THETA V, Z1)<br>Connection priority (1 to 5). Default is 1.<br><br>(RICOH THETA X)<br>Fixed to 1 (The access point registered later has a higher priority.) |
 | ipAddressAllocation | String | (Optional)<br>IP address allocation<br>"dynamic" or "static". Default is "dynamic" |
-| ipAddress | String | (Optional)<br>IP address assigned to camera<br>This setting can be set when ipAddressAllocation is "static" |
-| subnetMask | String | (Optional)<br>Subnet mask<br>This setting can be set when ipAddressAllocation is "static" |
-| defaultGateway | String | (Optional)<br>Default gateway<br>This setting can be set when ipAddressAllocation is "static" |
+| ipAddress | String | (Optional)<br>IP address assigned to camera<br>This setting must be set when ipAddressAllocation is "static" |
+| subnetMask | String | (Optional)<br>Subnet mask<br>This setting must be set when ipAddressAllocation is "static" |
+| defaultGateway | String | (Optional)<br>Default gateway<br>This setting must be set when ipAddressAllocation is "static" |
 | _proxy | Object | Proxy information to be used for the access point. *2 *3<br>Also refer to [_proxy](../options/_proxy.md) option spec to set each parameter.  |
 
 *2 THETA Z1 Version 2.20.3 or later  
