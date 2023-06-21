@@ -1041,9 +1041,9 @@ To set "RIC_AEC_BURST_ENABLE_ISO_CONTROL" to 1, ISO sensitivity will be set high
 |1|Enable to auto ISO control. This means to allow higher ISO sensitivity.|
 
 ## Face Detection
-To enable Face Detection feature, set the value (String type) for “RIC_FACE_DETECTION”. AE will make detected human faces brighter when this feature is enabled. Only available in still capture mode of RICOH THETA X.
+To enable Face Detection feature, set the value (int type) for “RIC_FACE_DETECTION”. AE will make detected human faces brighter when this feature is enabled. Only available in still capture mode of RICOH THETA X. Default value is 0.
 
 |Value|Description|
 |:-|:-|
-|"OFF"|OFF|
-|"ON"|ON|
+|0|OFF|
+|1|ON|
