@@ -1,5 +1,20 @@
 # THETA Firmware History
 
+## THETA Z1 firmware v3.01.1 (2023.06.27)
+
+### WebAPI
+* [camera.listFiles](../theta-web-api-v2.1/commands/camera.list_files.md) : Update description of entries object "_projectionType". Update entries object "_frameRate"
+* [fileFormat](../theta-web-api-v2.1/options/file_format.md) : Update new option video format
+* [_maxRecordableTime](../theta-web-api-v2.1/options/_max_recordable_time.md) : Update new 50 minutes setting only for 3.6K 1/2fps and 2.7K 1/2fps.
+
+### USB-API
+* [0x5003 ImageSize](../theta-usb-api/property/image_size.md) : Update new option movie shooting mode
+* [0xD823 MaxRecordableTime](../theta-usb-api/property/max_recordable_time.md) : Update new 50 minutes setting only for 3.6K 1/2fps and 2.7K 1/2fps.
+
+### Bluetooth-API
+* [File Format](../theta-bluetooth-api/shooting_control_command/file_format.md) : Update new option video format
+* [Max Recordable Time](../theta-bluetooth-api/shooting_control_command/max_recordable_time.md) : Update new 50 minutes setting only for 3.6K 1/2fps and 2.7K 1/2fps.
+
 ## THETA X firmware v2.00.0 (2023.04.12)
 
 ### WebAPI

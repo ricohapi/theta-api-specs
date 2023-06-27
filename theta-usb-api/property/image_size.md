@@ -64,14 +64,22 @@ Acquires or sets the recorded size (pixels).
       <td>"6720x3360"</td>
     </tr>
     <tr>
-      <td rowspan="2">Movie shooting mode</td>
+      <td rowspan="4">Movie shooting mode</td>
       <td>"3840x1920"</td>
     </tr>
     <tr>
       <td>"1920x960"</td>
     </tr>
+    <tr>
+      <td>"3648x3648" *1</td>
+    </tr>
+    <tr>
+      <td>"2688x2688" *1</td>
+    </tr>
   </tbody>
 </table>
+
+\*1 RICOH THETA Z1 firmware v3.01.1 or later. This mode outputs two fisheye video for each lens. The MP4 file name ending with `_0` is the video file on the front lens, and `_1` is back lens. This mode does not record audio track to MP4 file.  
 
 #### For RICOH THETA V
 
