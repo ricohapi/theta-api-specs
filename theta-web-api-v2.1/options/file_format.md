@@ -28,7 +28,7 @@ The supported value depends on the shooting mode ([captureMode](capture_mode.md)
 | video | {"type": "mp4", "width": 3840, "height": 1920, "\_codec": "H.264/MPEG-4 AVC"}<br>{"type": "mp4", "width": 1920, "height": 960, "\_codec": "H.264/MPEG-4 AVC"}<br>{"type": "mp4","width": 3648,"height": 3648, "\_codec": "H.264/MPEG-4 AVC", "_frameRate": 2} \*1<br>{"type": "mp4","width": 3648,"height": 3648, "\_codec": "H.264/MPEG-4 AVC", "\_frameRate": 1} \*1<br>{"type": "mp4","width": 2688,"height": 2688, "\_codec": "H.264/MPEG-4 AVC", "\_frameRate": 2} \*1<br>{"type": "mp4","width": 2688,"height": 2688, "\_codec": "H.264/MPEG-4 AVC", "\_frameRate": 1} \*1 |
 | \_liveStreaming | Not supported |
 
-\*1 RICOH THETA Z1 firmware v3.01.1 or later  
+\*1 RICOH THETA Z1 firmware v3.01.1 or later. This mode outputs two fisheye video for each lens. The MP4 file name ending with `_0` is the video file on the front lens, and `_1` is back lens.  
 
 
 #### For RICOH THETA V

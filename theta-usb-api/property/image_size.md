@@ -79,7 +79,7 @@ Acquires or sets the recorded size (pixels).
   </tbody>
 </table>
 
-\*1 RICOH THETA Z1 firmware v3.01.1 or later
+\*1 RICOH THETA Z1 firmware v3.01.1 or later. This mode outputs two fisheye video for each lens. The MP4 file name ending with `_0` is the video file on the front lens, and `_1` is back lens.  
 
 #### For RICOH THETA V
 
