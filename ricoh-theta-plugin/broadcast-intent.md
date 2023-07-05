@@ -16,6 +16,7 @@ Plugin can send Broadcast Intent to control several hardware feature, such as co
 * [Control Bluetooth](#control-bluetooth)
 * [Control GPS](#control-gps)
 * [Control IMU Sensor](#control-imu-sensor)
+* [Control Battery Charging](#control-battery-charging)
 * [Updating the Database](#updating-the-database)
 * [Notifying Occurrences of Errors](#notifying-occurrences-of-errors)
 * [Notifying Completion of Plugin](#notifying-completion-of-plugin)
@@ -436,6 +437,23 @@ THETA Plugin library supports a method to send broadcast.
 ```
 notificationSensorStop();
 notificationSensorStart();
+```
+
+## Control Battery Charging
+
+Supported by THETA X firmware v2.20.1 or later.  
+Battery charging can be suspended/resumed by following Broadcast Intent.  
+
+|Operation Mode|Intent|
+|:-|:-|
+|SUSPEND|"com.theta360.plugin.ACTION_BATTERY_CHARGING_SUSPEND"|
+|RESUME |"com.theta360.plugin.ACTION_BATTERY_CHARGING_RESUME"|
+
+THETA Plugin library supports a method to send broadcast.
+
+```
+notificationBatteryChargingSuspend();
+notificationBatteryChargingResume();
 ```
 
 ## Updating the Database

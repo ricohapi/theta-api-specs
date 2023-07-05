@@ -1,10 +1,18 @@
 # Overview
 
-For RICOH THETA V and Z1, camera control such as shooting via Bluetooth Low Energy communication is available. The communication protocol is implemented according to the Bluetooth 4.2 Core Specifications including RICOH THETA Extensions.
+For RICOH THETA V,Z1 and X, camera control such as shooting via Bluetooth Low Energy communication is available. The communication protocol is implemented according to the Bluetooth 4.2 Core Specifications including RICOH THETA Extensions.
 
 Obtain the base specifications from the following:
 
 - [Bluetooth 4.2 Core Specifications](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=286439&_ga=2.97979420.260081372.1496207139-937189733.1496207139)
+
+The procedure required to use the THETA Bluetooth API differs depending on the type of command.
+
+## Camera Control Command v2
+No Bluetooth authentication required
+
+## Other Commands
+Next Bluetooth authentication required
 
 ### Bluetooth authentication
 
