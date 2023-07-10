@@ -443,6 +443,7 @@ notificationSensorStart();
 
 Supported by THETA X firmware v2.20.1 or later.  
 Battery charging can be suspended/resumed by following Broadcast Intent.  
+Please note that THETA will power down soon after sending ACTION_BATTERY_CHARGING_RESUME when the battery level is almost 0%.
 
 |Operation Mode|Intent|
 |:-|:-|
