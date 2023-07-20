@@ -64,7 +64,7 @@ POST /osc/commands/execute
 }
 ```
 
-Search RICOH THETA with the deviceName, which should be equal to the serial number, obtained during registration. Once RICOH THETA is found, set the central device UUID using Bluetooth API [Auth Bluetooth Device](bluetooth_control_command/auth_bluetooth_device.md) to establish authenticate.  
+Search RICOH THETA V/Z1 with the deviceName, which should be equal to the serial number, obtained during registration. Once RICOH THETA V/Z1 is found, set the central device UUID using Bluetooth API [Auth Bluetooth Device](bluetooth_control_command/auth_bluetooth_device.md) to establish authenticate.  
 
 #### Write (Authenticate the central device)
 
