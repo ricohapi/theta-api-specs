@@ -37,8 +37,8 @@ Acquires the camera states.
 
 \*2 RICOH THETA X or later
 
-```
 Response (for RICOH THETA X)
+```
 {
     "_batteryInsert": true,
     "batteryLevel": 0.97,

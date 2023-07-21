@@ -28,8 +28,8 @@ Acquires basic information of the camera and supported functions.
 |firmwareVersion|String|Firmware version
 |uptime|Integer|time after startup (sec)
 
-```
 Response (for RICOH THETA X)
+```
 {
     "_bluetoothMacAddress": "58:38:79:46:F7:61",
     "firmwareVersion": "2.20.1",

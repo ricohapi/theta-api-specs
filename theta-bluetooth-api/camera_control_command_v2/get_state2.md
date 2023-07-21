@@ -23,8 +23,8 @@ Acquires the camera states.
 | \_externalGpsInfo | gpsInfo | gpsInfo set by API. |
 | \_internalGpsInfo | gpsInfo | gpsInfo from the built-in GPS module. |
 
-```
 Response (for RICOH THETA X)
+```
 {
     "_externalGpsInfo": {
         "gpsInfo": {
