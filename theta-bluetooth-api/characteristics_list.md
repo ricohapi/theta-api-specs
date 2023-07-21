@@ -621,10 +621,9 @@ Supported characteristics are listed below.
     </tr>
 </table>
 
-![Mandatory](assets/img/supported.png "Mandatory"): Mandatory    
-![Excluded](assets/img/not-supported.png "Excluded"): Excluded
-![some model Mandatory](assets/img/partially-supported.png "some model Mandatory"): some model Mandatory
-
+![Mandatory](assets/img/supported.png "Mandatory"): Mandatory  
+![Excluded](assets/img/not-supported.png "Excluded"): Excluded  
+![some model Mandatory](assets/img/partially-supported.png "some model Mandatory"): some model Mandatory  
 
 \*1 RICOH THETA V firmware v2.30.1 or later  
 \*2 RICOH THETA V firmware v3.00.1 or later  
