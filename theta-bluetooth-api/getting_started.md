@@ -1,8 +1,7 @@
 # Getting Started
 
-For RICOH THETA V and Z1, camera control such as shooting via Bluetooth Low Energy communication is available.
-
-This section explains the following flow for shooting a still image.
+RICOH THETA V and Z1 require following steps to start using Bluetooth API.  
+RICOH THETA X does not require these steps.
 
 1. [Bluetooth authentication](#1-bluetooth-authentication)
 1. [Acquire and set shooting properties](#2-acquire-and-set-shooting-properties)
@@ -65,8 +64,7 @@ POST /osc/commands/execute
 }
 ```
 
-Search for the camera with deviceName obtained in registration, and set the central device UUID via Bluetooth API to authenticate.  
- Use [Auth Bluetooth Device](bluetooth_control_command/auth_bluetooth_device.md) via Bluetooth API.
+Search RICOH THETA V/Z1 with the deviceName, which should be equal to the serial number, obtained during registration. Once RICOH THETA V/Z1 is found, set the central device UUID using Bluetooth API [Auth Bluetooth Device](bluetooth_control_command/auth_bluetooth_device.md) to establish authenticate.  
 
 #### Write (Authenticate the central device)
 

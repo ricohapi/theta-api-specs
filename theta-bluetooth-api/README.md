@@ -107,3 +107,10 @@
 [Auth Bluetooth Device](./bluetooth_control_command/auth_bluetooth_device.md)  
 [Bluetooth Power Status](./bluetooth_control_command/bluetooth_power_status.md)  
 [Bluetooth Role](./bluetooth_control_command/bluetooth_role.md) 
+
+#### Camera Control Command v2
+
+[Get Info](./camera_control_command_v2/get_info.md)  
+[Get State](./camera_control_command_v2/get_state.md)  
+[Get State2](./camera_control_command_v2/get_state2.md)  
+[Notify State](./camera_control_command_v2/notify_state.md)  

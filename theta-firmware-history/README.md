@@ -1,5 +1,19 @@
 # THETA Firmware History
 
+## THETA X firmware v2.20.1 (2023.07.25)
+
+### WebAPI
+* [State](../theta-web-api-v2.1/protocols/state.md) : Update new options "\_externalGpsInfo", "\_internalGpsInfo", "\_boardTemp", and "\_batteryTemp"
+
+### Bluetooth-API
+* [Get Info](../theta-bluetooth-api/camera_control_command_v2/get_info.md) : New Added
+* [Get State](../theta-bluetooth-api/camera_control_command_v2/get_state.md) : New Added
+* [Get State2](../theta-bluetooth-api/camera_control_command_v2/get_state2.md) : New Added
+* [Notify State](../theta-bluetooth-api/camera_control_command_v2/notify_state.md) : New Added
+
+### Plugin
+* [Broadcast Intent](../ricoh-theta-plugin/broadcast-intent.md#control-battery-charging) : Update new intent com.theta360.plugin.ACTION_BATTERY_CHARGING_SUSPEND(RESUME)
+
 ## THETA Z1 firmware v3.01.1 (2023.06.27)
 
 ### WebAPI

@@ -15,10 +15,8 @@ The supported value depends on the shooting mode ([captureMode](capture_mode.md)
 | Shooting mode | Supported value |
 |:--|:--|
 | image | {"type": "jpeg","width": 11008,"height": 5504}<br>{"type": "jpeg","width": 5504,"height": 2752} |
-| video | {"type": "mp4","width": 7680,"height": 3840, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 10}<br>{“type”: “mp4”,”width”: 7680,”height”: 3840, “_codec”: “H.264/MPEG-4 AVC”, “_frameRate”: 5}<br>{“type”: “mp4”,”width”: 7680,”height”: 3840, “_codec”: “H.264/MPEG-4 AVC”, “_frameRate”: 2}<br>{"type": "mp4","width": 5760,"height": 2880, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 30}<br>{“type”: “mp4”,”width”: 5760,”height”: 2880, “_codec”: “H.264/MPEG-4 AVC”, “_frameRate”: 5}<br>{“type”: “mp4”,”width”: 5760,”height”: 2880, “_codec”: “H.264/MPEG-4 AVC”, “_frameRate”: 2}<br>{"type": "mp4","width": 3840,"height": 1920, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 60}<br>{"type": "mp4","width": 3840,"height": 1920, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 30}<br>{"type": "mp4","width": 1920,"height": 960, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 60}<br>{"type": "mp4","width": 1920,"height": 960, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 30} |
+| video | {"type": "mp4","width": 7680,"height": 3840, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 10}<br>{“type”: “mp4”,”width”: 7680,”height”: 3840, “_codec”: “H.264/MPEG-4 AVC”, “_frameRate”: 5}<br>{“type”: “mp4”,”width”: 7680,”height”: 3840, “_codec”: “H.264/MPEG-4 AVC”, “_frameRate”: 2}<br>{"type": "mp4","width": 5760,"height": 2880, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 30}<br>{"type": "mp4","width": 5760,"height": 2880, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 15}<br>{"type": "mp4","width": 5760,"height": 2880, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 10}<br>{“type”: “mp4”,”width”: 5760,”height”: 2880, “_codec”: “H.264/MPEG-4 AVC”, “_frameRate”: 5}<br>{“type”: “mp4”,”width”: 5760,”height”: 2880, “_codec”: “H.264/MPEG-4 AVC”, “_frameRate”: 2}<br>{"type": "mp4","width": 3840,"height": 1920, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 60}<br>{"type": "mp4","width": 3840,"height": 1920, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 30}<br>{"type": "mp4","width": 3840,"height": 1920, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 15}<br>{"type": "mp4","width": 3840,"height": 1920, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 10}<br>{"type": "mp4","width": 1920,"height": 960, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 60}<br>{"type": "mp4","width": 1920,"height": 960, "_codec": "H.264/MPEG-4 AVC", "_frameRate": 30} |
 | \_liveStreaming | Not supported |
-
-
 
 #### For RICOH THETA Z1
 
@@ -30,7 +28,6 @@ The supported value depends on the shooting mode ([captureMode](capture_mode.md)
 
 \*1 RICOH THETA Z1 firmware v3.01.1 or later. This mode outputs two fisheye video for each lens. The MP4 file name ending with `_0` is the video file on the front lens, and `_1` is back lens. This mode does not record audio track to MP4 file.  
 
-
 #### For RICOH THETA V
 
 | Shooting mode | Supported value |
@@ -38,8 +35,6 @@ The supported value depends on the shooting mode ([captureMode](capture_mode.md)
 | image | {"type": "jpeg", "width": 5376, "height": 2688} |
 | video | {"type": "mp4", "width": 3840, "height": 1920, "\_codec": "H.264/MPEG-4 AVC"}<br>{"type": "mp4", "width": 1920, "height": 960, "\_codec": "H.264/MPEG-4 AVC"} |
 | \_liveStreaming | Not supported |
-
-
 
 #### For RICOH THETA S or SC
 

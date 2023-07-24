@@ -2,6 +2,8 @@
 
 Supported characteristics are listed below.
 
+### Auth Bluetooth Device required (RICOH THETA V/Z1)
+
 <table>
   <thead>
     <tr>
@@ -158,6 +160,35 @@ Supported characteristics are listed below.
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+    </tr>
+    <tr><th rowspan="4">Camera Control Command v2 <span class="mintext">*6</span></th>
+      <td><a href="camera_control_command_v2/get_info.md">Get Info</a></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+    </tr><tr>
+      <td><a href="camera_control_command_v2/get_state.md">Get State</a></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+    </tr><tr>
+      <td><a href="camera_control_command_v2/get_state2.md">Get State2</a></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+    </tr><tr>
+      <td><a href="camera_control_command_v2/notify_state.md">Notify State</a></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
     </tr>
@@ -541,12 +572,62 @@ Supported characteristics are listed below.
   </tbody>
 </table>
 
-![Mandatory](assets/img/supported.png "Mandatory"): Mandatory    
-![Excluded](assets/img/not-supported.png "Excluded"): Excluded
-![some model Mandatory](assets/img/partially-supported.png "some model Mandatory"): some model Mandatory
+### Auth Bluetooth Device not required (RICOH THETA X)
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Service Name</th>
+      <th rowspan="2">Characteristic Name</th>
+      <th rowspan="2">Read</th>
+      <th rowspan="2">Write</th>
+      <th rowspan="2">Notify</th>
+      <th colspan="2">MySetting <span class="mintext">*1</span></th>
+    </tr>
+    <tr>
+      <th>Image</th>
+      <th>Video</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th rowspan="4">Camera Control Command v2 <span class="mintext">*6</span></th>
+      <td><a href="camera_control_command_v2/get_info.md">Get Info</a></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+    </tr><tr>
+      <td><a href="camera_control_command_v2/get_state.md">Get State</a></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+    </tr><tr>
+      <td><a href="camera_control_command_v2/get_state2.md">Get State2</a></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+    </tr><tr>
+      <td><a href="camera_control_command_v2/notify_state.md">Notify State</a></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+    </tr>
+</table>
+
+![Mandatory](assets/img/supported.png "Mandatory"): Mandatory  
+![Excluded](assets/img/not-supported.png "Excluded"): Excluded  
+![some model Mandatory](assets/img/partially-supported.png "some model Mandatory"): some model Mandatory  
 
 \*1 RICOH THETA V firmware v2.30.1 or later  
 \*2 RICOH THETA V firmware v3.00.1 or later  
 \*3 RICOH THETA V is not supported  
 \*4 RICOH THETA Z1 firmware v2.10.1 or later  
 \*5 RICOH THETA Z1 firmware v2.20.3 or later  
+\*6 RICOH THETA X firmware v2.20.1 or later  
