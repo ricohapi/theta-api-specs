@@ -46,10 +46,10 @@ State of the camera.
 | \_currentStorage \*7 | String | Used to identify IN/SD at the app<br>"IN", "SD"<br>(IN: Record to internal memory,<br>SD: Record to SD card) |
 | \_cameraError | String Array | Error information of the camera (Refer to the next section for details.) |
 | \_batterylnsert \*7 | Boolean | true: Battery inserted; false: Battery not inserted<br>If "_batteryInsert" is true, video recording via the WebAPI is restricted.<br>Video recording at 4K 60fps, 5.7K 10fps, 5.7K 15fps, 5.7K 30fps, or 8K 10fps is not possible with the WebAPI.<br>When the battery level is at the specified value or less, video recording at 4K 30fps is not possible with the WebAPI. |
-| \_externalGpsInfo \*9 | Object | Location data is obtained through an external device using WebAPI or BLE-API.<br>Please refer to the object specification for [gpsInfo](../options/gps_info.md) as well. |
-| \_internalGpsInfo \*9 | Object | Location data is obtained through an internal GPS module.<br>Please refer to the object specification for [gpsInfo](../options/gps_info.md) as well. |
-| \_boardTemp \*9 | Number | This represents the current temperature inside the camera as an integer value, ranging from -10°C to 100°C with a precision of 1°C. | 
-| \_batteryTemp \*9 | Number | This represents the current temperature inside the battery as an integer value, ranging from -10°C to 100°C with a precision of 1°C. |
+| \_externalGpsInfo \*9\*10 | Object | Location data is obtained through an external device using WebAPI or BLE-API.<br>Please refer to the object specification for [gpsInfo](../options/gps_info.md) as well. |
+| \_internalGpsInfo \*9\*10 | Object | Location data is obtained through an internal GPS module.<br>Please refer to the object specification for [gpsInfo](../options/gps_info.md) as well.<br>RICOH THETA Z1 does not have a built-in GPS module. |
+| \_boardTemp \*9\*10 | Number | This represents the current temperature inside the camera as an integer value, ranging from -10°C to 100°C with a precision of 1°C. | 
+| \_batteryTemp \*9\*10 | Number | This represents the current temperature inside the battery as an integer value, ranging from -10°C to 100°C with a precision of 1°C. |
 
 \*1 RICOH THETA S firmware v01.82 or later
 
@@ -68,6 +68,8 @@ State of the camera.
 \*8 RICOH THETA X is not supported
 
 \*9 RICOH THETA X firmware v2.20.1 or later
+
+\*10 RICOH THETA Z1 firmware v3.10.2 or later
 
 ### \_cameraError
 

@@ -163,35 +163,6 @@ Supported characteristics are listed below.
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
     </tr>
-    <tr><th rowspan="4">Camera Control Command v2 <span class="mintext">*6</span></th>
-      <td><a href="camera_control_command_v2/get_info.md">Get Info</a></td>
-      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-    </tr><tr>
-      <td><a href="camera_control_command_v2/get_state.md">Get State</a></td>
-      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-    </tr><tr>
-      <td><a href="camera_control_command_v2/get_state2.md">Get State2</a></td>
-      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-    </tr><tr>
-      <td><a href="camera_control_command_v2/notify_state.md">Notify State</a></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
-    </tr>
     <tr><th rowspan="7">Shooting Status Command</th>
       <td><a href="shooting_status_command/camera_error.md">Camera Error</a></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
@@ -572,7 +543,7 @@ Supported characteristics are listed below.
   </tbody>
 </table>
 
-### Auth Bluetooth Device not required (RICOH THETA X)
+### Auth Bluetooth Device not required (RICOH THETA Z1/X)
 
 <table>
   <thead>
@@ -590,7 +561,7 @@ Supported characteristics are listed below.
     </tr>
   </thead>
   <tbody>
-    <tr><th rowspan="4">Camera Control Command v2 <span class="mintext">*6</span></th>
+    <tr><th rowspan="4">Camera Control Command v2 <span class="mintext">*6*7</span></th>
       <td><a href="camera_control_command_v2/get_info.md">Get Info</a></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
@@ -631,3 +602,4 @@ Supported characteristics are listed below.
 \*4 RICOH THETA Z1 firmware v2.10.1 or later  
 \*5 RICOH THETA Z1 firmware v2.20.3 or later  
 \*6 RICOH THETA X firmware v2.20.1 or later  
+\*7 RICOH THETA Z1 firmware v3.10.2 or later  

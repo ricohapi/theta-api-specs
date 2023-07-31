@@ -1,5 +1,19 @@
 # THETA Firmware History
 
+## THETA Z1 firmware v3.10.2 (2023.08.01)
+
+### WebAPI
+* [State](../theta-web-api-v2.1/protocols/state.md) : Update new options "\_externalGpsInfo", "\_internalGpsInfo", "\_boardTemp", and "\_batteryTemp"
+
+### Bluetooth-API
+* [Get Info](../theta-bluetooth-api/camera_control_command_v2/get_info.md) : New Added
+* [Get State](../theta-bluetooth-api/camera_control_command_v2/get_state.md) : New Added
+* [Get State2](../theta-bluetooth-api/camera_control_command_v2/get_state2.md) : New Added
+* [Notify State](../theta-bluetooth-api/camera_control_command_v2/notify_state.md) : New Added
+
+### USB-API
+* [0xD83D ExposureStatus](../theta-usb-api/property/exposure_status.md) : New Added
+  
 ## THETA X firmware v2.20.1 (2023.07.25)
 
 ### WebAPI

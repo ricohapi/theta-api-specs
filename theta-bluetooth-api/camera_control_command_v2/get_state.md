@@ -27,7 +27,7 @@ Acquires the camera states.
 | \_capturedPictures | Number | Number of still images captured during continuous shooting, Unit: images |
 | \_latestFileUrl | String | URL of the last saved file<br>Z1: http://[IP address]/files/[eMMC ID]/[Directory name]/[[File name]<br>X: http://[IP address]/files/[Directory name]/[[File name]<br>DNG format files are not displayed. For burst shooting, files in the DNG format are displayed.\*1 |
 | \_batteryState | String | Charging state<br>"charging", "charged", "disconnect"<br>(charging: Charging, charged: Charging completed,<br>disconnect: Not charging) |
-| \_function | String | Shooting function status<br>"normal", selfTimer"\*8, "mySetting" |
+| \_function | String | Shooting function status<br>"normal", selfTimer"\*1, "mySetting" |
 | \_cameraError | String Array | Error information of the camera (Refer to the next section for details.) |
 | \_batterylnsert \*2 | Boolean | true: Battery inserted; false: Battery not inserted|
 | \_boardTemp | Number | Camera main board temperature |
