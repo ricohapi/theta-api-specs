@@ -35,7 +35,7 @@ State of the camera.
 | \_recordableTime | Number | Remaining time of movie (sec) |
 | \_capturedPictures \*2 | Number | Number of still images captured during continuous shooting, Unit: images |
 | \_compositeShootingElapsedTime \*1\*4\*6\*8 | Number | Elapsed time for interval composite shooting (sec) |
-| \_latestFileUrl | String | URL of the last saved file<br>V, Z1: http://[IP address]/files/[eMMC ID]/[Directory name]/[[File name]<br>X: http://[IP address]/files/[Directory name]/[[File name]<br>DNG format files are not displayed. For burst shooting, files in the DNG format are displayed.\*6 |
+| \_latestFileUrl | String | URL of the last saved file<br>V, Z1: http://[IP address]/files/[eMMC ID]/[Directory name]/[File name]<br>X: http://[IP address]/files/[Directory name]/[File name]<br>DNG format files are not displayed. For burst shooting, files in the DNG format are displayed.\*6 |
 | \_batteryState | String | Charging state<br>"charging", "charged", "disconnect"<br>(charging: Charging, charged: Charging completed,<br>disconnect: Not charging) |
 | \_apiVersion | Number | API version currently set<br>(1: v2.0, 2: v2.1) |
 | \_pluginRunning \*3\*5 | Boolean | Plugin running state<br>(true: running, false: stop) |
