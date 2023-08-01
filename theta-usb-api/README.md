@@ -117,6 +117,7 @@
 [0xD83A White Balance Auto Strength](./property/white_balance_auto_strength.md)  
 [0xD83B Water Housing](./property/water_housing.md)  
 [0xD83C Water Housing Stitching](./property/water_housing_stitching.md)  
+[0xD83D ExposureStatus](./property/exposure_status.md)  
 
 
 #### Events

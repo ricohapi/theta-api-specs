@@ -14,5 +14,5 @@
 * [THETA Web API v2.1](./theta-web-api-v2.1/README.md): based OSC (RICOH THETA S or later)  
 * [THETA Web API v2.0](./theta-web-api-v2.0/README.md): based OSC (RICOH THETA S)  
 * [THETA Web API v1.0](./theta-web-api-v1.0/README.md): based PTP-IP (RICOH THETA, RICOH THETA m15)  
-* [THETA Bluetooth API v2](./theta-bluetooth-api/README.md): based GATT (RICOH THETA V or later, RICOH THETA X is not supported)  
+* [THETA Bluetooth API v2](./theta-bluetooth-api/README.md): based GATT (RICOH THETA V or later)  
 * [THETA USB API v2](./theta-usb-api/README.md): based MTP (RICOH THETA S or later)  
