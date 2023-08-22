@@ -1,5 +1,9 @@
 # THETA Firmware History
 
+## THETA X firmware v2.21.0 (2023.08.22)
+
+No API Update
+
 ## THETA Z1 firmware v3.10.2 (2023.08.01)
 
 ### WebAPI
@@ -42,6 +46,10 @@
 ### Bluetooth-API
 * [File Format](../theta-bluetooth-api/shooting_control_command/file_format.md) : Update new option video format
 * [Max Recordable Time](../theta-bluetooth-api/shooting_control_command/max_recordable_time.md) : Update new 50 minutes setting only for 3.6K 1/2fps and 2.7K 1/2fps.
+
+## THETA X firmware v2.10.1 (2023.06.19)
+
+No API Update
 
 ## THETA X firmware v2.00.0 (2023.04.12)
 
