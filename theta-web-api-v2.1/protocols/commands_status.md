@@ -24,7 +24,7 @@ Same as the [Commands/Execute](commands_execute.md) output.
 
 ```
 {
-    "name": "camera.startCapture"
+    "id": "90ABCD"
 }
 ```
 
