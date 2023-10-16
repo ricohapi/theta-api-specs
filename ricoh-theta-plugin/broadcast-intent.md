@@ -17,6 +17,7 @@ Plugin can send Broadcast Intent to control several hardware feature, such as co
 * [Control GPS](#control-gps)
 * [Control IMU Sensor](#control-imu-sensor)
 * [Control Battery Charging](#control-battery-charging)
+* [Power Off](#power-off)
 * [Updating the Database](#updating-the-database)
 * [Notifying Occurrences of Errors](#notifying-occurrences-of-errors)
 * [Notifying Completion of Plugin](#notifying-completion-of-plugin)
@@ -455,6 +456,21 @@ THETA Plugin library supports a method to send broadcast.
 ```
 notificationBatteryChargingSuspend();
 notificationBatteryChargingResume();
+```
+
+## Power Off
+
+Supported by THETA X firmware v2.30.0 or later.  
+Power off THETA by following Broadcast Intent.  
+
+|Operation|Intent|
+|:-|:-|
+|Power Off|"com.theta360.plugin.ACTION_POWER_OFF"|
+
+THETA Plugin library supports a method to send broadcast.
+
+```
+notificationPowerOff();
 ```
 
 ## Updating the Database

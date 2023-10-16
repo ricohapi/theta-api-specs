@@ -3,7 +3,6 @@
 ### Overview
 
 Reset all device settings and capture settings.  
-After reset, the camera will be restarted.
 
 ### Parameters
 

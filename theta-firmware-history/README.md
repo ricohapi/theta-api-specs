@@ -1,5 +1,10 @@
 # THETA Firmware History
 
+## THETA X firmware v2.30.0 (2023.10.17)
+
+### Plugin
+* [Broadcast Intent](../ricoh-theta-plugin/broadcast-intent.md#power-off) : Update new intent com.theta360.plugin.ACTION_POWER_OFF
+
 ## THETA X firmware v2.21.0 (2023.08.22)
 
 No API Update
