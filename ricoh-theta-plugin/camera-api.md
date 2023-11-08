@@ -903,6 +903,8 @@ Remark
 * This feature can be used with RICOH THETA Z1 firmware v2.00 or later
 * RICOH THETA X/V/SC/S is not supported.
 
+#### RIC_AEC_BURST_CAPTURE_NUM
+
 To set the number of burst capture frames, set value (int type) for "RIC_AEC_BURST_CAPTURE_NUM". Default value is 1.
 
 |Value|Description|
@@ -912,6 +914,8 @@ To set the number of burst capture frames, set value (int type) for "RIC_AEC_BUR
 |5|5 frames|
 |7|7 frames|
 |9|9 frames|
+
+#### RIC_AEC_BURST_BRACKET_STEP
 
 To set the bracket step of burst capture mode, set value (int type) for "RIC_AEC_BURST_BRACKET_STEP". Default value is 0.
 
@@ -927,6 +931,8 @@ To set the bracket step of burst capture mode, set value (int type) for "RIC_AEC
 |7|2.3 Ev|
 |8|2.7 Ev|
 |9|3.0 Ev|
+
+#### RIC_AEC_BURST_COMPENSATION
 
 To set the exposure compensation of burst capture mode, set value (int type) for "RIC_AEC_BURST_COMPENSATION". Default value is 0.
 
@@ -963,6 +969,8 @@ To set the exposure compensation of burst capture mode, set value (int type) for
 |13|+4.3 Ev|
 |14|+4.7 Ev|
 |15|+5.0 Ev|
+
+#### RIC_AEC_BURST_MAX_EXPOSURE_TIME
 
 To set the upper limit of exposure time of burst capture mode, set value (int type) for "RIC_AEC_BURST_MAX_EXPOSURE_TIME". Default value is 56.
 
@@ -1032,6 +1040,8 @@ To set the upper limit of exposure time of burst capture mode, set value (int ty
 |61|50 sec|
 |62|60 sec|
 
+#### RIC_AEC_BURST_ENABLE_ISO_CONTROL
+
 To set the auto ISO control of burst capture mode, set value (int type) for “RIC_AEC_BURST_ENABLE_ISO_CONTROL”.  
 To set "RIC_AEC_BURST_ENABLE_ISO_CONTROL" to 1, ISO sensitivity will be set higher value when exposure time reach to RIC_AEC_BURST_MAX_EXPOSURE_TIME. Default value is 0.
 
@@ -1039,6 +1049,15 @@ To set "RIC_AEC_BURST_ENABLE_ISO_CONTROL" to 1, ISO sensitivity will be set high
 |:-|:-|
 |0|Disable to auto ISO control. This means to set always ISO80 when auto exposure mode.|
 |1|Enable to auto ISO control. This means to allow higher ISO sensitivity.|
+
+#### RIC_AEC_BURST_ORDER
+
+To set the shooting order of exposure setting, set value (int type) for “RIC_AEC_BURST_ORDER”. This API is available with THETA Z1 firmware v2.10.3 or later. 
+
+|Value|Description|
+|:-|:-|
+|0| `0` > `-` > `+` (default)|
+|1| `-` > `0` > `+`|
 
 ## Face Detection
 To enable Face Detection feature, set the value (int type) for “RIC_FACE_DETECTION”. AE will make detected human faces brighter when this feature is enabled. Only available in still capture mode of RICOH THETA X. Default value is 0.
