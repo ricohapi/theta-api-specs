@@ -1,5 +1,21 @@
 # THETA Firmware History
 
+## THETA X firmware v2.40.0 (2024.01.16)
+
+### WebAPI
+* [State](../theta-web-api-v2.1/protocols/state.md#_cameraerror) : Update new error code `COMPASS CALIBRATION`, and Update `_cameraError` table
+* [_autoBracket](../theta-web-api-v2.1/options/_auto_bracket.md) : Update spec
+* [_ethernetConfig](../theta-web-api-v2.1/options/_ethernet_config.md) : New Added
+
+### USB-API
+* [0xD812 BracketParameters](../theta-usb-api/property/bracket_parameters.md) : Update spec
+
+### Plugin
+* [Camera API](../ricoh-theta-plugin/camera-api.md#shooting-mode) : Update new parameter `RicStillCaptureYuvHhHDR`
+
+### Others
+* [THETA Metadata Spec](../theta-metadata/README.md#rdt-atom) : Update spec of `RDTL` header
+
 ## THETA X firmware v2.30.0 (2023.10.17)
 
 ### Plugin
@@ -21,7 +37,7 @@ No API Update
 * [Notify State](../theta-bluetooth-api/camera_control_command_v2/notify_state.md) : New Added
 
 ### USB-API
-* [0xD83D ExposureStatus](../theta-usb-api/property/exposure_status.md) : New Added
+* [0xD83E ExposureStatus](../theta-usb-api/property/exposure_status.md) : New Added
   
 ## THETA X firmware v2.20.1 (2023.07.25)
 

@@ -159,6 +159,10 @@ To set shooting mode, set value (String type) for "RIC_SHOOTING_MODE".
         <td>HDR Rendering</td>
       </tr>
       <tr>
+        <td>"RicStillCaptureMultiYuvHhHdr"</td>
+        <td>Handheld HDR Rendering<br>RICOH THETA X firmware v2.40.0 or later</td>
+      </tr>
+      <tr>
         <td>"RicMovieRecording1920"</td>
         <td>2K video</td>
       </tr>

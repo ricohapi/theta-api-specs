@@ -1,8 +1,8 @@
-# 0xD83D ExposureStatus
+# 0xD83E ExposureStatus
 
 ### Device Prop Code
 
-0xD83D
+0xD83E
 
 ### Overview
 

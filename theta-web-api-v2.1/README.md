@@ -72,6 +72,7 @@
 [continuousNumber](./options/continuous_number.md)  
 [dateTimeZone](./options/date_time_zone.md)  
 [exposureCompensation](./options/exposure_compensation.md)  
+[_ethernetConfig](./options/_ethernet_config.md)  
 [exposureDelay](./options/exposure_delay.md)  
 [exposureProgram](./options/exposure_program.md)  
 [_faceDetect](./options/_face_detect.md)  
