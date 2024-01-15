@@ -70,8 +70,10 @@ The side where the shutter button is located is defined as Rear, for all THETA m
 | Sampling rate | `uint16` | 2 | [Hz] |
 | Sample size | `uint16` | 2 | e.g. `0x18` |
 | Endian | `uint16` | 2 | Little endian : `0x0123` <br> Big endian : `0x3210`
-| Reserve | `uint16[3]` | 6 | `0x00..00` |
+| Reserve | `uint16[3]` | 6 | `0x00..00` \*1 |
 | Data Table | | Variable | Data Table is stored as array of [Data Packet](#data-packet-format). |
+
+\*1 : RICOH THETA X firmware v2.40.0 or later puts the value of "timestamp" of 1st data packet as [msec] for RDTL.
 
 ### Data Packet Format
 

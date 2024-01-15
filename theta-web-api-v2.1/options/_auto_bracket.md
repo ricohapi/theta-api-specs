@@ -21,10 +21,11 @@ For "_bracketParameters", all parameters must be specified.
 | Key | Description |
 |:--|:--|
 | \_bracketNumber | Number of shots in multi bracket shooting.<br>2 to 13 (RICOH THETA V firmware v2.50.1  or prior, RICOH THETA X); 2 to 19 (RICOH THETA V firmware v3.00.1 or after). |
-| \_bracketParameters | Parameter array specified for multi bracket shooting.<br>Specify [iso](iso.md), [shutterSpeed](shutter_speed.md), and [\_colorTemperature](_color_temperature.md) for RICOH THETA V firmware v2.50.1 or prior;<br>or specify [iso](iso.md) \*1, [shutterSpeed](shutter_speed.md) \*1, [\_colorTemperature](_color_temperature.md) \*1, [exposureProgram](exposure_program.md), [aperture](aperture.md) \*1\*2, [exposureCompensation](exposure_compensation.md) \*1, and [whiteBalance](white_balance.md) for RICOH THETA V firmware v3.00.1 or later. |
+| \_bracketParameters | Parameter array specified for multi bracket shooting.<br>Specify [iso](iso.md), [shutterSpeed](shutter_speed.md), and [\_colorTemperature](_color_temperature.md) for RICOH THETA V firmware v2.50.1 or prior;<br>or specify [iso](iso.md) \*1, [shutterSpeed](shutter_speed.md) \*1, [\_colorTemperature](_color_temperature.md) \*1, [exposureProgram](exposure_program.md) \*3, [aperture](aperture.md) \*1\*2, [exposureCompensation](exposure_compensation.md) \*1, and [whiteBalance](white_balance.md) for RICOH THETA V firmware v3.00.1 or later. |
 
 \*1: Optional<br>
-\*2: RICOH THETA X is not supported.  
+\*2: Only RICOH THETA Z1 supports `aperture` option.  
+\*3: RICOH THETA X supports only `1` (Manual program).
 
 ### Example
 

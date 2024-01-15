@@ -75,49 +75,52 @@ State of the camera.
 
 Error information of the camera
 
-#### RICOH THETA X or later
+#### RICOH THETA X
 
-| Event flag | Error code | Desription |
-|:--|:--|:--|
-| 0x00000001 | NO\_MEMORY | Insufficient memory |
-| 0x00000004 | FILE\_NUMBER\_OVER | Maximum file number exceeded |
-| 0x00000008 | NO\_DATE\_SETTING | Camera clock not set |
-| 0x00000010 | READ\_ERROR | Includes when the card is removed |
-| 0x00000020 | NOT_SUPPORTED_MEDIA_TYPE | Unsupported media (SDHC, etc.) |
-| 0x00000040 | NOT_SUPPORTED_FILE_SYSTEM | FAT32, etc. |
-| 0x00000100 | MEDIA_NOT_READY | Error warning while mounting |
-| 0x00000200 | NOT_ENOUGH_BATTERY | Battery level warning (firmware update) |
-| 0x00000400 | INVALID_FILE | Firmware file mismatch warning |
-| 0x00000800 | PLUGIN_BOOT_ERROR | Plugin start warning (IoT technical standards compliance) |
-| 0x00001000 | IN_PROGRESS_ERROR<br><br>CANNOT_RECORDING | When performing continuous shooting by operating the camera while executing \<Delete object\>, \<Transfer firmware file\>, \<Install plugin\> or \<Uninstall plugin\> with the WebAPI or MTP.<br><br>Battery inserted + WLAN ON + Video mode + 4K 60fps / 5.7K 10fps / 5.7K 15fps / 5.7K 30fps / 8K 10fps |
-| 0x00002000 | CANNOT\_RECORD\_LOWBAT | Battery inserted AND Specified battery level or lower + WLAN ON + Video mode + 4K 30fps |
-| 0x00400000 | CAPTURE\_HW\_FAILED | Shooting hardware failure |
-| 0x00800000 | CAPTURE_SW_FAILED | Software error |
-| 0x08000000 | INTERNAL\_MEM\_ACCESS\_FAIL | Internal memory access error |
-| 0x20000000 | UNEXPECTED\_ERROR | Undefined error |
-| 0x40000000 | BATTERY\_CHARGE\_FAIL | Charging error |
-| 0x00100000 \*1 | HIGH\_TEMPERATURE\_WARNING | (Board) temperature warning |
-| 0x80000000 | HIGH\_TEMPERATURE | (Board) temperature error |
-| 0x00200000 | BATTERY\_HIGH\_TEMPERATURE | Battery temperature error |
+| Error code | Can/not shoot | Desription | Recommended action |
+|:--|:-:|:--|:--|
+| NO\_MEMORY         | |Insufficient memory | Delete files |
+| FILE\_NUMBER\_OVER | | Maximum file number exceeded | Delete 999 folder or delete 9999 file |
+| NO\_DATE\_SETTING  | ✓ | Camera clock not set | Set Date/Time via API, UI, or NTP |
+| ELECTRONIC\_COMPASS\_CALIBRATION \*2  | ✓ | Electronic compass error | Move the camera with ∞ pattern |
+| READ\_ERROR               | ✓ | Includes when the card is removed | Change or format the microSD card |
+| NOT_SUPPORTED_MEDIA_TYPE  | ✓ | Unsupported media (SDHC, etc.) | Use microSDXC card |
+| NOT_SUPPORTED_FILE_SYSTEM | ✓ | Unsupported format (FAT32, etc.) | Format the microSD card |
+| MEDIA_NOT_READY           | ✓ | Error warning while mounting | Wait for the microSD card is mounted |
+| NOT_ENOUGH_BATTERY | ✓ | Battery level warning (firmware update) | Charge battery |
+| INVALID_FILE       | ✓ | Firmware file mismatch warning | Retry firmware update |
+| PLUGIN_BOOT_ERROR  | ✓ | Plugin start warning (IoT technical standards compliance) | Disconnect from internet |
+| IN_PROGRESS_ERROR  | | When performing continuous shooting by operating the camera while executing \<Delete object\>, \<Transfer firmware file\>, \<Install plugin\> or \<Uninstall plugin\> with the WebAPI or MTP. | Wait for the processing finished |
+| CANNOT_RECORDING   | | Battery inserted + WLAN ON + Video mode + 4K 60fps / 5.7K 10fps / 5.7K 15fps / 5.7K 30fps / 8K 10fps | Turn off WLAN |
+| CANNOT\_RECORD\_LOWBAT | | Battery inserted AND Specified battery level or lower + WLAN ON + Video mode + 4K 30fps | Charge the battery |
+| CAPTURE\_HW\_FAILED | | Shooting hardware failure | Reboot the camera may help |
+| CAPTURE_SW_FAILED   | | Software error | Reboot the camera may help |
+| INTERNAL\_MEM\_ACCESS\_FAIL | | Internal memory access error | Reboot the camera may help |
+| UNEXPECTED\_ERROR   | | Undefined error | Reboot the camera may help |
+| BATTERY\_CHARGE\_FAIL | | Charging error | Check USB cable or charger |
+| HIGH\_TEMPERATURE\_WARNING \*1 | ✓ | (Board) temperature warning | Cool the camera |
+| HIGH\_TEMPERATURE          | | (Board) temperature error | Cool the camera |
+| BATTERY\_HIGH\_TEMPERATURE | | Battery temperature error | Cool the camera |
 
-\*1 RICOH THETA X firmware v1.40.0 or later
+\*1 RICOH THETA X firmware v1.40.0 or later  
+\*2 RICOH THETA X firmware v2.40.0 or later
 
 #### RICOH THETA Z1 or prior
 
-| Event flag | Error code | Desription |
-|:--|:--|:--|
-| 0x00000001 | NO\_MEMORY | Insufficient memory |
-| 0x00000004 | FILE\_NUMBER\_OVER | Maximum file number exceeded |
-| 0x00000008 | NO\_DATE\_SETTING | Camera clock not set |
-| 0x00000010 | COMPASS\_CALIBRATION | Electronic compass error |
-| 0x00000800 \*1 | PLUGIN\_BOOT\_ERROR | Plugin start warning (IoT technical standards compliance) |
-| 0x00100000 \*2 | HIGH\_TEMPERATURE\_WARNING | (Board) temperature warning |
-| 0x00400000 | CAPTURE\_HW\_FAILED | Shooting hardware failure |
-| 0x08000000 | INTERNAL\_MEM\_ACCESS\_FAIL | Internal memory access error |
-| 0x20000000 | UNEXPECTED\_ERROR | Undefined error |
-| 0x40000000 | BATTERY\_CHARGE\_FAIL | Charging error |
-| 0x80000000 | HIGH\_TEMPERATURE | (Board) temperature error |
-| 0x00200000 \*1 | BATTERY\_HIGH\_TEMPERATURE | Battery temperature error |
+| Error code | Can/not shoot | Desription | Recommended action |
+|:--|:-:|:--|:--|
+| NO\_MEMORY | | Insufficient memory | Delete files |
+| FILE\_NUMBER\_OVER | | Maximum file number exceeded | Delete 999 folder or delete 9999 file |
+| NO\_DATE\_SETTING  | ✓ | Camera clock not set | Set Date/Time via API |
+| ELECTRONIC\_COMPASS\_CALIBRATION | ✓ | Electronic compass error | Move the camera with ∞ pattern |
+| PLUGIN\_BOOT\_ERROR \*1 | ✓ | Plugin start warning (IoT technical standards compliance) | Disconnect from internet |
+| HIGH\_TEMPERATURE\_WARNING \*2 | ✓ | (Board) temperature warning | Cool the camera |
+| CAPTURE\_HW\_FAILED | | Shooting hardware failure | Reboot the camera may help |
+| INTERNAL\_MEM\_ACCESS\_FAIL | | Internal memory access error | Reboot the camera may help |
+| UNEXPECTED\_ERROR | | Undefined error | Reboot the camera may help |
+| BATTERY\_CHARGE\_FAIL | | Charging error | Check USB cable or charger |
+| HIGH\_TEMPERATURE | | (Board) temperature error | Cool the camera |
+| BATTERY\_HIGH\_TEMPERATURE \*1 |  | Battery temperature error | Cool the camera |
 
 \*1 RICOH THETA Z1 or later  
 \*2 RICOH THETA Z1 v2.20.3 or later  

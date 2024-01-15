@@ -46,5 +46,5 @@ The array size should be 2 to 13.
 | ShutterSpeed | 64 bits | Shutter speed<br>Refer to [0xD00F ShutterSpeed](shutter_speed.md) for the format. |
 | ExposureBiasCompensation | 16 bits | Exposure compensation<br>Refer to [0x5010 ExposureBiasCompensation](exposure_bias_compensation.md) for the format. |
 | F-number | 16 bits | Aperture<br>Refer to [0x5007 F-Number](f_number.md) for the format.<br>Set 0 for RICOH THETA V, X. |
-| ExposureProgramMode | 16 bits | Exposure program<br>Refer to [0x500E ExposureProgramMode](exposure_program_mode.md) for the format. |
+| ExposureProgramMode | 16 bits | Exposure program<br>Refer to [0x500E ExposureProgramMode](exposure_program_mode.md) for the format.<br>RICOH THETA X supports only `0x0001` (Manual program). |
 | WhiteBalance | 16 bits | White balance<br>Refer to [0x5005 WhiteBalance](white_balance.md) for the format. |

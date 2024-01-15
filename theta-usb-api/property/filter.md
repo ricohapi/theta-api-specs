@@ -34,9 +34,9 @@ The condition below will result in an error.
 | 0x01 | DR compensation \*2 |
 | 0x02 | Noise reduction |
 | 0x03 | HDR |
-| 0x04 | Handheld HDR \*1\*2\*3 |
+| 0x04 | Handheld HDR \*1\*3 |
 
- \*1 RICOH THETA Z1 firmware v1.20.1 or later and RICOH THETA V firmware v3.10.1 or later  
+ \*1 RICOH THETA Z1 firmware v1.20.1 or later, RICOH THETA V firmware v3.10.1 or later, or RICOH THETA X firmware v2.40.0 or later.  
 
  \*2 RICOH THETA X is not supported
  
