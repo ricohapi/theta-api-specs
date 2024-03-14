@@ -17,6 +17,7 @@
 * [THETA Bluetooth API v2](./theta-bluetooth-api/README.md): based GATT (RICOH THETA V or later)  
 * [THETA USB API v2](./theta-usb-api/README.md): based MTP (RICOH THETA S or later)  
 
-## RICOH THETA Metadata
+## Other Tips
 
 * [MP4 Metadata Spec](./theta-metadata/README.md): how to parse IMU/GNSS sensor data packet from MP4 video file.
+* [THETA Lens Spec](./theta-lens/README.md): design value of THETA fisheye lens.
