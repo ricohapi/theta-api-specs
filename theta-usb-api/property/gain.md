@@ -19,6 +19,8 @@ Acquires or sets the microphone gain.
 
 | Value | Description |
 |:--|:--|
-| 0x00 | Normal mode |
-| 0x01 | Loud volume mode |
-| 0x02 | Mute mode<br>(RICOH THETA V firmware v2.50.1 or later, RICOH THETA X is not supported) |
+| 0x00 | Default |
+| 0x01 | Set low microphone gain |
+| 0x02 | Not record audio data \*1 |
+
+(\*1) RICOH THETA V firmware v2.50.1 or later, or RICOH THETA X firmware v2.50.1 or later

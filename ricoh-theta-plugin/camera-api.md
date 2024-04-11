@@ -22,6 +22,7 @@ RICOH THETA V, Z1, and X define original parameters as listed below. They can be
 * [ISO Sensitivity](#iso-sensitivity)
 * [ISO Sensitivity Upper Limit](#iso-sensitivity-upper-limit)
 * [Aperture](#aperture)
+* [HDR Bracket Setting](#hdr-bracket-setting)
 * [White Balance](#white-balance)
 * [Color Temperature](#color-temperature)
 * [White Balance Auto Strength](#white-balance-auto-strength)
@@ -110,76 +111,24 @@ To set shooting mode, set value (String type) for "RIC_SHOOTING_MODE".
 
 ### RICOH THETA X
 
-<table>
-    <thead>
-      <tr>
-        <th width="40%">Value</th>
-        <th width="60%">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>"RicPreview1024"</td>
-        <td>Live View (1024x512)</td>
-      </tr>
-      <tr>
-        <td>"RicPreview1920"</td>
-        <td>Live View (1920x960)</td>
-      </tr>
-      <tr>
-        <td>"RicPreview3840"</td>
-        <td>Live View (3840x1920)</td>
-      </tr>
-      <tr>
-        <td>"RicPreview5760"</td>
-        <td>Live View (5760x2880)</td>
-      </tr>
-      <tr>
-        <td>"RicPreview1024:576"</td>
-        <td>Live View (1024x576)</td>
-      </tr>
-      <tr>
-        <td>"RicPreview1920:1080"</td>
-        <td>Live View (1920×1080)</td>
-      </tr>
-      <tr>
-        <td>"RicPreview3840:2160"</td>
-        <td>Live View (3840x2160)</td>
-      </tr>
-      <tr>
-        <td>"RicStillCaptureStd"</td>
-        <td>Still Image Shooting</td>
-      </tr>
-      <tr>
-        <td>"RicStillCaptureMultiRawNR"</td>
-        <td>Noise Reduction</td>
-      </tr>
-      <tr>
-        <td>"RicStillCaptureMultiYuvHdr"</td>
-        <td>HDR Rendering</td>
-      </tr>
-      <tr>
-        <td>"RicStillCaptureMultiYuvHhHdr"</td>
-        <td>Handheld HDR Rendering<br>RICOH THETA X firmware v2.40.0 or later</td>
-      </tr>
-      <tr>
-        <td>"RicMovieRecording1920"</td>
-        <td>2K video</td>
-      </tr>
-      <tr>
-        <td>"RicMovieRecording3840"</td>
-        <td>4K video</td>
-      </tr>
-      <tr>
-        <td>"RicMovieRecording5760"</td>
-        <td>5.7K video</td>
-      </tr>
-      <tr>
-        <td>"RicMovieRecording7680"</td>
-        <td>8K video<br>8K video mode is available up to 10fps. Plugin app need to set video fps like setVideoFrameRate(10).<br>8K video can be encoded with I-frame only configuration. Plugin app need to set I-frame interval like setVideoEncodingIFrameInterval(0.0f).</td>
-      </tr>
-    </tbody>
-  </table>  
+| Value | Description |
+|:--|:--|
+|"RicPreview512:512"|Live View (512x512), only for `CAMERA_FACING_BACK` and `CAMERA_FACING_FRONT`|
+|"RicPreview1024"|Live View (1024x512)|
+|"RicPreview1920"|Live View (1920x960)|
+|"RicPreview3840"|Live View (3840x1920)|
+|"RicPreview5760"|Live View (5760x2880)|
+|"RicPreview1024:576" |Live View (1024x576)|
+|"RicPreview1920:1080"|Live View (1920×1080)|
+|"RicPreview3840:2160"|Live View (3840x2160)|
+|"RicStillCaptureStd"|Still Image Shooting|
+|"RicStillCaptureMultiRawNR"|Noise Reduction|
+|"RicStillCaptureMultiYuvHdr"|HDR Rendering|
+|"RicStillCaptureMultiYuvHhHdr"|Handheld HDR Rendering<br>RICOH THETA X firmware v2.40.0 or later|
+|"RicMovieRecording1920"|2K video|
+|"RicMovieRecording3840"|4K video|
+|"RicMovieRecording5760"|5.7K video|
+|"RicMovieRecording7680"|8K video<br>8K video mode is available up to 10fps. Plugin app need to set video fps like setVideoFrameRate(10).<br>8K video can be encoded with I-frame only configuration. Plugin app need to set I-frame interval like setVideoEncodingIFrameInterval(0.0f).|
 
 ## Stitching
 To set stitching, set the value (String type) for "RIC_PROC_STITCHING".
@@ -806,6 +755,21 @@ This KEY is available only with RICOH THETA Z1.
       </tr>
     </tbody>
   </table> 
+
+## HDR Bracket Setting
+
+To set HDR Bracekt Setting, set value (int type) to the KEY `RIC_HDR_BRACKET`.  
+This parameter is valid only for HDR mode, not for Handheld HDR mode.  
+This KEY is available only with RICOH THETA X firmware v2.50.1 or later.
+
+|Value|Description|
+|:--:|:--|
+| 0 | -4Ev / ±0Ev / +2Ev (default value) |
+| 1 | -1Ev / ±0Ev / +1Ev |
+| 2 | -2Ev / ±0Ev / +1Ev |
+| 3 | -3Ev / ±0Ev / +3Ev |
+| 4 | -4Ev / ±0Ev / +4Ev |
+| 5 | -5Ev / ±0Ev / +2Ev |
 
 ## White Balance
 To set white balance, set the value (String type) for "RIC_WB_MODE".

@@ -83,6 +83,7 @@
 [gpsInfo](./options/gps_info.md)  
 [_gpsTagRecording](./options/_gps_tag_recording.md)  
 [_HDMIreso](./options/_hdmi_reso.md)  
+[_hdrBracket](./options/_hdr_bracket.md)  
 [_imageStitching](./options/_image_stitching.md)  
 [iso](./options/iso.md)  
 [isoAutoHighLimit](./options/iso_auto_high_limit.md)  
