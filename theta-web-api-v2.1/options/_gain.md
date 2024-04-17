@@ -16,6 +16,8 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 
 | Value | Description |
 |:--|:--|
-| normal | Normal mode |
-| megavolume | Loud volume mode |
-| mute | Mute mode<br>(RICOH THETA V firmware v2.50.1 or later, RICOH THETA X is not supported.) |
+| normal     | Default |
+| megavolume | Set low microphone gain |
+| mute       | Not record audio data \*1 |  
+
+(\*1) RICOH THETA V firmware v2.50.1 or later, or RICOH THETA X firmware v2.50.1 or later

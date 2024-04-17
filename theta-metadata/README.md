@@ -172,6 +172,7 @@ RICOH THETA MP4 file also have CaMM track in following modes.
 * RICOH THETA X
     * 8K (7680x3840px) 10fps, 5fps, 2fps
     * 5.7K (5760x2880px) 10fps, 5fps, 2fps
+    * 2.7K (2752x2752px) 10fps, 5fps, 2fps
 * RICOH THETA Z1
     * 3.6K (3648x3648px) 2fps, 1fps
     * 2.7K (2688x2688px) 2fps, 1fps
