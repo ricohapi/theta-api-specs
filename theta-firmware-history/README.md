@@ -1,14 +1,31 @@
 # THETA Firmware History
 
+## THETA X firmware v2.50.2 (2024.04.18)
+
+### WebAPI
+* [fileFormat](../theta-web-api-v2.1/options/file_format.md) : Update new video mode
+* [_gain](../theta-web-api-v2.1/options/_gain.md) : Update new value `mute`
+* [_hdrBracket](../theta-web-api-v2.1/options/_hdr_bracket.md) : New Added
+
+### USB-API
+* [0x5003](../theta-usb-api/property/image_size.md) : Update new video mode
+* [0xD81F Gain](../theta-usb-api/property/gain.md) : Update new value `mute`
+* [0xD840 hdrBracket](../theta-usb-api/property/hdr_bracket.md) : New Added
+
+### Plugin
+* [HDR Bracket Setting](../ricoh-theta-plugin/camera-api.md#hdr-bracket-setting) : Update new Key `RIC_HDR_BRACKET`
+
 ## THETA X firmware v2.40.0 (2024.01.16)
 
 ### WebAPI
 * [State](../theta-web-api-v2.1/protocols/state.md#_cameraerror) : Update new error code `COMPASS CALIBRATION`, and Update `_cameraError` table
 * [_autoBracket](../theta-web-api-v2.1/options/_auto_bracket.md) : Update spec
+* [_filter](../theta-web-api-v2.1/options/_filter.md) : Update new value `Hh HDR` for Handheld HDR
 * [_ethernetConfig](../theta-web-api-v2.1/options/_ethernet_config.md) : New Added
 
 ### USB-API
 * [0xD812 BracketParameters](../theta-usb-api/property/bracket_parameters.md) : Update spec
+* [0xD80B Filter](../theta-usb-api/property/filter.md) : Update new value `0x04` for Handheld HDR
 
 ### Plugin
 * [Camera API](../ricoh-theta-plugin/camera-api.md#shooting-mode) : Update new parameter `RicStillCaptureYuvHhHDR`

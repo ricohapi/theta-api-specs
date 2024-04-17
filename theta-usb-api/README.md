@@ -118,6 +118,7 @@
 [0xD83B Water Housing](./property/water_housing.md)  
 [0xD83C Water Housing Stitching](./property/water_housing_stitching.md)  
 [0xD83E ExposureStatus](./property/exposure_status.md)  
+[0xD840 hdrBracket](./property/hdr_bracket.md)  
 
 
 #### Events
