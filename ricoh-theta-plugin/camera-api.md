@@ -113,7 +113,8 @@ To set shooting mode, set value (String type) for "RIC_SHOOTING_MODE".
 
 | Value | Description |
 |:--|:--|
-|"RicPreview512:512"|Live View (512x512), only for `CAMERA_FACING_BACK` and `CAMERA_FACING_FRONT`|
+|"RicPreviewFront"|Live View (512x512), only for `CAMERA_FACING_FRONT`|
+|"RicPreviewRear" |Live View (512x512), only for `CAMERA_FACING_BACK` |
 |"RicPreview1024"|Live View (1024x512)|
 |"RicPreview1920"|Live View (1920x960)|
 |"RicPreview3840"|Live View (3840x1920)|
