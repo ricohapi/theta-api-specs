@@ -1,5 +1,21 @@
 # THETA Firmware History
 
+## THETA Z1 firmware v3.30.2 (2024.06.11)
+
+### WebAPI
+* [_hdrBracket](../theta-web-api-v2.1/options/_hdr_bracket.md) : New Added
+
+### USB-API
+* [0xD840 hdrBracket](../theta-usb-api/property/hdr_bracket.md) : New Added
+
+## THETA X firmware v2.51.0 (2024.06.04)
+
+No API Update
+
+## THETA Z1 firmware v3.20.1 (2024.05.21)
+
+No API Update
+
 ## THETA X firmware v2.50.2 (2024.04.18)
 
 ### WebAPI

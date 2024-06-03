@@ -5,7 +5,7 @@ Basic structure of RICOH THETA MP4 files is following, and vendor specified meta
 
 > * ftyp
 > * mdat
-> * mdia  
+> * moov
 >    * mvhd
 >    * trak (video)
 >        * tkhd
