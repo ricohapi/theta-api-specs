@@ -761,7 +761,7 @@ This KEY is available only with RICOH THETA Z1.
 
 To set HDR Bracekt Setting, set value (int type) to the KEY `RIC_HDR_BRACKET`.  
 This parameter is valid only for HDR mode, not for Handheld HDR mode.  
-This KEY is available only with RICOH THETA X firmware v2.50.1 or later.
+This KEY is available only with RICOH THETA X firmware v2.50.2 or later.
 
 |Value|Description|
 |:--:|:--|
