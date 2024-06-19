@@ -287,11 +287,9 @@ Frame rate: 30fps
 
 Equirectangular data in H.264 format is output.
 
-Image size: 3840x1920, 1920x960\*
+Image size: 3840x1920, 1920x960
 
 Frame rate: 30fps
-
-\*RICOH THETA X is not supported.
 
 | Device | Standards | Details |
 |:--|:--|:--|
