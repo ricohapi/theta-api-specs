@@ -14,7 +14,7 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 
 ### Support value
 
-| Key | Description |
+| Name | Description |
 |:--:|:--|
 | 0 | -4Ev / ±0Ev / +2Ev (default value) |
 | 1 | -1Ev / ±0Ev / +1Ev |

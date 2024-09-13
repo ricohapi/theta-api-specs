@@ -52,6 +52,22 @@ None.
 |:--|:--|:--|
 | fileUrls | String Array | List of file URLs |
 
+#### Remark
+
+For movie shooting, the response includes `_fileUrls` information at the timing of `camera.startCapture`.   
+This feature is available with THETA X firmware v2.61.0 or later.  
+
+```
+{
+    "_fileUrls": [
+        "http://192.168.1.1/files/100RICOH/R0011234.MP4"
+    ],
+    "id": "1234",
+    "name": "camera.startCapture",
+    "state": "done"
+}
+```
+
 ### Restriction
 
 Some commands cannot be run while shooting a movie.

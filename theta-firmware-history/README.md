@@ -1,5 +1,15 @@
 # THETA Firmware History
 
+## THETA X firmware v2.61.0 (2024.09.17)
+
+### WebAPI
+* [camera.startCapture](../theta-web-api-v2.1/commands/camera.start_capture.md) : Add `_fileUrls` for video recording mode
+* [_cameraPower](../theta-web-api-v2.1/options/_camera_power.md) : New Added
+* [_accessInfo](../theta-web-api-v2.1/options/_access_info.md) : New Added
+
+### Others
+* [THETA Metadata Spec](../theta-metadata/README.md#rdt-atom) : Add `RDL2` box
+
 ## THETA Z1 firmware v3.30.2 (2024.06.11)
 
 ### WebAPI

@@ -51,6 +51,7 @@
 #### Options
 
 [Overview](./options.md)  
+[_accessInfo](./options/_access_info.md)  
 [_aiAutoThumbnail](./options/_ai_auto_thumbnail.md)  
 [aperture](./options/aperture.md)  
 [_autoBracket](./options/_auto_bracket.md)  
