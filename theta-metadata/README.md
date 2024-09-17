@@ -49,7 +49,8 @@ The side where the shutter button is located is defined as Rear, for all THETA m
 | [RDTG](#rdtg) | ✓ | ✓ | ✓ | ✓ |   |   |   |   | Timestamp for each video frame |
 | RDTH |   |   |   | ✓ |   |   |   |   | Quarternion for each video frame |
 | RDTI | ✓ | ✓ | ✓ |   |   |   |   |   | *Details Not Disclosed* |
-| [RDTL](#rdtl) | ✓ <br> *1 |   |   |   |   |   |   |   | GNSS location |
+| [RDTL](#rdtl) | ✓ <br> \*1 |   |   |   |   |   |   |   | GNSS location |
+| [RDL2](#rdl2) | ✓ <br> \*1\*2 |   |   |   |   |   |   |   | GNSS location + accuracy |
 | @mod | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Model name <br> e.g. `RICOH THETA X` |
 | @swr | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Software version <br> e.g. `RICOH THETA X Ver 2.21.0` |
 | @day | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   |   | Date/Time with timezone <br> e.g. `2023-04-01T09:00+09:00` |
@@ -58,7 +59,8 @@ The side where the shutter button is located is defined as Rear, for all THETA m
 | manu | ✓ | ✓ | ✓ |   |   |   |   |   | Same as `@mak` |
 | modl | ✓ | ✓ | ✓ |   |   |   |   |   | Same as `@mod` |
 
-*1 : Serial number started with `YR12` (shipped to China) will not store this type data in any case.
+\*1 : Serial number started with `YR12` (shipped to China) will not store this type data in any case.  
+\*2 : RICOH THETA X firmware v2.61.0 or later.  
 
 ### RDT* Atom
 
@@ -73,7 +75,9 @@ The side where the shutter button is located is defined as Rear, for all THETA m
 | Reserve | `uint16[3]` | 6 | `0x00..00` \*1 |
 | Data Table | | Variable | Data Table is stored as array of [Data Packet](#data-packet-format). |
 
-\*1 : RICOH THETA X firmware v2.40.0 or later puts the value of "timestamp" of 1st data packet as [msec] for RDTL.
+\*1 :  
+RICOH THETA X firmware v2.40.0 or later puts the value of "timestamp" of 1st data packet as [msec] for RDTL.  
+RICOH THETA X firmware v2.61.0 or later puts the value of "timestamp" of 1st data packet as [msec] for RDL2.  
 
 ### Data Packet Format
 
@@ -128,10 +132,28 @@ RDTL stores GNSS location sensor data.
 
 | Data | Format | Bytes | Description |
 | :--- | :---: | :---: | :--- |
-| timestamp | `double` | 8 | GPS time epoch [nsec] |
+| timestamp | `double` | 8 | GPS time epoch [sec] |
 | latitude | `double` | 8 | [deg] |
 | longitude | `double` | 8 | [deg] |
 | altitude | `double` | 8 | [m] |
+
+#### RDL2
+
+RDL2 stores GNSS location + accuracy sensor data.
+
+| Data | Format | Bytes | Description |
+| :--- | :---: | :---: | :--- |
+| timestamp | `double` | 8 | GPS time epoch [sec] |
+| gps_fix_type | `int16` | 2 | `0` (no fix), `2` (2D fix), `3` (3D fix) |
+| latitude | `double` | 8 | [deg] |
+| longitude | `double` | 8 | [deg] |
+| altitude | `float` | 4 | [m] |
+| horizontal_accuracy | `float` | 4 | [m] |
+| vertical_accuracy | `float` | 4 | [m] |
+| velocity_east | `float` | 4 | [m/s] |
+| velocity_north | `float` | 4 | [m/s] |
+| velocity_up | `float` | 4 | [m/s] , always `0.0f` |
+| speed_accuracy | `float` | 4 | [m/s] |
 
 ### Sample How to Find Data Packet from RDTA Box
 
@@ -186,11 +208,12 @@ RICOH THETA MP4 file also have CaMM track in following modes.
 | 2 | ✓ | ✓ | `gyro` |
 | 3 | ✓ | ✓ | `Accelerometer` |
 | 4 |   |   | `position` |
-| 5 | ✓ <br> *1 |   | `latitude`, <br> `longitude`, <br> and `altitude` |
-| 6 |   |   | 5 plus <br> `time_gps_epoch`, <br> `gps_fix_type`, <br> and some `*_accuracy` data |
+| 5 | ✓ <br> \*1 |   | `latitude`, <br> `longitude`, <br> and `altitude` |
+| 6 | ✓ <br> \*1\*2 |   | 5 plus <br> `time_gps_epoch`, <br> `gps_fix_type`, <br> and some `*_accuracy` data |
 | 7 |   |   | `magnetic_field` |
 
-*1 : Serial number started with `YR12` (shipped to China) will not store this type data in any case.
+\*1 : Serial number started with `YR12` (shipped to China) will not store this type data in any case.  
+\*2 : RICOH THETA X firmware v2.61.0 or later.  
 
 ### Track Structure
 
