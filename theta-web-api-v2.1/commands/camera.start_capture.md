@@ -17,17 +17,17 @@ For movie shooting or interval shooting with no shot count specified, "state" fo
 
 ### Support model
 
-| Shooting mode | X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|:--|
-| Interval shooting | All | All | All | All | v01.62 or later |
-| Multi bracket shooting | All | All | All | v1.10 or later | v01.82 or later |
-| Interval composite shooting | --- | All | --- | v1.10 or later | v01.82 or later |
-| Time shift shooting | All | All | v3.00.1 or later | --- | --- |
-| Movie shooting | All | All | All | All | v01.62 or later |
-| Interval shooting (optimized <span class="mintext">*1</span>, Tripod stabilization Off) | --- | v1.50.1 or later | v3.40.1 or later | --- | --- |
-| Interval shooting (optimized <span class="mintext">*1</span>, Tripod stabilization On) | --- | v1.50.1 or later | v3.40.1 or later | --- | --- |
-| Burst shooting | --- | v2.10.1 or later | --- | --- | --- |
-| Continuous shooting | All | --- | --- | --- | --- |
+| `_mode` | Shooting mode | X | Z1 | V | SC | S |
+|:--|:--|:--|:--|:--|:--|:--|
+| `interval`  | Interval shooting | All | All | All | All | v01.62 or later |
+| `bracket`   | Multi bracket shooting | All | All | All | v1.10 or later | v01.82 or later |
+| `composite` | Interval composite shooting | --- | All | --- | v1.10 or later | v01.82 or later |
+| `timeShift` | Time shift shooting | All | All | v3.00.1 or later | --- | --- |
+|| Movie shooting | All | All | All | All | v01.62 or later |
+| `moveInterval ` | Interval shooting (optimized <span class="mintext">*1</span>, Tripod stabilization Off) | --- | v1.50.1 or later | v3.40.1 or later | --- | --- |
+| `fixInterval ` | Interval shooting (optimized <span class="mintext">*1</span>, Tripod stabilization On) | --- | v1.50.1 or later | v3.40.1 or later | --- | --- |
+| `burst` | Burst shooting | --- | v2.10.1 or later | --- | --- | --- |
+| `continuous` | Continuous shooting | All | --- | --- | --- | --- |
 
 \*1 Top/bottom correction and stitching conditions are optimized.
 
@@ -35,7 +35,9 @@ For movie shooting or interval shooting with no shot count specified, "state" fo
 
 | Name | Type | Description |
 |:--|:--|:--|
-| \_mode | String | Continuously shoots in the still image shooting mode.<br>Interval shooting is started if this parameter is omitted<br>(interval: Interval shooting, composite: Interval composite shooting, bracket: Multi bracket shooting, timeShift: Time shift shooting, burst: Burst shooting, continuous: Continuous shooting).<br>This parameter cannot be specified in the movie shooting mode. |
+| \_mode | String | Continuously shoots in the still image shooting mode.<br>Please refer to \*2 the behavior when `_mode` is not set.<br>This parameter cannot be specified in the movie shooting mode. |
+
+\*2 For THETA X, capture will be started as the method set by [`_shootingMethod`](../options/_shooting_method.md) option. For other than THETA X, Interval shooting will be started.  
 
 ### Results
 

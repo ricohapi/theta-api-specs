@@ -14,11 +14,25 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 
 ### Support value
 
-#### For RICOH THETA V or later
+#### RICOH THETA X  
 
-0, or a value that is a multiple of 60 out of 600 or more and 2592000 or less (unit: second), or 65535.  
-Return 0 when 65535 is set and obtained (Do not turn power OFF).
+```
+[0, 3600, 7200, 14400, 28800, 43200, 64800, 86400, 172800] (unit: seconds)
+```
 
-#### For RICOH THETA S or SC
+Setting this value to either `0` or `65535` will not turn power OFF automatically.  
+You can also set any value between 600 and 172800 that is a multiple of 60.  
 
-30 or more and 1800 or less (unit: seconds), 65535 (Do not turn power OFF).
+#### RICOH THETA V or Z1
+
+```
+[0, 3600, 43200, 64800, 86400, 172800, 259200, 604800] (unit: seconds)
+```
+
+Setting this value to either `0` or `65535` will not turn power OFF automatically.  
+You can also set any value between 600 and 604800 that is a multiple of 60.  
+
+#### RICOH THETA S or SC
+
+Setting this value to `65535` will not turn power OFF automatically.  
+You can also set any value between 30 and 1800.  
