@@ -63,6 +63,7 @@
 [_burstOption](./options/_burst_option.md)  
 [_cameraControlSource](./options/_camera_control_source.md)  
 [_cameraMode](./options/_camera_mode.md)  
+[_cameraPower](./options/_camera_power.md)  
 [captureInterval](./options/capture_interval.md)  
 [captureMode](./options/capture_mode.md)  
 [captureNumber](./options/capture_number.md)  
