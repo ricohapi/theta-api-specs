@@ -1,5 +1,9 @@
 # THETA Firmware History
 
+## THETA X firmware v2.63.0 (2024.11.12)
+
+No API Update
+
 ## THETA X firmware v2.61.0 (2024.09.17)
 
 ### WebAPI

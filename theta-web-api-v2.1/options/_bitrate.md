@@ -16,16 +16,30 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 
 The supported value depends on the shooting mode ([captureMode](capture_mode.md)).
 
+#### RICOH THETA Z1/V
+
 | Shooting mode | Supported value |
 |:--|:--|
-| video | "Fine", "Normal", "Economy"(RICOH THETA X or later) \*1<br/>"2000000"-"120000000" (RICOH THETA X v1.20 or later) \*2 |
-| image | "Auto", "1048576"-"20971520"\*2(RICOH THETA X v1.20 or later) \*3 |
+| video | "Fine", "Normal", "Auto" \*1 |
+| image | "Auto" |
 | _liveStreaming | "Auto" |
 
-----
+\*1 3.6K or 2.7K single fisheye video supports only "Auto".
 
-\*1 Bitrate setting  
-RICOH THETA X
+#### RICOH THETA X
+
+| Shooting mode | Supported value |
+|:--|:--|
+| video | "Fine", "Normal", "Economy"<br/>"2000000"-"120000000" [bps] \*2\*3 |
+| image | "Fine", "1048576"-"20971520" [byte] \*2\*4 |
+| _liveStreaming | "Auto" |
+
+\*2 RICOH THETA X v1.20 or later
+\*3 The actual bit rate varies depending on the resolution, frame rate, shooting conditions, subject, etc.  
+\*4 Images are treated with the target file size. The actual image file size varies depending on the resolution, shooting conditions, subject, etc.  
+
+#### RICOH THETA X
+
 | Video mode | Fine<br/>[Mbps] | Normal<br/>[Mbps] | Economy<br/>[Mbps] | Remark
 |:--|:--|:--|:--|:--|
 |   2K 30fps |  32 |  16 |   8 ||
@@ -51,6 +65,3 @@ RICOH THETA X
 |            |  64 |  32 |  16 | firmware v1.30.0 or earlier (I-frame only)|
 |   8K 10fps | 120 |  96 |  40 | firmware v1.40.0 or later   (I-frame only)|
 |            | 120 |  64 |  32 | firmware v1.30.0 or earlier (I-frame only)|
-
-\*2 The actual bit rate varies depending on the resolution, frame rate, shooting conditions, subject, etc.  
-\*3 Images are treated with the target file size. The actual image file size varies depending on the resolution, shooting conditions, subject, etc.  
