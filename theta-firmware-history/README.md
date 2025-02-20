@@ -1,5 +1,14 @@
 # THETA Firmware History
 
+## THETA Z1 firmware v3.40.3 (2025.02.26)
+
+### WebAPI
+* [_whiteBalanceAutoStrength](../theta-web-api-v2.1/options/_white_balance_auto_strength.md) : Add sample image  
+
+### USB-API
+* [0x99AF Reboot](../theta-usb-api/operation/reboot.md) : New Added  
+* [0xD83A White Balance Auto Strength](../theta-usb-api/property/white_balance_auto_strength.md) : Add sample image  
+
 ## THETA X firmware v2.63.0 (2024.11.12)
 
 No API Update
@@ -26,7 +35,7 @@ No API Update
 
 No API Update
 
-## THETA Z1 firmware v3.20.1 (2024.05.21)
+## THETA Z1 firmware v3.20.3 (2024.05.21)
 
 No API Update
 
