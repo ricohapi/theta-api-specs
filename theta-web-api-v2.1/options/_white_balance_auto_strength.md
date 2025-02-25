@@ -17,4 +17,8 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 | Value | Description |
 |:--|:--|
 | ON  |     correct tint for low color temperature scene |
-| OFF | not correct tint for low color temperature scene (default) |
+| OFF | not correct tint for low color temperature scene |
+
+Upper side: `ON`  
+Lower side: `OFF`  
+![wb_auto_strength](../assets/img/wb_auto_strength.jpg)

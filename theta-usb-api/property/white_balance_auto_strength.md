@@ -18,5 +18,9 @@ To set the strength of white balance auto for low color temperature scene. This 
 
 | Value | Description |
 |:--|:--|
-| 0 | not correct tint for low color temperature scene (default) |
 | 1 |     correct tint for low color temperature scene |
+| 0 | not correct tint for low color temperature scene |
+
+Upper side: `1`  
+Lower side: `0`  
+![wb_auto_strength](../assets/img/wb_auto_strength.jpg)

@@ -46,6 +46,7 @@
 [0x99B8 GetPluginOrders](./operation/get_plugin_orders.md)  
 [0x99B9 GetPluginState](./operation/get_plugin_state.md)  
 [0x99BF GetAccessPointProxy](./operation/get_access_point_proxy.md)  
+[0x99AF Reboot](./operation/reboot.md)  
 [0x99C0 SetAccessPointProxy](./operation/set_access_point_proxy.md)  
 [0x99C1 SetAccessPointProxyPassword](./operation/set_access_point_proxy_password.md)  
 [0x99C2 GetEthernetProxy](./operation/get_ethernet_proxy.md)  
