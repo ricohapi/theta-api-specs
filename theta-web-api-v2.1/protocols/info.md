@@ -19,7 +19,7 @@ None.
 | manufacturer | String | Manufacturer name |
 | model | String | Model |
 | serialNumber | String | Serial number |
-| \_wlanMacAddress | String | MAC address of wireless LAN<br>(RICOH THETA V firmware v2.11.1 or later) |
+| \_wlanMacAddress | String | MAC address of wireless LAN (\*1)<br>(RICOH THETA V firmware v2.11.1 or later) |
 | \_bluetoothMacAddress | String | MAC address of Bluetooth<br>(RICOH THETA V firmware v2.11.1 or later) |
 | firmwareVersion | String | Firmware version |
 | supportUrl | String | URL of the support page |
@@ -29,6 +29,8 @@ None.
 | api | String Array | List of supported APIs |
 | endpoints | Object | Endpoint information (Refer to the next section for details.) |
 | apiLevel | Integer Array | List of supported APIs<br>(1: v2.0, 2: v2.1) |
+
+(\*1) For THETA X, firmware versions v2.63.0 and earlier display `the communication MAC address`, while v2.71.0 and later diplay `the physical MAC address`. For other than THETA X, `the physical MAC address` is displayed.  
 
 ### endpoints object
 
