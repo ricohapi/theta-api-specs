@@ -10,7 +10,7 @@ When \_filter is enabled, it takes priority over the exposure program ([exposure
 
 The condition below will result in an error.
 
-- [fileFormat](file_format.md) is raw+ and \_filter is Noise reduction, HDR or Handheld HDR
+- When attempting to set `_filter` to `Noise reduction`, `HDR` or `Handheld HDR` while `fileFormat` is set to `raw+`, but this restriction is only for RICOH THETA Z1 firmware v1.80.1 or earlier.  
 - [\_shootingMethod](_shooting_method.md) is except for Normal shooting and \_filter is enabled
 - Access during video capture mode
 

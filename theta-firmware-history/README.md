@@ -1,5 +1,13 @@
 # THETA Firmware History
 
+## THETA X firmware v2.71.1 (2025.03.11)
+
+### WebAPI
+
+* [Info](../theta-web-api-v2.1/protocols/info.md) : Change the spec of `_wlanMacAddress`  
+* [previewFormat](../theta-web-api-v2.1/options/preview_format.md) : Add 2K preview mode
+* [_wlanAntennaConfig](../theta-web-api-v2.1/options/_wlan_antenna_config.md) : New Added  
+
 ## THETA Z1 firmware v3.40.3 (2025.02.26)
 
 ### WebAPI
