@@ -22,7 +22,7 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 {"width": 512, "height": 512, "framerate": 30}  
 
 \*1 Recommend to use Ethernet to transfer 4K livePreview because wireless LAN may not have enough bandwidth for it.  
-\*2 firmware v2.71.0 or later
+\*2 firmware v2.71.1 or later
 
 #### For RICOH THETA V or Z1
 

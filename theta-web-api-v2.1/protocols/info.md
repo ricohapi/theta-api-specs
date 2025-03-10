@@ -30,7 +30,7 @@ None.
 | endpoints | Object | Endpoint information (Refer to the next section for details.) |
 | apiLevel | Integer Array | List of supported APIs<br>(1: v2.0, 2: v2.1) |
 
-(\*1) For THETA X, firmware versions v2.63.0 and earlier display `the communication MAC address`, while v2.71.0 and later diplay `the physical MAC address`. For other than THETA X, `the physical MAC address` is displayed.  
+(\*1) For THETA X, firmware versions v2.63.0 and earlier display `the communication MAC address`, while v2.71.1 and later diplay `the physical MAC address`. For other than THETA X, `the physical MAC address` is displayed.  
 
 ### endpoints object
 
