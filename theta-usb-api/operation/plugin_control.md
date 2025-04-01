@@ -33,6 +33,6 @@ Operation Parameters as follows.
 
 ### Support model
 
-| Z1 | V | SC | S |
-|:--|:--|:--|:--|
-| All | v2.21.1 or later | --- | --- |
+| X | Z1 | V | SC | S |
+|:--|:--|:--|:--|:--|
+| All | All | v2.21.1 or later | --- | --- |
