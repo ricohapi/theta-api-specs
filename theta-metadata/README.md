@@ -1,5 +1,63 @@
 # THETA Metadata Spec
 
+## Photo Metadata
+
+RICOH THETA JPG file and DNG file have vendor specified metadata stored under `MakerNote IFD`.
+
+> * Tiff Header
+> * 0th IFD (Primary IFD)
+>    * ....
+>    * Exif IFD
+>        * [MakerNote IFD](#makernote-ifd)
+>            * [RICOH THETA IFD](#ricoh-theta-ifd)
+>            * ....
+>        * GPS IFD
+>        * ....
+> * 1st IFD (Thumbnail IFD) (\*1)
+> * Photo Sphere XMP Metadata (\*2)
+
+\*1 : DNG file does not have this IFD in some mode.  
+\*2 : Stored in Equirectangular JPG file only. Refer to https://developers.google.com/streetview/spherical-metadata for detail.  
+
+### MakerNote IFD
+
+`MakerNote IFD` is always started with 8 byte header `0x52_69_63_6F_68_00_00_00` which means "Ricoh\0\0\0" as ASCII format. The next 2 bytes indicate the number of entries.  
+
+| Name | Type | Count | ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC2](https://img.shields.io/badge/SC2-yellow) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) | ![m15](https://img.shields.io/badge/m15-lightgray) | ![THETA](https://img.shields.io/badge/THETA-gray) | Description |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| 0x4001 | LONG | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Offset to RICOH THETA IFD |
+
+### RICOH THETA IFD
+
+The first 2 bytes indicate the number of entries.  
+
+| Name | Type | Count | ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC2](https://img.shields.io/badge/SC2-yellow) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) | ![m15](https://img.shields.io/badge/m15-lightgray) | ![THETA](https://img.shields.io/badge/THETA-gray) | Description |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| 0x0001 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Image Type<br>`1` Equirectangular<br>`2` DualFisheye<br>`3` DualFisheye (upright)<br>`4` SingleFisheye<br>`5` SingleFisheye (Front-lens)<br>`6` SingleFisheye (Rear-lens) |
+| 0x0002 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | -- | -- | Option: HDR Rendering<br>`0` OFF, `1` ON |
+| 0x000E | SHORT | 1 | ✓ | ✓ | | | | | | | Option: Handheld HDR Rendering<br>`0` OFF, `1` ON |
+| 0x0006 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | | Option: Noise Reduction<br>`0` OFF, `1` ON |
+| 0x0008 | SHORT | 1 | | ✓ | ✓ | ✓ | ✓ | ✓ | | | Option: DR Compensation<br>`0` OFF, `1` ON |
+| 0x0010 | SHORT | 1 | | | | ✓ | | | | | Filter: Face mode<br>`0` OFF, `1` ON |
+| 0x0011 | SHORT | 1 | | | | ✓ | | | | | Filter: Night View mode<br>`0` OFF, `1` ON |
+| 0x0012 | SHORT | 1 | | | | ✓ | | | | | Filter: Lens-by-Lens Exposure mode<br>`0` OFF, `1` ON |
+| 0x0007 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | | Zenith Correction<br>`0` Not applied, `1` Applied |
+| 0x0109 | SRATIONAL | 3 | ✓ | ✓ | ✓ | ✓ | | | | | Zenith Direction (=Rotation Vector) (ax,ay,az) |
+| 0x010D | SHORT | 1 | ✓ | | | | | | | | Water Housing Setting<br>`0` Not used, `1` Used underwater, `2` Used on-land |
+| 0x1011 | SHORT | 1 | -- | ✓ | ✓ | | | | | | Microphone Select<br>`0` Internal, `1` External (4ch), `2` External (1ch) |
+| 0x1013 | SHORT | 1 | ✓ | ✓ | ✓ | | | | | | Audio Gain Setting<br>`0` Normal, `1` Low, `2` Mute |
+| 0x1001 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | | | | | Temperature of image sensor (front-lens) \*1 |
+| 0x1003 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | | | | | Temperature of image sensor (rear-lens) \*1 |
+| 0x1101 | SHORT | 1 | ✓ | | | | | | | | Temperature of IMU \*1 |
+| 0x1201 | SLONG | 1 | ✓ | | | | | | | | Temperature of main board \*1 |
+| 0x1202 | SLONG | 1 | ✓ | | | | | | | | Temperature of battery \*1 <br>`65535` is set when the battery is not inserted |
+
+\*1 : The values is 10 times of actual value. e.g. `250` means 25.0 degree C.
+
+----
+
+## Video Metadata
+
 RICOH THETA MP4 file have two types of metadata which stores IMU sensor data, GNSS sensor data, and related timestamp information.  
 Basic structure of RICOH THETA MP4 files is following, and vendor specified metadata is stored under `udta` box and in `CaMM` track.
 
@@ -11,7 +69,7 @@ Basic structure of RICOH THETA MP4 files is following, and vendor specified meta
 >        * tkhd
 >        * mdia
 >            * ....
->        * uuid `ffcc8263-f855-4a93-8814-587a02521fdd`
+>        * uuid `ffcc8263-f855-4a93-8814-587a02521fdd` \*1
 >    * trak (audio)
 >        * ....
 >    * [trak (CaMM)](#camm-track)
@@ -21,6 +79,8 @@ Basic structure of RICOH THETA MP4 files is following, and vendor specified meta
 >    * [udta](#udta-box)
 >        * ....
 > * uuid `28F311E2-B791-4F6F-94E2-4F5DEACB3C01`
+
+\*1 : Spherical Video RFC v1.0. Refer to https://github.com/google/spatial-media/blob/master/docs/spherical-video-rfc.md for detail. This box is stored only when video is stitched as equirectangular format.  
 
 ----
 
@@ -39,7 +99,7 @@ The side where the shutter button is located is defined as Rear, for all THETA m
 | Name | ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC2](https://img.shields.io/badge/SC2-yellow) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) | ![m15](https://img.shields.io/badge/m15-lightgray) | ![THETA](https://img.shields.io/badge/THETA-gray) | Description |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | RTHU | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Thumbnail |
-| RMKN | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | *Details Not Disclosed* |
+| [RMKN](#photo-metadata) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Same structure as [Photo Metadata](#photo-metadata) |
 | RDT1-8 |   | ✓ | ✓ |   | ✓ | ✓ | ✓ |   | *Details Not Disclosed* |
 | RDT9   | ✓ | ✓ | ✓ |   |   |   |   |   | *Details Not Disclosed* |
 | [RDTA](#rdta) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   |   | Accelerometer |
