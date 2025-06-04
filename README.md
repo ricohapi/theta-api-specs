@@ -1,5 +1,8 @@
 # RICOH THETA API Specifications
 
+> [!NOTE]  
+> If you have any questions or encounter any issues, please visit [Discussions](https://github.com/ricohapi/awesome-theta/discussions?discussions_q=) and create a new discussion thread.
+
 ## Overview
 
 * [Overview](./core/products/theta.md) - RICOH THETA Developers  
@@ -19,5 +22,5 @@
 
 ## Other Tips
 
-* [MP4 Metadata Spec](./theta-metadata/README.md): how to parse IMU/GNSS sensor data packet from MP4 video file.
+* [THETA Metadata Spec](./theta-metadata/README.md): how to parse IMU/GNSS sensor data packet from JPG/MP4 file.
 * [THETA Lens Spec](./theta-lens/README.md): design value of THETA fisheye lens.
