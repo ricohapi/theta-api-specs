@@ -23,34 +23,34 @@ RICOH THETA JPG file and DNG file have vendor specified metadata stored under `M
 
 `MakerNote IFD` is always started with 8 byte header `0x52_69_63_6F_68_00_00_00` which means "Ricoh\0\0\0" as ASCII format. The next 2 bytes indicate the number of entries.  
 
-| Name | Type | Count | ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC2](https://img.shields.io/badge/SC2-yellow) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) | ![m15](https://img.shields.io/badge/m15-lightgray) | ![THETA](https://img.shields.io/badge/THETA-gray) | Description |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| Name | Type | Count | ![A1](https://img.shields.io/badge/A1-maroon) | ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC2](https://img.shields.io/badge/SC2-yellow) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) | ![m15](https://img.shields.io/badge/m15-lightgray) | ![THETA](https://img.shields.io/badge/THETA-gray) | Description |
+| :--- | :---: | :---: |:---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | 0x4001 | LONG | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Offset to RICOH THETA IFD |
 
 ### RICOH THETA IFD
 
 The first 2 bytes indicate the number of entries.  
 
-| Name | Type | Count | ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC2](https://img.shields.io/badge/SC2-yellow) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) | ![m15](https://img.shields.io/badge/m15-lightgray) | ![THETA](https://img.shields.io/badge/THETA-gray) | Description |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| 0x0001 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Image Type<br>`1` Equirectangular<br>`2` DualFisheye<br>`3` DualFisheye (upright)<br>`4` SingleFisheye<br>`5` SingleFisheye (Front-lens)<br>`6` SingleFisheye (Rear-lens) |
-| 0x0002 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | -- | -- | Option: HDR Rendering<br>`0` OFF, `1` ON |
-| 0x000E | SHORT | 1 | ✓ | ✓ | | | | | | | Option: Handheld HDR Rendering<br>`0` OFF, `1` ON |
-| 0x0006 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | | Option: Noise Reduction<br>`0` OFF, `1` ON |
-| 0x0008 | SHORT | 1 | | ✓ | ✓ | ✓ | ✓ | ✓ | | | Option: DR Compensation<br>`0` OFF, `1` ON |
-| 0x0010 | SHORT | 1 | | | | ✓ | | | | | Filter: Face mode<br>`0` OFF, `1` ON |
-| 0x0011 | SHORT | 1 | | | | ✓ | | | | | Filter: Night View mode<br>`0` OFF, `1` ON |
-| 0x0012 | SHORT | 1 | | | | ✓ | | | | | Filter: Lens-by-Lens Exposure mode<br>`0` OFF, `1` ON |
-| 0x0007 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | | Zenith Correction<br>`0` Not applied, `1` Applied |
-| 0x0109 | SRATIONAL | 3 | ✓ | ✓ | ✓ | ✓ | | | | | Zenith Direction (=Rotation Vector) (ax,ay,az) |
-| 0x010D | SHORT | 1 | ✓ | | | | | | | | Water Housing Setting<br>`0` Not used, `1` Used underwater, `2` Used on-land |
-| 0x1011 | SHORT | 1 | -- | ✓ | ✓ | | | | | | Microphone Select<br>`0` Internal, `1` External (4ch), `2` External (1ch) |
-| 0x1013 | SHORT | 1 | ✓ | ✓ | ✓ | | | | | | Audio Gain Setting<br>`0` Normal, `1` Low, `2` Mute |
-| 0x1001 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | | | | | Temperature of image sensor (front-lens) \*1 |
-| 0x1003 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | | | | | Temperature of image sensor (rear-lens) \*1 |
-| 0x1101 | SHORT | 1 | ✓ | | | | | | | | Temperature of IMU \*1 |
-| 0x1201 | SLONG | 1 | ✓ | | | | | | | | Temperature of main board \*1 |
-| 0x1202 | SLONG | 1 | ✓ | | | | | | | | Temperature of battery \*1 <br>`65535` is set when the battery is not inserted |
+| Name | Type | Count | ![A1](https://img.shields.io/badge/A1-maroon) | ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC2](https://img.shields.io/badge/SC2-yellow) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) | ![m15](https://img.shields.io/badge/m15-lightgray) | ![THETA](https://img.shields.io/badge/THETA-gray) | Description |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| 0x0001 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Image Type<br>`1` Equirectangular<br>`2` DualFisheye<br>`3` DualFisheye (upright)<br>`4` SingleFisheye<br>`5` SingleFisheye (Front-lens)<br>`6` SingleFisheye (Rear-lens) |
+| 0x0002 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | -- | -- | Option: HDR Rendering<br>`0` OFF, `1` ON |
+| 0x000E | SHORT | 1 | ✓ | ✓ | ✓ | | | | | | | Option: Handheld HDR Rendering<br>`0` OFF, `1` ON |
+| 0x0006 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | | Option: Noise Reduction<br>`0` OFF, `1` ON |
+| 0x0008 | SHORT | 1 | | | ✓ | ✓ | ✓ | ✓ | ✓ | | | Option: DR Compensation<br>`0` OFF, `1` ON |
+| 0x0010 | SHORT | 1 | | | | | ✓ | | | | | Filter: Face mode<br>`0` OFF, `1` ON |
+| 0x0011 | SHORT | 1 | | | | | ✓ | | | | | Filter: Night View mode<br>`0` OFF, `1` ON |
+| 0x0012 | SHORT | 1 | | | | | ✓ | | | | | Filter: Lens-by-Lens Exposure mode<br>`0` OFF, `1` ON |
+| 0x0007 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | | Zenith Correction<br>`0` Not applied, `1` Applied |
+| 0x0109 | SRATIONAL | 3 | ✓ | ✓ | ✓ | ✓ | ✓ | | | | | Zenith Direction (=Rotation Vector) (ax,ay,az) |
+| 0x010D | SHORT | 1 | | ✓ | | | | | | | | Water Housing Setting<br>`0` Not used, `1` Used underwater, `2` Used on-land |
+| 0x1011 | SHORT | 1 | -- | -- | ✓ | ✓ | | | | | | Microphone Select<br>`0` Internal, `1` External (4ch), `2` External (1ch) |
+| 0x1013 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | | | | | | Audio Gain Setting<br>`0` Normal, `1` Low, `2` Mute |
+| 0x1001 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | | | | | Temperature of image sensor (front-lens) \*1 |
+| 0x1003 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | | | | | Temperature of image sensor (rear-lens) \*1 |
+| 0x1101 | SHORT | 1 | ✓ | ✓ | | | | | | | | Temperature of IMU \*1 |
+| 0x1201 | SLONG | 1 | | ✓ | | | | | | | | Temperature of main board \*1 |
+| 0x1202 | SLONG | 1 | | ✓ | | | | | | | | Temperature of battery \*1 <br>`65535` is set when the battery is not inserted |
 
 \*1 : The values is 10 times of actual value. e.g. `250` means 25.0 degree C.
 
@@ -96,30 +96,30 @@ The side where the shutter button is located is defined as Rear, for all THETA m
 
 `udta` box has following child-boxes.
 
-| Name | ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC2](https://img.shields.io/badge/SC2-yellow) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) | ![m15](https://img.shields.io/badge/m15-lightgray) | ![THETA](https://img.shields.io/badge/THETA-gray) | Description |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| RTHU | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Thumbnail |
-| [RMKN](#photo-metadata) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Same structure as [Photo Metadata](#photo-metadata) |
-| RDT1-8 |   | ✓ | ✓ |   | ✓ | ✓ | ✓ |   | *Details Not Disclosed* |
-| RDT9   | ✓ | ✓ | ✓ |   |   |   |   |   | *Details Not Disclosed* |
-| [RDTA](#rdta) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   |   | Accelerometer |
-| [RDTB](#rdtb) | ✓ | ✓ | ✓ | ✓ |   |   |   |   | Gyroscope |
-| [RDTC](#rdtc) | ✓ | ✓ | ✓ |   |   | ✓ |   |   | Ambient magnetic field |
-| RDTD | ✓ | ✓ | ✓ |   |   |   |   |   | *Details Not Disclosed* |
-| [RDTG](#rdtg) | ✓ | ✓ | ✓ | ✓ |   |   |   |   | Timestamp for each video frame |
-| RDTH |   |   |   | ✓ |   |   |   |   | Quarternion for each video frame |
-| RDTI | ✓ | ✓ | ✓ |   |   |   |   |   | *Details Not Disclosed* |
-| [RDTL](#rdtl) | ✓ <br> \*1 |   |   |   |   |   |   |   | GNSS location |
-| [RDL2](#rdl2) | ✓ <br> \*1\*2 |   |   |   |   |   |   |   | GNSS location + accuracy |
-| @mod | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Model name <br> e.g. `RICOH THETA X` |
-| @swr | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Software version <br> e.g. `RICOH THETA X Ver 2.21.0` |
-| @day | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   |   | Date/Time with timezone <br> e.g. `2023-04-01T09:00+09:00` |
-| @xyz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   |   | GNSS location <br> e.g. `+35.7101+139.8108+0032` |
-| @mak | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Manufacturer <br> `RICOH` |
-| manu | ✓ | ✓ | ✓ |   |   |   |   |   | Same as `@mak` |
-| modl | ✓ | ✓ | ✓ |   |   |   |   |   | Same as `@mod` |
+| Name | ![A1](https://img.shields.io/badge/A1-maroon) | ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC2](https://img.shields.io/badge/SC2-yellow) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) | ![m15](https://img.shields.io/badge/m15-lightgray) | ![THETA](https://img.shields.io/badge/THETA-gray) | Description |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| RTHU | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Thumbnail |
+| [RMKN](#photo-metadata) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Same structure as [Photo Metadata](#photo-metadata) |
+| RDT1-8 |   |   | ✓ | ✓ |   | ✓ | ✓ | ✓ |   | *Details Not Disclosed* |
+| RDT9   |   | ✓ | ✓ | ✓ |   |   |   |   |   | *Details Not Disclosed* |
+| [RDTA](#rdta) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   |   | Accelerometer |
+| [RDTB](#rdtb) | ✓ | ✓ | ✓ | ✓ | ✓ |   |   |   |   | Gyroscope |
+| [RDTC](#rdtc) | ✓ | ✓ | ✓ | ✓ |   |   | ✓ |   |   | Ambient magnetic field |
+| RDTD | ✓ | ✓ | ✓ | ✓ |   |   |   |   |   | *Details Not Disclosed* |
+| [RDTG](#rdtg) | ✓ | ✓ | ✓ | ✓ | ✓ |   |   |   |   | Timestamp for each video frame |
+| RDTH |   |   |   |   | ✓ |   |   |   |   | Quarternion for each video frame |
+| RDTI | ✓ | ✓ | ✓ | ✓ |   |   |   |   |   | *Details Not Disclosed* |
+| [RDTL](#rdtl) | ✓ <br> \*1 | ✓ <br> \*1 |   |   |   |   |   |   |   | GNSS location |
+| [RDL2](#rdl2) |   | ✓ <br> \*1\*2 |   |   |   |   |   |   |   | GNSS location + accuracy |
+| @mod | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Model name <br> e.g. `RICOH THETA X` |
+| @swr | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Software version <br> e.g. `RICOH THETA X Ver 2.21.0` |
+| @day | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   |   | Date/Time with timezone <br> e.g. `2023-04-01T09:00+09:00` |
+| @xyz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   |   | GNSS location <br> e.g. `+35.7101+139.8108+0032` |
+| @mak | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |   | Manufacturer <br> `RICOH` |
+| manu | ✓ | ✓ | ✓ | ✓ |   |   |   |   |   | Same as `@mak` |
+| modl | ✓ | ✓ | ✓ | ✓ |   |   |   |   |   | Same as `@mod` |
 
-\*1 : Serial number started with `YR12` (shipped to China) will not store this type data in any case.  
+\*1 : Serial number started with `AA12` or `YR12` (shipped to China) will not store this type data in any case.  
 \*2 : RICOH THETA X firmware v2.61.0 or later.  
 
 ### RDT* Atom
@@ -251,6 +251,9 @@ D1 23 1E 41 00 00 00 00 80 64 B0 09 05 0A 00 00
 CaMM is *Camera Motion Metadata* defined by Google. Refer to [spec](https://developers.google.com/streetview/publish/camm-spec) for detail.  
 RICOH THETA MP4 file also have CaMM track in following modes. 
 
+* RICOH360 THETA A1
+    * 8K (7680x3840px) 10fps, 5fps, 2fps
+    * 5.7K (5760x2880px) 10fps, 5fps, 2fps
 * RICOH THETA X
     * 8K (7680x3840px) 10fps, 5fps, 2fps
     * 5.7K (5760x2880px) 10fps, 5fps, 2fps
@@ -261,18 +264,18 @@ RICOH THETA MP4 file also have CaMM track in following modes.
 
 ### Supported Data Type
 
-| Type | ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | Description |
-| :--- | :---: | :---: | :--- |
-| 0 |   |   | `angle_axis` |
-| 1 |   |   | `pixel_exposure_time` <br> and `rolling_shutter_skew_time` |
-| 2 | ✓ | ✓ | `gyro` |
-| 3 | ✓ | ✓ | `Accelerometer` |
-| 4 |   |   | `position` |
-| 5 | ✓ <br> \*1 |   | `latitude`, <br> `longitude`, <br> and `altitude` |
-| 6 | ✓ <br> \*1\*2 |   | 5 plus <br> `time_gps_epoch`, <br> `gps_fix_type`, <br> and some `*_accuracy` data |
-| 7 |   |   | `magnetic_field` |
+| Type | ![A1](https://img.shields.io/badge/A1-maroon) | ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | Description |
+| :--- | :---: | :---: | :---: | :--- |
+| 0 |   |   |   | `angle_axis` |
+| 1 |   |   |   | `pixel_exposure_time` <br> and `rolling_shutter_skew_time` |
+| 2 | ✓ | ✓ | ✓ | `gyro` |
+| 3 | ✓ | ✓ | ✓ | `Accelerometer` |
+| 4 |   |   |   | `position` |
+| 5 | ✓ <br> \*1 | ✓ <br> \*1 |   | `latitude`, <br> `longitude`, <br> and `altitude` |
+| 6 |   | ✓ <br> \*1\*2 |   | 5 plus <br> `time_gps_epoch`, <br> `gps_fix_type`, <br> and some `*_accuracy` data |
+| 7 |   |   |   | `magnetic_field` |
 
-\*1 : Serial number started with `YR12` (shipped to China) will not store this type data in any case.  
+\*1 : Serial number started with `AA12` or `YR12` (shipped to China) will not store this type data in any case.  
 \*2 : RICOH THETA X firmware v2.61.0 or later.  
 
 ### Track Structure

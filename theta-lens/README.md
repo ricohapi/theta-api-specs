@@ -5,11 +5,11 @@ This page explains THETA's fisheye lens' characteristic value, especially for di
 > [!NOTE]  
 > They are just design value. If you want more accurate characteristics, you need to do calibration process for each camera by yourself.  
 
-* [THETA X](#theta-x)  
+* [THETA X/A1](#theta-xa1)  
 * [THETA Z1](#theta-z1)  
 * [THETA V](#theta-v)  
 
-## THETA X
+## THETA X/A1
 
 * Focal Length = 1.37mm  
 * Pixel Pitch = 0.8um/px @11K mode, 1.6um/px @5.5K mode  
