@@ -107,7 +107,6 @@
 [0xD826 IsoAutoHighLimit](./property/iso_auto_high_limit.md)  
 [0xD827 ImageFormat](./property/image_format.md)  
 [0xD829 Bitrate](./property/bitrate.md)  
-[0xD82A Authentication](./property/authentication.md)  
 [0xD82C BluetoothRole](./property/bluetooth_role.md)  
 [0xD831 ConvertVideoFormatStatus](./property/convert_video_format_status.md)  
 [0xD832 GPStagRecording](./property/gps_tag_recording.md)  
