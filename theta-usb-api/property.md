@@ -28,6 +28,7 @@ Supported properties are listed below.
 | [0xD801 GpsInfo](./property/gps_info.md) | ![supported](./assets/img/supported.png "supported") | ![supported](./assets/img/supported.png "supported") |
 | [0xD802 AutoPowerOffDelay](./property/auto_power_off_delay.md) | ![supported](./assets/img/supported.png "supported") | ![supported](./assets/img/supported.png "supported") |
 | [0xD803 SleepDelay](./property/sleep_delay.md) | ![supported](./assets/img/supported.png "supported") | ![supported](./assets/img/supported.png "supported") |
+| [0xD806 Passphrase](./property/passphrase.md) | ![supported](./assets/img/supported.png "supported") | ![not supported](./assets/img/not-supported.png "not supported") |
 | [0xD807 ChannelNumber](./property/channel_number.md) \*01 | ![supported](./assets/img/supported.png "supported") | ![supported](./assets/img/supported.png "supported") |
 | [0xD808 CaptureStatus](./property/capture_status.md) | ![supported](./assets/img/supported.png "supported") | ![not supported](./assets/img/not-supported.png "not supported") |
 | [0xD809 RecordingTime](./property/recording_time.md) | ![supported](./assets/img/supported.png "supported") | ![not supported](./assets/img/not-supported.png "not supported") |

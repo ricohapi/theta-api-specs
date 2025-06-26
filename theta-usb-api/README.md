@@ -76,6 +76,7 @@
 [0xD801 GpsInfo](./property/gps_info.md)  
 [0xD802 AutoPowerOffDelay](./property/auto_power_off_delay.md)  
 [0xD803 SleepDelay](./property/sleep_delay.md)  
+[0xD806 Passphrase](./property/passphrase.md)  
 [0xD807 ChannelNumber](./property/channel_number.md)  
 [0xD808 CaptureStatus](./property/capture_status.md)  
 [0xD809 RecordingTime](./property/recording_time.md)  
