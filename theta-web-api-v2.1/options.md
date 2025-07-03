@@ -199,6 +199,14 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
+    <td><a href="./options/_default_wifi_password.md">_defaultWifiPassword</a>*39</td>
+    <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
+    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
+    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
+    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
+    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
+  </tr>
+  <tr>
     <td><a href="./options/exposure_compensation.md">exposureCompensation</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -550,6 +558,14 @@ Supported properties are listed below.
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
   </tr>
+    <tr>
+    <td><a href="./options/wifi_password.md">wifiPassword</a></td>
+    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
+    <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
+    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
+    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
+    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
+  </tr>
   <tr>
     <td><a href="./options/_wlan_channel.md">_wlanChannel</a></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -599,3 +615,4 @@ Supported properties are listed below.
 \*36 RICOH THETA X firmware v2.10.1 or later  
 \*37 RICOH THETA X firmware v2.50.2 or later  
 \*38 RICOH THETA X firmware v2.61.0 or later  
+\*39 RICOH THETA X firmware v2.80.1 or later  

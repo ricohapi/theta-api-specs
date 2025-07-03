@@ -1,5 +1,16 @@
 # THETA Firmware History
 
+## THETA X firmware v2.80.1 (2025.07.08)
+
+### WebAPI
+
+* [EventLog](../theta-web-api-v2.1/protocols/event_log.md) : New Added  
+* [_defaultWifiPassword](../theta-web-api-v2.1/options/_default_wifi_password.md) : New Added  
+
+### Bluetooth-API
+
+* [Read WLAN Password State](../theta-bluetooth-api/wlan_control_command/read_wlan_password_state.md) : New Added  
+
 ## THETA X firmware v2.71.1 (2025.03.11)
 
 ### WebAPI
