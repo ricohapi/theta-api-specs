@@ -17,6 +17,7 @@
 [OpenSourceLicenses](./protocols/open_source_licenses.md)  
 [OpenPluginPage](./protocols/open_plugin_page.md)  
 [Errors](./protocols/errors.md)  
+[EventLog](./protocols/event_log.md)  
 
 #### Commands
 
@@ -73,6 +74,7 @@
 [_compositeShootingTime](./options/_composite_shooting_time.md)  
 [continuousNumber](./options/continuous_number.md)  
 [dateTimeZone](./options/date_time_zone.md)  
+[_defaultWifiPassword](./options/_default_wifi_password.md)  
 [exposureCompensation](./options/exposure_compensation.md)  
 [_ethernetConfig](./options/_ethernet_config.md)  
 [exposureDelay](./options/exposure_delay.md)  
@@ -118,6 +120,6 @@
 [_waterHousingStitching](./options/_water_housing_stitching.md)  
 [whiteBalance](./options/white_balance.md)  
 [_whiteBalanceAutoStrength](./options/_white_balance_auto_strength.md)  
-[wifiPassword](./options/wifiPassword.md)  
+[wifiPassword](./options/wifi_password.md)  
 [_wlanChannel](./options/_wlan_channel.md)  
 [_wlanFrequency](./options/_wlan_frequency.md)  

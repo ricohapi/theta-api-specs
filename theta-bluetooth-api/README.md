@@ -101,6 +101,7 @@
 [Access Point List](./wlan_control_command/access_point_list.md)  
 [Selected Access Point](./wlan_control_command/selected_access_point.md)  
 [Access Point Information](./wlan_control_command/access_point_information.md)  
+[Read WLAN Password State](./wlan_control_command/read_wlan_password_state.md)  
 
 #### Bluetooth Control Command
 

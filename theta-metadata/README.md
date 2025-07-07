@@ -19,6 +19,9 @@ RICOH THETA JPG file and DNG file have vendor specified metadata stored under `M
 \*1 : DNG file does not have this IFD in some mode.  
 \*2 : Stored in Equirectangular JPG file only. Refer to https://developers.google.com/streetview/spherical-metadata for detail.  
 
+> [!IMPORTANT]  
+> THETA X firmware v2.71.1 has a bug where the values of `GPano:PosePitch/RollDegrees` are NOT zero even when Zenith Correction is enabled. This bug has been fixed in THETA X firmware v2.80.1.  
+
 ### MakerNote IFD
 
 `MakerNote IFD` is always started with 8 byte header `0x52_69_63_6F_68_00_00_00` which means "Ricoh\0\0\0" as ASCII format. The next 2 bytes indicate the number of entries.  
