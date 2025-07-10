@@ -1,12 +1,25 @@
 # THETA Firmware History
 
+## THETA Z1 firmware v3.50.2 (2025.07.15)
+
+### WebAPI
+
+* [EventLog](../theta-web-api-v2.1/protocols/event_log.md) : New Added  
+* [_defaultWifiPassword](../theta-web-api-v2.1/options/_default_wifi_password.md) : New Added  
+  * Refer to Bluetooth API [Get Options](../theta-bluetooth-api/camera_control_command_v2/get_options.md) as well  
+
+### Bluetooth-API
+
+* [Read WLAN Password State](../theta-bluetooth-api/wlan_control_command/read_wlan_password_state.md) : New Added  
+
 ## THETA X firmware v2.80.1 (2025.07.08)
 
 ### WebAPI
 
 * [EventLog](../theta-web-api-v2.1/protocols/event_log.md) : New Added  
 * [_defaultWifiPassword](../theta-web-api-v2.1/options/_default_wifi_password.md) : New Added  
-
+  * Refer to Bluetooth API [Get Options](../theta-bluetooth-api/camera_control_command_v2/get_options.md) as well  
+  
 ### Bluetooth-API
 
 * [Read WLAN Password State](../theta-bluetooth-api/wlan_control_command/read_wlan_password_state.md) : New Added  
@@ -109,6 +122,7 @@ No API Update
 * [Get Info](../theta-bluetooth-api/camera_control_command_v2/get_info.md) : New Added
 * [Get State](../theta-bluetooth-api/camera_control_command_v2/get_state.md) : New Added
 * [Get State2](../theta-bluetooth-api/camera_control_command_v2/get_state2.md) : New Added
+* [Get Options](../theta-bluetooth-api/camera_control_command_v2/get_options.md) : New Added
 * [Notify State](../theta-bluetooth-api/camera_control_command_v2/notify_state.md) : New Added
 
 ### USB-API
@@ -123,6 +137,7 @@ No API Update
 * [Get Info](../theta-bluetooth-api/camera_control_command_v2/get_info.md) : New Added
 * [Get State](../theta-bluetooth-api/camera_control_command_v2/get_state.md) : New Added
 * [Get State2](../theta-bluetooth-api/camera_control_command_v2/get_state2.md) : New Added
+* [Get Options](../theta-bluetooth-api/camera_control_command_v2/get_options.md) : New Added
 * [Notify State](../theta-bluetooth-api/camera_control_command_v2/notify_state.md) : New Added
 
 ### Plugin

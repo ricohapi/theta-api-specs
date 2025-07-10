@@ -12,7 +12,7 @@ Supported characteristics are listed below.
       <th rowspan="2">Read</th>
       <th rowspan="2">Write</th>
       <th rowspan="2">Notify</th>
-      <th colspan="2">MySetting <span class="mintext">*1</span></th>
+      <th colspan="2">MySetting <span class="mintext">*11</span></th>
     </tr>
     <tr>
       <th>Image</th>
@@ -396,7 +396,7 @@ Supported characteristics are listed below.
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
     </tr>
-    <tr><th rowspan="11">Shooting Control Command v2 *2</th>
+    <tr><th rowspan="11">Shooting Control Command v2 *12</th>
       <td><a href="shooting_control_command_v2/aperture.md">Aperture</a></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
@@ -404,14 +404,14 @@ Supported characteristics are listed below.
       <td><img src="assets/img/partially-supported.png" alt="some model Mandatory" title="some model Mandatory" class="support-mark"></td>
       <td><img src="assets/img/partially-supported.png" alt="some model Mandatory" title="some model Mandatory" class="support-mark"></td>
     </tr><tr>
-      <td><a href="shooting_control_command_v2/burst_mode.md">burstMode *3*4</a></td>
+      <td><a href="shooting_control_command_v2/burst_mode.md">burstMode *13*21</a></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
     </tr><tr>
-      <td><a href="shooting_control_command_v2/burst_option.md">burstOption *3*4</a></td>
+      <td><a href="shooting_control_command_v2/burst_option.md">burstOption *13*21</a></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
@@ -467,7 +467,7 @@ Supported characteristics are listed below.
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
     </tr><tr>
-      <td><a href="shooting_control_command_v2/white_balance_auto_strength.md">White Balance Auto Strength *3*5</a></td>
+      <td><a href="shooting_control_command_v2/white_balance_auto_strength.md">White Balance Auto Strength *13*22</a></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
@@ -519,7 +519,7 @@ Supported characteristics are listed below.
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
     </tr>
     <tr>
-      <td><a href="wlan_control_command/read_wlan_password_state.md">Read WLAN Password State</a></td>
+      <td><a href="wlan_control_command/read_wlan_password_state.md">Read WLAN Password State</a>*24*32</td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
@@ -561,7 +561,7 @@ Supported characteristics are listed below.
       <th rowspan="2">Read</th>
       <th rowspan="2">Write</th>
       <th rowspan="2">Notify</th>
-      <th colspan="2">MySetting <span class="mintext">*1</span></th>
+      <th colspan="2">MySetting <span class="mintext">*11</span></th>
     </tr>
     <tr>
       <th>Image</th>
@@ -569,7 +569,7 @@ Supported characteristics are listed below.
     </tr>
   </thead>
   <tbody>
-    <tr><th rowspan="4">Camera Control Command v2 <span class="mintext">*6*7</span></th>
+    <tr><th rowspan="5">Camera Control Command v2 <span class="mintext">*23*31</span></th>
       <td><a href="camera_control_command_v2/get_info.md">Get Info</a></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
@@ -591,6 +591,13 @@ Supported characteristics are listed below.
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
     </tr><tr>
+      <td><a href="camera_control_command_v2/get_options.md">Get Options</a></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+    </tr><tr>
       <td><a href="camera_control_command_v2/notify_state.md">Notify State</a></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
@@ -604,10 +611,12 @@ Supported characteristics are listed below.
 ![Excluded](assets/img/not-supported.png "Excluded"): Excluded  
 ![some model Mandatory](assets/img/partially-supported.png "some model Mandatory"): some model Mandatory  
 
-\*1 RICOH THETA V firmware v2.30.1 or later  
-\*2 RICOH THETA V firmware v3.00.1 or later  
-\*3 RICOH THETA V is not supported  
-\*4 RICOH THETA Z1 firmware v2.10.1 or later  
-\*5 RICOH THETA Z1 firmware v2.20.3 or later  
-\*6 RICOH THETA X firmware v2.20.1 or later  
-\*7 RICOH THETA Z1 firmware v3.10.2 or later  
+\*11 RICOH THETA V firmware v2.30.1 or later  
+\*12 RICOH THETA V firmware v3.00.1 or later  
+\*13 RICOH THETA V is not supported  
+\*21 RICOH THETA Z1 firmware v2.10.1 or later  
+\*22 RICOH THETA Z1 firmware v2.20.3 or later  
+\*23 RICOH THETA Z1 firmware v3.10.2 or later  
+\*24 RICOH THETA Z1 firmware v3.50.2 or later  
+\*31 RICOH THETA X firmware v2.20.1 or later  
+\*32 RICOH THETA X firmware v2.80.1 or later  
