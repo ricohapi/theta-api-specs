@@ -1,34 +1,28 @@
 # 0x99B5 GetWlanMacAddress
 
-### Operation Code
+**Vendor Extension Operation**  
+Returns the MAC address of the wireless LAN interface.  
 
-0x99B5
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓<sup>\*1</sup> |   |   |
 
-### Overview
+<sup>\*1</sup>Firmware v2.11.1 and later  
 
-Return the MAC address of wireless LAN.  
-(Vendor Extension Operations)
+| | |
+|:--|:--|
+| Operation Code | `0x99B5` |
+| Operation Parameter 1 | None |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | `MacAddress` dataset |
+| Data Direction | R->I |
 
-Operation parameters as follows.
+### MacAddress Dataset
 
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | Reserved | unused<br>Specify 0x00000000 |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-### Support model
-
-| X | Z1 | V | SC | S |
-| --- | --- | --- | --- | --- |
-| All | All | v2.11.1 or later | --- | --- |
-
-### Support value
-
-The MAC address format is predetermined by the following.
-
-| Name | Size | Data Type | Description |
-|:--|:--|:--|:--|
-| MacAddress | 18 | String | MAC address |
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | MAC Address | 18 | String | MAC address |

@@ -11,7 +11,7 @@ F37F568F-9071-445D-A938-5441F2E82399
 ### Overview
 
 Acquires the access point list used in client mode.  
-RICOH THETA V firmware v2.00.2 or later.
+RICOH THETA V firmware v2.00.2 and later.
 
 ### Value Fields
 

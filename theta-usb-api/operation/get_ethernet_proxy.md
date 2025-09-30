@@ -1,39 +1,31 @@
 # 0x99C2 GetEthernetProxy
 
-### Operation Code
+**Vendor Extension Operation**  
+Returns the proxy information for wired LAN.  
 
-0x99C2
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+|   | ✓<sup>\*1</sup> |   |   |   |
 
-### Overview
+<sup>\*1</sup>Firmware v2.20.3 and later  
 
-Return the proxy information to be used when wired LAN is enabled.
-(Vendor Extension Operations)
+| | |
+|:--|:--|
+| Operation Code | `0x99C2` |
+| Operation Parameter 1 | None |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | `Proxy` dataset |
+| Data Direction | R->I |
 
-Operation parameters are as follows.
+### Proxy Dataset
 
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | Reserved | unused<br>Specify 0x00000000 |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| --- | v2.20.3 or later | --- | --- | --- |
-
-### Support value
-
-The proxy dataset format is predetermined by the following.
-
-\<Use\>\<Url\>\<Port\>\<UserID\>
-
-| Name | Size | Data Type | Description |
-|:--|:--|:--|:--|
-| Use | 1 | UINT8 | Presence of proxy usage <br> (0: do not use proxy, 1: use proxy) |
-| Url | 64 | String | Proxy server URL |
-| Port | 5 | String | Proxy server port number: 0 to 65535 |
-| UserID | 64 | String | User ID used for proxy authentication |
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Use | 1 | UINT8 | Proxy usage<br>`0`: Do not use proxy<br>`1`: Use proxy |
+| 2 | Url | 64 | String | Proxy server URL |
+| 3 | Port | 5 | String | Proxy server port number: `0` to `65535` |
+| 4 | UserID | 64 | String | User ID used for proxy authentication |

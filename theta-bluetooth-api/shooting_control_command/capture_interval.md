@@ -18,7 +18,7 @@ Acquires or sets the interval (sec) of interval shooting.
 
 ### Value Fields
 
-#### For RICOH THETA Z1 or later
+#### For RICOH THETA Z1 and later
 
 6 to 3600 (if [File Format](file_format.md) is JPEG)  
 10 to 3600 (if [File Format](file_format.md) is RAW+)

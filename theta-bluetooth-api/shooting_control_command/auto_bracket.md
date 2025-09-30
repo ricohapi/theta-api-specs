@@ -16,15 +16,15 @@ Acquires and sets the bracketing settings.
 
 | Name | Type | Description |
 |:--|:--|:--|
-| Number of Bracket Shots | sint8 | Number of shots in multi bracketing.<br>2 to 13 (RICOH THETA V firmware v2.50.1 or prior), 2 to19 (RICOH THETA Z1 and RICOH THETA V firmware v3.00.1 or later). |
+| Number of Bracket Shots | sint8 | Number of shots in multi bracketing.<br>2 to 13 (RICOH THETA V firmware v2.50.1 and earlier), 2 to19 (RICOH THETA Z1 and RICOH THETA V firmware v3.00.1 and later). |
 
 Requests for data in the following format for the number of bracket shots.
 
-#### For RICOH THETA Z1 and V firmware v3.00.1 or later
+#### For RICOH THETA Z1 and V firmware v3.00.1 and later
 
 \<Exposure Program\>\<Aperture\>\<Shutter Speed\>\<ISO\>\<Exposure Compensation\>\<White Balance\>\<Color Temperature\>
 
-#### For RICOH THETA V firmware v2.50.1 or prior
+#### For RICOH THETA V firmware v2.50.1 and earlier
 
 \<ISO\>\<Shutter Speed\>\<Color Temperature\>
 

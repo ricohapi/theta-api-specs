@@ -3,7 +3,7 @@
 ### Overview
 
 Operating time (sec.) of the self-timer.   
-(RICOH THETA S firmware version 01.42 or later)
+(RICOH THETA S firmware version 01.42 and later)
 
 If exposureDelay is enabled, self-timer is used by shooting in still image capture mode.  
 If exposureDelay is disabled, use [\_latestEnabledExposureDelayTime](_latest_enabled_exposure_delay_time.md) to get the operating time of the self-timer stored in the camera.

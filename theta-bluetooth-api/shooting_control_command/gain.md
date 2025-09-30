@@ -22,7 +22,7 @@ Acquires and sets the microphone gain.
 |:--|:--|
 | 1 | Normal mode |
 | 2 | Loud volume mode |
-| 3 | Mute mode<br>(RICOH THETA V firmware v2.50.1 or later) |
+| 3 | Mute mode<br>(RICOH THETA V firmware v2.50.1 and later) |
 
 ### Properties
 

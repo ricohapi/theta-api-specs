@@ -26,7 +26,7 @@ None.
 | uptime | Integer | Time elapsed after startup (sec.) |
 | api | String Array | List of supported API |
 | endpoints | Object | End point information (Details in the following item) |
-| apiLevel | Integer Array | Supported API version<br>(1: v2.0, 2: v2.1)<br>(RICOH THETA S firmware version 01.62 or later) |
+| apiLevel | Integer Array | Supported API version<br>(1: v2.0, 2: v2.1)<br>(RICOH THETA S firmware version 01.62 and later) |
 
 ### endpoints Object
 

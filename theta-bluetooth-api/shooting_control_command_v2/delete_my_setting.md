@@ -15,7 +15,7 @@ sint8
 ### Overview
 
 Delete shooting conditions in My Settings.  
-RICOH THETA Z1 or later.
+RICOH THETA Z1 and later.
 
 ### Value Fields
 

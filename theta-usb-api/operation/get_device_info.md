@@ -1,28 +1,39 @@
 # 0x1001 GetDeviceInfo
 
-### Operation Code
+Returns the device information.  
+When the [`0x5002 FunctionalMode`](../property/functional_mode.md) property changes, any corresponding updates to the device information are notified via the [`0x4008 DeviceInfoChanged`](../event/device_info_changed.md) event.  
 
-0x1001
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Overview
-
-Return device information data.
-
-Changes in the device information associated with the property change of [FunctionalMode](../property/functional_mode.md) property are notified by [DeviceInfoChanged](../event/device_info_changed.md) event.
-
-Details of each Dataset field are as follows.
-
-| Name | RICOH&nbsp;THETA Specification |
+| | |
 |:--|:--|
-| vendor\_extension\_id | Fixed value irrespective of the firmware version |
-| vendor\_extension\_version | RICOH THETA Camera version<br>110 (RICOH THETA S or later) |
-| device\_version | RICOH THETA firmware version. For details of the revision history, see the download page on theta360.com |
-| serial\_number | RICOH THETA camera serial number |
-| functional\_mode | Camera status ([FunctionalMode](../property/functional_mode.md)) |
+| Operation Code | `0x1001` |
+| Operation Parameter 1 | None |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | `DeviceInfo` dataset |
+| Data Direction | R->I |
 
-### Support model
+### DeviceInfo Dataset 
 
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | All | All | All |
-
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | `Standard Version` | 2 | UINT16 ||
+| 2 | `MTP Vendor Extension ID` | 4 | UINT32 | Fixed value |
+| 3 | `MTP Version` | 2 | UINT16 | Fixed to `110` |
+| 4 | `MTP Extension` | 4 | String ||
+| 5 | `Functional Mode` | 2 | UINT16 | Camera status: refer to [`0x5002 FunctionalMode`](../property/functional_mode.md) property |
+| 6 | `Operations Supported` | Variable || Operation Code Array |
+| 7 | `Events Supported` | Variable || Event Code Array |
+| 8 | `Device Properties Supported` | Variable || Device Property Code Array |
+| 9 | `Capture Formats` | Variable || Object Format Code Array |
+| 10 | `Playback Formats` | Variable || Object Format Code Array |
+| 11 | `Manufacturer` | Variable | String ||
+| 12 | `Model` | Variable | String ||
+| 13 | `Device Version` | Variable | String | THETA firmware version |
+| 14 | `Serial Number`  | Variable | String | THETA serial number |

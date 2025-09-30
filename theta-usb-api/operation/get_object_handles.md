@@ -1,23 +1,22 @@
 # 0x1007 GetObjectHandles
 
-### Operation Code
+Returns the ObjectHandle corresponding to the specified storage ID.  
 
-0x1007
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Overview
-
-Return the ObjectHandle for the specified storage ID.  
-The compatibility status of options is as follows.
-
-| Operation Parameter | RICOH THETA Specification |
+| | |
 |:--|:--|
-| ObjectFormatCode | unused<br>Specify 0x00000000 |
-| ObjectHandle of Association | unused<br>Specify 0x00000000 |
+| Operation Code | `0x1007` |
+| Operation Parameter 1 | `StorageID` |
+| Operation Parameter 2 | `ObjectFormatCode`<sup>\*1</sup> |
+| Operation Parameter 3 | `ObjectHandle` of Association<sup>\*1</sup> |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | `ObjectHandle` array<sup>\*2</sup> |
+| Data Direction | R->I |
 
-The upper limit for the number of ObjectHandles that can be used is 9,999 directories and files
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | All | All | All |
+<sup>\*1</sup>Unused. Specify `0x00000000`.  
+<sup>\*2</sup>The maximum number of ObjectHandles that can be used is 9,999, including both directories and files.  

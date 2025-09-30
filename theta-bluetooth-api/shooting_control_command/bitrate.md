@@ -15,7 +15,7 @@ sint8
 ### Overview
 
 Sets or acquires the movie bit rate of the camera.  
-RICOH THETA V firmware v2.50.1 or later.
+RICOH THETA V firmware v2.50.1 and later.
 
 ### Value Fields
 

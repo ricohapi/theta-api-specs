@@ -67,7 +67,7 @@ Converts the movie format of a saved movie.
           </tr>
         </tbody>
       </table>
-      <span class="mintext">*</span> Rotational shake correction and rotational shake perfect correction are supported from RICOH THETA V firmware v1.20.1 or later.<br /><br />RICOH THETA X is not supported.</td>
+      <span class="mintext">*</span> Rotational shake correction and rotational shake perfect correction are supported from RICOH THETA V firmware v1.20.1 and later.<br /><br />RICOH THETA X is not supported.</td>
     </tr>
   </tbody>
 </table>

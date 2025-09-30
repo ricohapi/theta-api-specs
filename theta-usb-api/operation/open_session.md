@@ -1,17 +1,20 @@
 # 0x1002 OpenSession
 
-### Operation Code
+Initiates a session.  
+Only a single active session is supported; multiple simultaneous sessions are not allowed.  
 
-0x1002
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Overview
-
-Open a session.
-
-Multiple sessions are not supported.
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | All | All | All |
+| | |
+|:--|:--|
+| Operation Code | `0x1002` |
+| Operation Parameter 1 | `SessionID` |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | None |
+| Data Direction | N/A |

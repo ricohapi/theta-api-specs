@@ -4,7 +4,7 @@
 
 Shutter speed (sec).
 
-It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 or later. Shooting settings are retained separately for both the Still image shooting mode and Video shooting mode.
+It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 and later. Shooting settings are retained separately for both the Still image shooting mode and Video shooting mode.
 
 Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and set by [camera.setOptions](../commands/camera.set_options.md).
 
@@ -22,7 +22,7 @@ The choise is listed below. There are certain range difference between each mode
   <thead>
     <tr>
       <th style="text-align: left"><a href="capture_mode.md">captureMode</a></th><th><a href="exposure_program.md">exposureProgram</a></th>
-      <th style="text-align: left">X or later</th>
+      <th style="text-align: left">X and later</th>
       <th style="text-align: left">V or Z1</th>
       <th class="description_item">SC</th>
       <th style="text-align: left">S</th>
@@ -59,8 +59,8 @@ The choise is listed below. There are certain range difference between each mode
   </tbody>
 </table>
 
-\*1 RICOH THETA Z1 and RICOH THETA V firmware v3.00.1 or later  
-\*2 RICOH THETA Z1 firmware v1.50.1 or later and RICOH THETA V firmware v3.40.1 or later
+\*1 RICOH THETA Z1 and RICOH THETA V firmware v3.00.1 and later  
+\*2 RICOH THETA Z1 firmware v1.50.1 and later and RICOH THETA V firmware v3.40.1 and later
 
 #### Support value
 
@@ -84,4 +84,4 @@ The choise is listed below. There are certain range difference between each mode
 
 \*3 Enabled only for RICOH THETA X.  
 \*4 No support for RICOH THETA X.  
-\*5 RICOH THETA Z1 firmware v2.10.1 or later and RICOH THETA V firmware v3.80.1 or later. For RICOH THETA X, all versions are supported.  
+\*5 RICOH THETA Z1 firmware v2.10.1 and later and RICOH THETA V firmware v3.80.1 and later. For RICOH THETA X, all versions are supported.  

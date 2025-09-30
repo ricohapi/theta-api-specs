@@ -23,4 +23,4 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 | _colorTemperature | CT settings (specified by the <a href="_color_temperature.md">_colorTemperature</a> option) \* |
 
 
-\* RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v01.10 or later
+\* RICOH THETA S firmware v01.82 and later and RICOH THETA SC firmware v01.10 and later

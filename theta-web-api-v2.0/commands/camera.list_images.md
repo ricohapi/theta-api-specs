@@ -36,8 +36,8 @@ Acquires the still image file list.
 | thumbnail | String | Thumbnail<br>Encoded in base64<br>Can be acquired when includeThumb is true |
 | \_thumbSize | Integer | Thumbnail file size (byte)<br>Can be acquired when includeThumb is true |
 | \_intervalCaptureGroupId | String | Group ID of still images shot using interval shooting<br>Can be acquired when images are shot using interval shooting |
-| \_compositeShootingGroupId | String | Group ID of still images shot using interval composite shooting<br>Can be acquired when images are shot using interval composite shooting<br>(RICOH THETA S only; firmware version 01.82 or later) |
-| \_autoBracketGroupId | String | Group ID of still images shot using multi bracket shooting<br>Can be acquired when images are shot using multi bracket shooting<br>(RICOH THETA S only; firmware version or later) |
+| \_compositeShootingGroupId | String | Group ID of still images shot using interval composite shooting<br>Can be acquired when images are shot using interval composite shooting<br>(RICOH THETA S only; firmware version 01.82 and later) |
+| \_autoBracketGroupId | String | Group ID of still images shot using multi bracket shooting<br>Can be acquired when images are shot using multi bracket shooting<br>(RICOH THETA S only; firmware version and later) |
 
 ### Restriction
 

@@ -18,7 +18,7 @@ Acquires and sets the recording size (pixels) of the camera.
 
 ### Value Fields
 
-For RICOH THETA Z1 or later, can be set 1, 3, 6, 7, 9 or 11.
+For RICOH THETA Z1 and later, can be set 1, 3, 6, 7, 9 or 11.
 
 For RICOH THETA V, can be set 0, 1 or 3.
 
@@ -37,7 +37,7 @@ For RICOH THETA V, can be set 0, 1 or 3.
 | 10 | Reserved |
 | 11 \*1 | Movie. 3648x3648. H.264/MPEG-4 AVC |
 
-\*1 RICOH THETA Z1 firmware v3.01.1 or later. This mode outputs two fisheye video for each lens. The MP4 file name ending with `_0` is the video file on the front lens, and `_1` is back lens. This mode does not record audio track to MP4 file.  
+\*1 RICOH THETA Z1 firmware v3.01.1 and later. This mode outputs two fisheye video for each lens. The MP4 file name ending with `_0` is the video file on the front lens, and `_1` is back lens. This mode does not record audio track to MP4 file.  
 
 ### Properties
 

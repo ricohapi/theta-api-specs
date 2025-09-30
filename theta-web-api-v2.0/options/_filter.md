@@ -17,4 +17,4 @@ The current setting can be acquired by [camera.getOptions](../commands/camera.ge
 | off | No filter |
 | DR Comp | DR compensation |
 | Noise Reduction | Noise reduction |
-| hdr | HDR (RICOH THETA S firmware 01.21 or later)<br>If you use shooting command ([camera.takePicture](../commands/camera.take_picture.md)) continuously while using<br>HDR filter, the next shooting command cannot be used until the previous<br>shooting command is completed (i.e. state of [Commands/Status](../protocols/commands_status.md) is "done"). |
+| hdr | HDR (RICOH THETA S firmware 01.21 and later)<br>If you use shooting command ([camera.takePicture](../commands/camera.take_picture.md)) continuously while using<br>HDR filter, the next shooting command cannot be used until the previous<br>shooting command is completed (i.e. state of [Commands/Status](../protocols/commands_status.md) is "done"). |

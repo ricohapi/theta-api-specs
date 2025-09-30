@@ -45,8 +45,8 @@ Errors in detail
 | 21 \*1 | Plugin boot error<br>Plugin start warning. (IoT technical standards compliance) |
 | 24 \*2 | (Board) temperature warning<br>Issued when the internal temperature of the camera is close to the upper limit temperature. |
 
-\*1 RICOH THETA Z1 or later  
-\*2 RICOH THETA Z1 v2.20.3 or later  
+\*1 RICOH THETA Z1 and later  
+\*2 RICOH THETA Z1 v2.20.3 and later  
 
 ### Properties
 

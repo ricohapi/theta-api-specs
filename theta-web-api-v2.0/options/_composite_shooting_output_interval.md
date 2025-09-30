@@ -3,7 +3,7 @@
 ### Overview
 
 In-progress save interval for interval composite shooting (sec).   
-(RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v1.10 or later)
+(RICOH THETA S firmware v01.82 and later and RICOH THETA SC firmware v1.10 and later)
 
 Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and set by [camera.setOptions](../commands/camera.set_options.md).
 

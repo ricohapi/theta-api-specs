@@ -14,7 +14,7 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 
 ### Support value
 
-#### For RICOH THETA V or later
+#### For RICOH THETA V and later
 
 60 to 65534, or 65535 (to disable the sleep mode).
 

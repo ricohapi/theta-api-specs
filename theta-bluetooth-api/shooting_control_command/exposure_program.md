@@ -16,7 +16,7 @@ sint8
 
 Acquires and sets the exposure program of the camera.
 
-It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 or later.  
+It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 and later.  
 Shooting settings are retained separately for both the Still image shooting mode and Video shooting mode.
 
 ### Value Fields
@@ -25,7 +25,7 @@ Shooting settings are retained separately for both the Still image shooting mode
 |:--|:--|
 | 1 | Manual program<br>[ISO](iso.md), [Shutter Speed](shutter_speed.md) and [Aperture](../shooting_control_command_v2/aperture.md) (RICOH THETA Z1 o r later) can be set manually. |
 | 2 | Normal program<br>All exposure settings are automatically configured.<br>This value is used when the [image processing filter](filter.md) is enabled. |
-| 3 | Aperture priority program<br>[Aperture](../shooting_control_command_v2/aperture.md) can be manually set.<br>RICOH THETA Z1 or later. |
+| 3 | Aperture priority program<br>[Aperture](../shooting_control_command_v2/aperture.md) can be manually set.<br>RICOH THETA Z1 and later. |
 | 4 | Shutter priority program<br>[Shutter Speed](shutter_speed.md) can be manually set. |
 | 9 | ISO priority program<br>[ISO](iso.md) can be manually set. |
 

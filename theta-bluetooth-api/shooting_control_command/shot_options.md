@@ -29,7 +29,7 @@ Acquire or set shooting parameters of camera at once.
 | Aperture \* | sint8 | Aperture.<br>See [Aperture](../shooting_control_command_v2/aperture.md) about parameters in detail. |
 | Iso Auto High Limit \* | sint16 | ISO sensitivity upper limit when ISO sensitivity is set to automatic.<br>See [Iso Auto High Limit](../shooting_control_command_v2/iso_auto_high_limit.md) about parameters in detail. |
 
-\* RICOH THETA Z1 and RICOH THETA V firmware v3.00.1 or later
+\* RICOH THETA Z1 and RICOH THETA V firmware v3.00.1 and later
 
 ### Properties
 

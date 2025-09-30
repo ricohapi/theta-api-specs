@@ -21,7 +21,7 @@ Error information from the camera can be acquired by [State](state.md).
 | powerOffSequenceRunning | 403 | Process request when power supply is off |
 | invalidFileFormat | 403 | Invalid file format specified |
 | serviceUnavailable | 503 | Processing requests cannot be received temporarily |
- canceledShooting | 403 | Shooting request cancellation of the self-timer.<br>Returned in [Commands/Status](commands_status.md) of [camera.takePicture](../commands/camera.take_picture.md)<br>(RICOH THETA S firmware version 01.42 or later) |
+ canceledShooting | 403 | Shooting request cancellation of the self-timer.<br>Returned in [Commands/Status](commands_status.md) of [camera.takePicture](../commands/camera.take_picture.md)<br>(RICOH THETA S firmware version 01.42 and later) |
 | unexpected | 503 | Other errors |
 
 ### Example

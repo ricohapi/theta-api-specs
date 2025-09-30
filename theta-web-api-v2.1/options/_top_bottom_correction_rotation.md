@@ -11,7 +11,7 @@ The current setting can be acquired by [camera.getOptions](../commands/camera.ge
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| v1.20.0 or later | --- | --- | --- | --- |
+| v1.20.0 and later | --- | --- | --- | --- |
 
 ### Support value
 

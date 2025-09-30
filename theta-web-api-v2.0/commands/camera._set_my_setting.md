@@ -3,7 +3,7 @@
 ### Overview
 
 Sets the still image shooting properties upon startup.   
-(For RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v1.10 or later only)  
+(For RICOH THETA S firmware v01.82 and later and RICOH THETA SC firmware v1.10 and later only)  
 To adjust the properties, use [camera.setOptions](camera.set_options.md).
 
 Refer to My Settings in [Options Overview](../options.md) for properties which can be set.

@@ -51,25 +51,25 @@ State of the camera.
 | \_boardTemp \*9\*10 | Number | This represents the current temperature inside the camera as an integer value, ranging from -10°C to 100°C with a precision of 1°C. | 
 | \_batteryTemp \*9\*10 | Number | This represents the current temperature inside the battery as an integer value, ranging from -10°C to 100°C with a precision of 1°C. |
 
-\*1 RICOH THETA S firmware v01.82 or later
+\*1 RICOH THETA S firmware v01.82 and later
 
-\*2 RICOH THETA V or later
+\*2 RICOH THETA V and later
 
-\*3 RICOH THETA V firmware v2.21.1 or later
+\*3 RICOH THETA V firmware v2.21.1 and later
 
 \*4 RICOH THETA V is not supported
 
-\*5 RICOH THETA Z1 or later
+\*5 RICOH THETA Z1 and later
 
 \*6 RICOH THETA Z1
 
-\*7 RICOH THETA X or later
+\*7 RICOH THETA X and later
 
 \*8 RICOH THETA X is not supported
 
-\*9 RICOH THETA X firmware v2.20.1 or later
+\*9 RICOH THETA X firmware v2.20.1 and later
 
-\*10 RICOH THETA Z1 firmware v3.10.2 or later
+\*10 RICOH THETA Z1 firmware v3.10.2 and later
 
 ### \_cameraError
 
@@ -102,10 +102,10 @@ Error information of the camera
 | HIGH\_TEMPERATURE          | | (Board) temperature error | Cool the camera |
 | BATTERY\_HIGH\_TEMPERATURE | | Battery temperature error | Cool the camera |
 
-\*1 RICOH THETA X firmware v1.40.0 or later  
-\*2 RICOH THETA X firmware v2.40.0 or later
+\*1 RICOH THETA X firmware v1.40.0 and later  
+\*2 RICOH THETA X firmware v2.40.0 and later
 
-#### RICOH THETA Z1 or prior
+#### RICOH THETA Z1 and earlier
 
 | Error code | Can/not shoot | Desription | Recommended action |
 |:--|:-:|:--|:--|
@@ -122,8 +122,8 @@ Error information of the camera
 | HIGH\_TEMPERATURE | | (Board) temperature error | Cool the camera |
 | BATTERY\_HIGH\_TEMPERATURE \*1 |  | Battery temperature error | Cool the camera |
 
-\*1 RICOH THETA Z1 or later  
-\*2 RICOH THETA Z1 v2.20.3 or later  
+\*1 RICOH THETA Z1 and later  
+\*2 RICOH THETA Z1 v2.20.3 and later  
 
 ### Example
 

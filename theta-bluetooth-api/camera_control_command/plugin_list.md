@@ -11,7 +11,7 @@ E83264B2-C52D-454E-95BD-6485DE912430
 ### Overview
 
 Acquires a list of installed plugins.  
-RICOH THETA V firmware v2.21.1 or later
+RICOH THETA V firmware v2.21.1 and later
 
 ### Value Fields
 

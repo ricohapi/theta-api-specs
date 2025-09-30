@@ -15,7 +15,7 @@ sint16
 ### Overview
 
 Acquires or sets the in-progress save interval (sec) for interval composite shooting.  
-RICOH THETA Z1 or later.
+RICOH THETA Z1 and later.
 
 ### Value Fields
 

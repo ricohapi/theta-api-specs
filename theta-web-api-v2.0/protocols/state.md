@@ -30,13 +30,13 @@ Camera status.
 | sessionId | String | Current session ID |
 | batteryLevel | Number | Remaining battery<br>(four levels: 0.0, 0.33, 0.67, 1.0) |
 | storageChanged | Boolean | Whether a new format storage is inserted/removed |
-| \_captureStatus | String | Continuous shooting status<br>"shooting", "idle",<br>"self-timer countdown" (RICOH THETA S firmware version 01.42 or later),<br>"bracket shooting" (RICOH THETA S only; firmware version or later) |
+| \_captureStatus | String | Continuous shooting status<br>"shooting", "idle",<br>"self-timer countdown" (RICOH THETA S firmware version 01.42 and later),<br>"bracket shooting" (RICOH THETA S only; firmware version and later) |
 | \_recordedTime | Number | Recorded time (sec.) of video being shot |
 | \_recordableTime | Number | Remaining time (sec.) of video being shot |
-| \_compositeShootingElapsedTime | Number | Elapsed time (sec.) for interval composite shooting<br>(RICOH THETA S only; firmware version 01.82 or later) |
+| \_compositeShootingElapsedTime | Number | Elapsed time (sec.) for interval composite shooting<br>(RICOH THETA S only; firmware version 01.82 and later) |
 | \_latestFileUri | String | Last saved file ID |
 | \_batteryState | String | Charging status<br>"charging", "charged", "disconnect" |
-| \_apiVersion | Number | Current camera API version<br>(1: v2.0, 2: v2.1)<br>(RICOH THETA S firmware version 01.62 or later) |
+| \_apiVersion | Number | Current camera API version<br>(1: v2.0, 2: v2.1)<br>(RICOH THETA S firmware version 01.62 and later) |
 | \_cameraError | String Array | Camera error information (Details in the following item) |
 
 ### \_cameraError

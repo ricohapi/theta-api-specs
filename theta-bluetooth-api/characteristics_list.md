@@ -611,12 +611,12 @@ Supported characteristics are listed below.
 ![Excluded](assets/img/not-supported.png "Excluded"): Excluded  
 ![some model Mandatory](assets/img/partially-supported.png "some model Mandatory"): some model Mandatory  
 
-\*11 RICOH THETA V firmware v2.30.1 or later  
-\*12 RICOH THETA V firmware v3.00.1 or later  
+\*11 RICOH THETA V firmware v2.30.1 and later  
+\*12 RICOH THETA V firmware v3.00.1 and later  
 \*13 RICOH THETA V is not supported  
-\*21 RICOH THETA Z1 firmware v2.10.1 or later  
-\*22 RICOH THETA Z1 firmware v2.20.3 or later  
-\*23 RICOH THETA Z1 firmware v3.10.2 or later  
-\*24 RICOH THETA Z1 firmware v3.50.2 or later  
-\*31 RICOH THETA X firmware v2.20.1 or later  
-\*32 RICOH THETA X firmware v2.80.1 or later  
+\*21 RICOH THETA Z1 firmware v2.10.1 and later  
+\*22 RICOH THETA Z1 firmware v2.20.3 and later  
+\*23 RICOH THETA Z1 firmware v3.10.2 and later  
+\*24 RICOH THETA Z1 firmware v3.50.2 and later  
+\*31 RICOH THETA X firmware v2.20.1 and later  
+\*32 RICOH THETA X firmware v2.80.1 and later  

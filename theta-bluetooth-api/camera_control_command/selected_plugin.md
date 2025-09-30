@@ -15,7 +15,7 @@ sint8
 ### Overview
 
 Acquires or sets the target plugin number for control by other commands.  
-RICOH THETA V firmware v2.21.1 or later.
+RICOH THETA V firmware v2.21.1 and later.
 
 ### Properties
 

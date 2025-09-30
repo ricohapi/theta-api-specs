@@ -36,7 +36,7 @@ The condition below will result in an error.
 | 1 | Noise reduction |
 | 2 | HDR |
 | 3 | DR compensation |
-| 4 | Handheld HDR<br>RICOH THETA Z1 firmware v1.20.1 or later and RICOH THETA V firmware v3.10.1 or later |
+| 4 | Handheld HDR<br>RICOH THETA Z1 firmware v1.20.1 and later and RICOH THETA V firmware v3.10.1 and later |
 
 ### Properties
 

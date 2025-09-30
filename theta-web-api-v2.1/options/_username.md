@@ -10,4 +10,4 @@ Can be set by [camera.setOptions](../commands/camera.set_options.md) during dire
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| All | All | v2.00.2 or later | --- | --- |
+| All | All | v2.00.2 and later | --- | --- |

@@ -1,31 +1,27 @@
 # 0x100E InitiateCapture
 
-### Operation Code
+Starts shooting.  
+If [`0x5012 CaptureDelay`](../property/capture_delay.md) is enabled, shooting will begin after the specified self-timer delay.  
 
-0x100E
+> [!NOTE]
+> If the InitiateCapture operation is requested under any of the following conditions, a DeviceBusy response will be returned during processing:  
+> * While video recording or saving is in progress
+> * When the [`0x5013 StillCaptureMode`](../property/still_capture_mode.md) is set to a mode other than single shot
 
-### Overview
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-Start shooting.
-
-When [CaptureDelay](../property/capture_delay.md) is enabled, shooting with self-timer is started.
-
-The compatibility status of options is as follows.
-
-| Operation Parameter | RICOH THETA Specification |
+| | |
 |:--|:--|
-| StorageID | unused<br>Specify 0x00000000 |
-| ObjectFormatCode | unused<br>Specify 0x00000000 |
+| Operation Code | `0x100E` |
+| Operation Parameter 1 | `StorageID`<sup>\*1</sup> |
+| Operation Parameter 2 | `ObjectFormatCode`<sup>\*1</sup> |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | None |
+| Data Direction | N/A |
 
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | All | All | All |
-
-### Prohibited Operations
-
-If the InitiateCapture operation is requested under any of the following conditions, a DeviceBusy response is notified during processing.
-
-- During video shooting or saving
-- [StillCaptureMode](../property/still_capture_mode.md) is a different mode to single shot mode
+<sup>\*1</sup>Unused. Specify `0x00000000`.  

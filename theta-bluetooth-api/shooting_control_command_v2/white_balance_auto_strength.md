@@ -15,7 +15,7 @@ sint8
 ### Overview
 
 To set the strength of white balance auto for low color temperature scene. This parameter can be set for photo mode and video mode separately. Also this parameter will not be cleared by power-off.  
-This API is available with RICOH THETA Z1 firmware v2.20.3 or later.
+This API is available with RICOH THETA Z1 firmware v2.20.3 and later.
 
 ### Value Fields
 

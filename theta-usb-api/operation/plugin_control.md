@@ -1,38 +1,24 @@
 # 0x99AB PluginControl
 
-### Operation Code
+**Vendor Extension Operation**  
+Starts or stops the plugin.  
 
-0x99AB
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓<sup>\*1</sup> |   |   |
 
-### Overview
+<sup>\*1</sup>Firmware v2.21.1 and later  
 
-Starts or stops plugin.  
-(Vendor Extension Operations)
+| | |
+|:--|:--|
+| Operation Code | `0x99AB` |
+| Operation Parameter 1 | `0`: Starts the plugin<br>`1`: Stops the plugin |
+| Operation Parameter 2 | `PluginHandle`<sup>\*2</sup> |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | None |
+| Data Direction | N/A |
 
-Operation Parameters as follows.
-
-#### For RICOH THETA Z1 or later
-
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | Type | Kind of action.<br>(0: start plugin; 1: stop) |
-| 2 | PluginHandle | Target plugin handle.<br>If no target is specified, then PluginHandle 1 of [SetPluginOrders](set_plugin_orders.md) will start. This parameter is ignored when action parameter is 1 (stop). |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-#### For RICOH THETA V
-
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | Type | Kind of action. Target is the plugin which boot selection is true in [GetPluginInfo](get_plugin_info.md)<br>(0: start plugin; 1: stop) |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | v2.21.1 or later | --- | --- |
+<sup>\*2</sup>This parameter is ignored when the plugin is stopped.  

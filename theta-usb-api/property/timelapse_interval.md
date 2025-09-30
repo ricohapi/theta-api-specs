@@ -1,43 +1,64 @@
 # 0x501B TimelapseInterval
 
-### Device Prop Code
+Sets and Returns the current value of the interval (msec) of shots in interval shooting mode.  
 
-0x501B
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Overview
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Property Code | 2 | UINT16 | `0x501B` |
+| 2 | Datatype | 2 | UINT16 | `0x0006` (UINT32) |
+| 3 | Get/Set | 1 | UINT8 | `0x01` (GET/SET) |
+| 4 | Default Value | 4 | UINT32 | Refer to [Supported Value](#supported-values) |
+| 5 | Current Value | 4 | UINT32 ||
+| 6 | Form Flag | 1 | UINT8 | `0x01` (Range) |
+| 7 | Minimum Value | 4 | UINT32 | Refer to [Supported Value](#supported-values) |
+| 8 | Maximum Value | 4 | UINT32 | Refer to [Supported Value](#supported-values) |
+| 9 | Step Size | 4 | UINT32 | `1000` (1000 msec) |
 
-Acquire or set the shooting interval (msec) for interval shooting.
+> [!WARNING]
+> For THETA S/SC, this property is available only when [`0x5013 StillCaptureMode`](./still_capture_mode.md) 
+ is `0x0001` Single-shot shooting. Configure this property prior to changing [`0x5013 StillCaptureMode`](still_capture_mode.md) to `0x0003` Interval shooting.  
 
-This property can be set only when the [StillCaptureMode](still_capture_mode.md) is single shooting.  
-Set this property before switching the StillCaptureMode to interval shooting.
+### Supported Values
 
-### Support model
+#### THETA X
 
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | All | All | All |
-
-### Support value
-
-This can be set in 1000 msec unit.  
-The value that can be set differs depending on the size of the image ([ImageSize](image_size.md)) or the image format ([ImageFormat](image_format.md)) to be shot.
-
-For RICOH THETA Z1 or later
-
-| ImageFormat | Value |
+| Field Name | Description |
 |:--|:--|
-| JPEG | Minimum value: 6000<br>Maximum value: 3600000 |
-| RAW+ | Minimum value: 10000<br>Maximum value: 3600000 |
+| Default Value | `6000` (6 sec) |
+| Minimum Value | `6000` (6 sec) |
+| Maximum Value | `3600000` (3600 sec) |
 
-For RICOH THETA V
+#### THETA Z1
 
-| ImageSize | Value |
+| [`0xD827 ImageFormat`](./image_format.md) | Field Name | Description |
+|:--|:--|:--|
+| `0x00` (JPEG) | Default Value | `6000` (6 sec) |
+|               | Minimum Value | `6000` (6 sec) |
+|               | Maximum Value | `3600000` (3600 sec) |
+| `0x01` (RAW+) | Default Value | `10000` (10 sec) |
+|               | Minimum Value | `10000` (10 sec) |
+|               | Maximum Value | `3600000` (3600 sec) |
+
+#### THETA V
+
+| Field Name | Description |
 |:--|:--|
-| 5376 x 2688 | Minimum value: 4000<br>Maximum value: 3600000 |
+| Default Value | `4000` (4 sec) |
+| Minimum Value | `6000` (6 sec) |
+| Maximum Value | `3600000` (3600 sec) |
 
-For RICOH THETA S or SC
+#### THETA SC/S
 
-| ImageSize | Value |
-|:--|:--|
-| 5376 x 2688 | Minimum value: 8000<br>Maximum value: 3600000 |
-| 2048 x 1024 | Minimum value: 5000<br>Maximum value: 3600000 |
+| [`0x5003 ImageSize`](./image_size.md) | Field Name | Description |
+|:--|:--|:--|
+| `5376x2688\0` | Default Value | `8000` (8 sec) |
+|               | Minimum Value | `8000` (8 sec) |
+|               | Maximum Value | `3600000` (3600 sec) |
+| `2048x1024\0` | Default Value | `5000` (5 sec) |
+|               | Minimum Value | `5000` (5 sec) |
+|               | Maximum Value | `3600000` (3600 sec) |

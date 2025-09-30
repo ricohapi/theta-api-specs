@@ -14,7 +14,7 @@ The current setting can be acquired by [camera.getOptions](../commands/camera.ge
 
 ### Support value
 
-#### RICOH THETA V or prior
+#### RICOH THETA V and earlier
 
 2.0
 
@@ -22,7 +22,7 @@ The current setting can be acquired by [camera.getOptions](../commands/camera.ge
 
 2.1, 3.5, 5.6
 
-#### RICOH THETA X or later
+#### RICOH THETA X and later
 
 2.4
 

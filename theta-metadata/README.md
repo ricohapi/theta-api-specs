@@ -123,7 +123,7 @@ The side where the shutter button is located is defined as Rear, for all THETA m
 | modl | ✓ | ✓ | ✓ | ✓ |   |   |   |   |   | Same as `@mod` |
 
 \*1 : Serial number started with `AA12` or `YR12` (shipped to China) will not store this type data in any case.  
-\*2 : RICOH THETA X firmware v2.61.0 or later.  
+\*2 : RICOH THETA X firmware v2.61.0 and later.  
 
 ### RDT* Atom
 
@@ -139,8 +139,8 @@ The side where the shutter button is located is defined as Rear, for all THETA m
 | Data Table | | Variable | Data Table is stored as array of [Data Packet](#data-packet-format). |
 
 \*1 :  
-RICOH THETA X firmware v2.40.0 or later puts the value of "timestamp" of 1st data packet as [msec] for RDTL.  
-RICOH THETA X firmware v2.61.0 or later puts the value of "timestamp" of 1st data packet as [msec] for RDL2.  
+RICOH THETA X firmware v2.40.0 and later puts the value of "timestamp" of 1st data packet as [msec] for RDTL.  
+RICOH THETA X firmware v2.61.0 and later puts the value of "timestamp" of 1st data packet as [msec] for RDL2.  
 
 ### Data Packet Format
 
@@ -279,7 +279,7 @@ RICOH THETA MP4 file also have CaMM track in following modes.
 | 7 |   |   |   | `magnetic_field` |
 
 \*1 : Serial number started with `AA12` or `YR12` (shipped to China) will not store this type data in any case.  
-\*2 : RICOH THETA X firmware v2.61.0 or later.  
+\*2 : RICOH THETA X firmware v2.61.0 and later.  
 
 ### Track Structure
 

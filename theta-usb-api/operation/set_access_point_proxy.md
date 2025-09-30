@@ -1,39 +1,31 @@
 # 0x99C0 SetAccessPointProxy
 
-### Operation Code
+**Vendor Extension Operation**  
+Sets the proxy information for the access point in client mode.  
 
-0x99C0
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+|   | ✓<sup>\*1</sup> |   |   |   |
 
-### Overview
+<sup>\*1</sup>Firmware v2.20.3 and later
 
-Set the proxy information for the access point being used in client mode.
-(Vendor Extension Operations)
+| | |
+|:--|:--|
+| Operation Code | `0x99C0` |
+| Operation Parameter 1 | `AccessPointHandle` |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | `Proxy` dataset |
+| Data Direction | I->R |
 
-Operation parameters are as follows.
+### Proxy Dataset
 
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | AccessPointHandle | Access point handle of the target access point |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| --- | v2.20.3 or later | --- | --- | --- |
-
-### Support value
-
-The access point proxy format is predetermined by the following.
-
-\<Use\>\<Url\>\<Port\>\<UserID\>
-
-| Name | Size | Data Type | Description |
-|:--|:--|:--|:--|
-| Use | 1 | UINT8 | Presence of proxy usage <br> (0: do not use proxy, 1: use proxy) |
-| Url | 64 | String | Proxy server URL |
-| Port | 5 | String | Proxy server port number: 0 to 65535 |
-| UserID | 64 | String | User ID used for proxy authentication |
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Use | 1 | UINT8 | Proxy usage<br>`0`: Do not use proxy<br>`1`: Use proxy |
+| 2 | Url | 64 | STRING | Proxy server URL |
+| 3 | Port | 5 | STRING | Proxy server port number: `0` to `65535` |
+| 4 | UserID | 64 | STRING | User ID used for proxy authentication |

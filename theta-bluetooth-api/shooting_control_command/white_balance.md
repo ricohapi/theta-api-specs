@@ -16,7 +16,7 @@ sint8
 
 Acquires and sets the white balance of the camera.
 
-It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 or later. Shooting settings are retained separately for both the Still image shooting mode and Video shooting mode.
+It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 and later. Shooting settings are retained separately for both the Still image shooting mode and Video shooting mode.
 
 ### Value Fields
 
@@ -35,7 +35,7 @@ It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 or later
 | 10 | color temperature<br>[CT settings](color_temperature.md) |
 | 11 | underwater \* |
 
-\* RICOH THETA V firmware v3.21.1 or later
+\* RICOH THETA V firmware v3.21.1 and later
 
 ### Properties
 

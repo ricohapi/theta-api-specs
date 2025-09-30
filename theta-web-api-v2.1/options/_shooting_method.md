@@ -20,10 +20,10 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 |:--|:--|
 | normal | Normal shooting |
 | interval | Interval shooting |
-| moveInterval | Move interval shooting (RICOH THETA Z1 firmware v1.50.1 or later, RICOH THETA X is not supported) |
-| fixedInterval | Fixed interval shooting (RICOH THETA Z1 firmware v1.50.1 or later, RICOH THETA X is not supported) |
+| moveInterval | Move interval shooting (RICOH THETA Z1 firmware v1.50.1 and later, RICOH THETA X is not supported) |
+| fixedInterval | Fixed interval shooting (RICOH THETA Z1 firmware v1.50.1 and later, RICOH THETA X is not supported) |
 | bracket | Multi bracket shooting |
 | composite | Interval composite shooting (RICOH THETA X is not supported) |
-| continuous | Continuous shooting (RICOH THETA X or later) |
-| timeShift | TimeShift shooting (RICOH THETA X or later) |
-| burst | Burst shooting (RICOH THETA Z1 v2.10.1 or later, RICOH THETA X is not supported) |
+| continuous | Continuous shooting (RICOH THETA X and later) |
+| timeShift | TimeShift shooting (RICOH THETA X and later) |
+| burst | Burst shooting (RICOH THETA Z1 v2.10.1 and later, RICOH THETA X is not supported) |

@@ -35,7 +35,7 @@ Acquires the camera states.
 
 \*1 RICOH THETA Z1
 
-\*2 RICOH THETA X or later
+\*2 RICOH THETA X and later
 
 Response (for RICOH THETA X)
 ```

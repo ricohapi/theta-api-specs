@@ -4,7 +4,7 @@
 
 White balance.
 
-It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 or later. Shooting settings are retained separately for both the Still image shooting mode and Video shooting mode.
+It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 and later. Shooting settings are retained separately for both the Still image shooting mode and Video shooting mode.
 
 Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and set by [camera.setOptions](../commands/camera.set_options.md).
 
@@ -31,8 +31,8 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 | _colorTemperature | CT settings (specified by the <a href="_color_temperature.md">_colorTemperature</a> option) \*1 |
 | _underwater | Underwater \*2 \*3 |
 
-\*1 RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v01.10 or later
+\*1 RICOH THETA S firmware v01.82 and later and RICOH THETA SC firmware v01.10 and later
 
-\*2 RICOH THETA V firmware v3.21.1 or later
+\*2 RICOH THETA V firmware v3.21.1 and later
 
 \*3 With RICOH THETA X, stitching process will be optimized for underwater setting when whiteBalance is set to _underwater.

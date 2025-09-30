@@ -9,7 +9,7 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| v2.61.0 or later | -- | -- | -- | -- |
+| v2.61.0 and later | -- | -- | -- | -- |
 
 ### Support value
 

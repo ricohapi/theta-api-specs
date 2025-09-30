@@ -25,11 +25,11 @@ Starts and stops interval shooting, bracketing, interval composite, time shift s
 | 2 | Performing interval shooting (Interval shooting started \* Camera should in the still image shooting mode.) |
 | 3 | Performing bracketing (Bracketing started \* Camera should in the still image shooting mode.) |
 | 4 | Conversion of a saved movie ([camera.\_convertVideoFormats](../../theta-web-api-v2.1/commands/camera._convert_video_formats.md)) in progress.<br>Writing is Excluded. |
-| 5 | Performing interval composite shooting (Interval composite shooting started \* Camera should in the still image shooting mode.)<br>RICOH THETA Z1 or later |
-| 6 | Performing time shift shooting.<br>RICOH THETA Z1 and RICOH THETA V firmware v3.00.1 or later<br>Writing is Excluded. |
-| 7 | Performing interval shooting (optimized \*1, Tripod stabilization Off) (Interval shooting started \* Camera should in the still image shooting mode.)<br>RICOH THETA Z1 v1.50.1 or later and RICOH THETA V firmware v3.40.1 or later |
-| 8 | Performing interval shooting (optimized \*1, Tripod stabilization On) (Interval shooting started \* Camera should in the still image shooting mode.)<br>RICOH THETA Z1 v1.50.1 or later and RICOH THETA V firmware v3.40.1 or later |
-| 9 | Performing burst shooting(Burst shooting started \* Camera should in the still image shooting mode.)<br>RICOH THETA Z1 v2.10.1 or later |
+| 5 | Performing interval composite shooting (Interval composite shooting started \* Camera should in the still image shooting mode.)<br>RICOH THETA Z1 and later |
+| 6 | Performing time shift shooting.<br>RICOH THETA Z1 and RICOH THETA V firmware v3.00.1 and later<br>Writing is Excluded. |
+| 7 | Performing interval shooting (optimized \*1, Tripod stabilization Off) (Interval shooting started \* Camera should in the still image shooting mode.)<br>RICOH THETA Z1 v1.50.1 and later and RICOH THETA V firmware v3.40.1 and later |
+| 8 | Performing interval shooting (optimized \*1, Tripod stabilization On) (Interval shooting started \* Camera should in the still image shooting mode.)<br>RICOH THETA Z1 v1.50.1 and later and RICOH THETA V firmware v3.40.1 and later |
+| 9 | Performing burst shooting(Burst shooting started \* Camera should in the still image shooting mode.)<br>RICOH THETA Z1 v2.10.1 and later |
 
 \*1 Top/bottom correction and stitching conditions are optimized.
 

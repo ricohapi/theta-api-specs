@@ -1,24 +1,29 @@
 # 0xD831 ConvertVideoFormatStatus
 
-### Device Prop Code
+**Vendor Extension Property**  
+Returns the progress rate of the video format conversion post-processing.  
 
-0xD831
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓<sup>\*1</sup> | ✓<sup>\*2</sup> |   |   |
 
-### Overview
+<sup>\*1</sup>THETA Z1 firmware v1.31.1 and later  
+<sup>\*2</sup>THETA V firmware v3.21.1 and later  
 
-Acquires progress rate of conversion and information of converted video.  
-(Vendor Extension Property)
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Property Code | 2 | UINT16 | `0xD831` |
+| 2 | Datatype | 2 | UINT16 | `0xFFFF` (STRING) |
+| 3 | Get/Set | 1 | UINT8 | `0x00` (GET) |
+| 4 | Default Value | 16 | STRING | `ProgressRate:000` |
+| 5 | Current Value | 1 | STRING ||
+| 6 | Form Flag | 1 | UINT8 | `0x02` (Enumeration) |
 
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | v1.31.1 or later | v3.21.1 or later | --- | --- |
-
-### Support value
+### Supported Values
 
 | Value | Description |
 |:--|:--|
-| ProgressRate:%d | Conversion is processing.<br>%d is progress rate. |
-| ProgressRate:100_ObjectHandle:%d_ObjectSize:%d | Conversion is completed. |
-| ProgressRate:000 | Conversion is canceled. |
+| `ProgressRate:%d` | Video format conversion is processing.<br>`%d` is progress rate (000-099). |
+| `ProgressRate:100_ObjectHandle:%d_ObjectSize:%d` | Video format conversion is completed. |
+| `ProgressRate:000` | Video format conversion is canceled. |

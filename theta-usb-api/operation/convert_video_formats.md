@@ -1,94 +1,43 @@
 # 0x99A7 ConvertVideoFormats
 
-### Operation Code
+**Vendor Extension Operation**  
+Converts the format of a saved video file.  
 
-0x99A7
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓<sup>\*1</sup> | ✓<sup>\*2</sup> |   |   |
 
-### Overview
+<sup>\*1</sup>Firmware v1.31.1 and later  
+<sup>\*2</sup>Firmware v3.21.1 and later  
 
-Converts the movie format of a saved movie.  
-(Vendor Extension Operations)
+| | |
+|:--|:--|
+| Operation Code | `0x99A7` |
+| Operation Parameter 1 | `ObjectHandle` of saved video file |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | `ConvertVideoFormat` dataset |
+| Data Direction | I->R |
 
-Operation parameters are as follows.
+### ConvertVideoFormat Dataset
 
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | VideoHandle | Video handle to be converted |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
+#### THETA X
 
-### Support model
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Size | 1 | UINT8 | `1`: 3840x1920 |
 
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | v1.31.1 or later | v3.21.1 or later | --- | --- |
+> [!NOTE]
+> THETA X only supports the conversion from 5760x2880px 30/15/10fps Equirectangular video down-scale to 3840x1920px.  
 
-### Support value
+#### THETA V/Z1
 
-The video formats information format is predetermined by the following.
-
-#### RICOH THETA X
-
-\<Size\>
-
-<table>
-    <thead>
-      <tr>
-        <th width="27%">Name</th>
-        <th width="5%">Size</th>
-        <th width="15%">Data Type</th>
-        <th width="53%">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Size</td>
-        <td>1</td>
-        <td>UINT8</td>
-        <td>Recorded size (1: 3840x1920)</td>
-      </tr>
-    </tbody>
-  </table> 
-
-#### RICOH THETA Z1 or prior
-
-\<Size\>\<ProjectionType\>\<Codec\>\<TopBottomCorrection\>
-
-<table>
-    <thead>
-      <tr>
-        <th width="27%">Name</th>
-        <th width="5%">Size</th>
-        <th width="15%">Data Type</th>
-        <th width="53%">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Size</td>
-        <td>1</td>
-        <td>UINT8</td>
-        <td>Recorded size (0: 1920x960, 1: 3840x1920)</td>
-      </tr>
-      <tr>
-        <td>ProjectionType</td>
-        <td>1</td>
-        <td>UINT8</td>
-        <td>0: Equirectangular</td>
-      </tr>
-      <tr>
-        <td>Codec</td>
-        <td>1</td>
-        <td>UINT8</td>
-        <td>0: H.264/MPEG-4 AVC</td>
-      </tr>
-      <tr>
-        <td>TopBottomCorrection</td>
-        <td>1</td>
-        <td>UINT8</td>
-        <td>0: Apply, 1: ApplyFixedDirection, 2: Disapply</td>
-      </tr>
-    </tbody>
-  </table> 
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Size | 1 | UINT8 | `0`: 1920x960<br>`1`: 3840x1920 |
+| 2 | Projection Type | 1 | UINT8 | `0`: Equirectangular |
+| 3 | Codec | 1 | UINT8 | `0`: H.264/MPEG-4 AVC |
+| 4 | Top Bottom Correction | 1 | UINT8 | `0`: Apply<br>`1`: ApplyFixedDirection<br>`2`: Disapply |

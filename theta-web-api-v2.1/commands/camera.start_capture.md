@@ -19,14 +19,14 @@ For movie shooting or interval shooting with no shot count specified, "state" fo
 
 | `_mode` | Shooting mode | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|:--|:--|
-| `interval`  | Interval shooting | All | All | All | All | v01.62 or later |
-| `bracket`   | Multi bracket shooting | All | All | All | v1.10 or later | v01.82 or later |
-| `composite` | Interval composite shooting | --- | All | --- | v1.10 or later | v01.82 or later |
-| `timeShift` | Time shift shooting | All | All | v3.00.1 or later | --- | --- |
-|| Movie shooting | All | All | All | All | v01.62 or later |
-| `moveInterval ` | Interval shooting (optimized <span class="mintext">*1</span>, Tripod stabilization Off) | --- | v1.50.1 or later | v3.40.1 or later | --- | --- |
-| `fixInterval ` | Interval shooting (optimized <span class="mintext">*1</span>, Tripod stabilization On) | --- | v1.50.1 or later | v3.40.1 or later | --- | --- |
-| `burst` | Burst shooting | --- | v2.10.1 or later | --- | --- | --- |
+| `interval`  | Interval shooting | All | All | All | All | v01.62 and later |
+| `bracket`   | Multi bracket shooting | All | All | All | v1.10 and later | v01.82 and later |
+| `composite` | Interval composite shooting | --- | All | --- | v1.10 and later | v01.82 and later |
+| `timeShift` | Time shift shooting | All | All | v3.00.1 and later | --- | --- |
+|| Movie shooting | All | All | All | All | v01.62 and later |
+| `moveInterval ` | Interval shooting (optimized <span class="mintext">*1</span>, Tripod stabilization Off) | --- | v1.50.1 and later | v3.40.1 and later | --- | --- |
+| `fixInterval ` | Interval shooting (optimized <span class="mintext">*1</span>, Tripod stabilization On) | --- | v1.50.1 and later | v3.40.1 and later | --- | --- |
+| `burst` | Burst shooting | --- | v2.10.1 and later | --- | --- | --- |
 | `continuous` | Continuous shooting | All | --- | --- | --- | --- |
 
 \*1 Top/bottom correction and stitching conditions are optimized.
@@ -57,7 +57,7 @@ None.
 #### Remark
 
 For movie shooting, the response includes `_fileUrls` information at the timing of `camera.startCapture`.   
-This feature is available with THETA X firmware v2.61.0 or later.  
+This feature is available with THETA X firmware v2.61.0 and later.  
 
 ```
 {

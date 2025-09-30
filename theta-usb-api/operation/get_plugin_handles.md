@@ -1,34 +1,28 @@
 # 0x99A8 GetPluginHandles
 
-### Operation Code
+**Vendor Extension Operation**  
+Returns the list of plugin handles.  
 
-0x99A8
+#### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+|   | ✓ | ✓<sup>\*1</sup> |   |   |
 
-### Overview
+<sup>\*1</sup>Firmware v2.21.1 and later  
 
-Return the plugin handle list.  
-(Vendor Extension Operations)
+| | |
+|:--|:--|
+| Operation Code | `0x99A8` |
+| Operation Parameter 1 | None |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | `PluginHandle` array |
+| Data Direction | R->I |
 
-Operation parameters are as follows.
+### Data
 
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | Reserved | unused<br>Specify 0x00000000 |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| --- | All | v2.21.1 or later | --- | --- |
-
-### Support value
-
-The plugin handle list format is predetermined by the following.
-
-| Name | Size | Data Type | Description |
-|:--|:--|:--|:--|
-| PluginHandle array | any | PluginHandle array | List of plugin handle |
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | `PluginHandle` array | Variable | AUINT32 | The list of plugin handles |

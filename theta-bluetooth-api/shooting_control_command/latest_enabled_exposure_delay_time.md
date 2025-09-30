@@ -17,7 +17,7 @@ sint8
 Acquires self-timer operating time (sec.) when the self-timer ([Exposure Delay](exposure_delay.md)) was effective.  
 Return non-zero value.
 
-The time is returned separately for both the Still image shooting mode and Video shooting mode at RICOH THETA V firmware v3.00.1 or later.
+The time is returned separately for both the Still image shooting mode and Video shooting mode at RICOH THETA V firmware v3.00.1 and later.
 
 ### Properties
 

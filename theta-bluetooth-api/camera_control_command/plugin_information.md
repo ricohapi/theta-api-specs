@@ -11,7 +11,7 @@ E7FFAD40-8049-4028-AFC0-FDD8DE8F67DE
 ### Overview
 
 Acquires the detailed plugin information applicable in [Selected Plugin.](selected_plugin.md)  
-RICOH THETA V firmware v2.21.1 or later.
+RICOH THETA V firmware v2.21.1 and later.
 
 ### Value Fields
 

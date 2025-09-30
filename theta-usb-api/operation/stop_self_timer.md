@@ -1,27 +1,21 @@
 # 0x99A2 StopSelfTimer
 
-### Operation Code
+**Vendor Extension Operation**  
+Stop the self-timer.  
+If [`0x5012 CaptureDelay`](../property/capture_delay.md) is enabled, shooting will be performed using the self-timer.  
 
-0x99A2
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Overview
-
-Stop running self-timer.  
-(Vendor Extension Operations)  
- If [CaptureDelay](../property/capture_delay.md) is enabled, self-timer is used by shooting.
-
-Operation parameters are as follows.
-
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | Reserved | unused<br>Specify 0x00000000 |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | All | All | All |
+| | |
+|:--|:--|
+| Operation Code | `0x99A2` |
+| Operation Parameter 1 | None |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | None |
+| Data Direction | N\A |

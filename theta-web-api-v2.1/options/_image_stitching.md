@@ -10,7 +10,7 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| All | All | v3.00.1 or later | --- | --- |
+| All | All | v3.00.1 and later | --- | --- |
 
 ### Support value
 
@@ -18,9 +18,9 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 |:--|:--|
 | auto | Refer to stitching when shooting with "auto" |
 | static | Performs static stitching |
-| dynamic | Performs dynamic stitching(RICOH THETA X or later) |
+| dynamic | Performs dynamic stitching(RICOH THETA X and later) |
 | dynamicAuto | For Normal shooting, performs dynamic stitching, for Interval shooting, saves dynamic distortion correction parameters for the first image and then uses them for the 2nd and subsequent images(RICOH THETA X is not supported) |
-| dynamicSemiAuto | Performs semi-dynamic stitching<br>Saves dynamic distortion correction parameters for the first image and then uses them for the 2nd and subsequent images(RICOH THETA X or later) |
+| dynamicSemiAuto | Performs semi-dynamic stitching<br>Saves dynamic distortion correction parameters for the first image and then uses them for the 2nd and subsequent images(RICOH THETA X and later) |
 | dynamicSave | Performs dynamic stitching and then saves distortion correction parameters |
 | dynamicLoad | Performs stitching using the saved distortion correction parameters |
 | none | Does not perform stitching |

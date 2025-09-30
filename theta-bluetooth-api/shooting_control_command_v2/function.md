@@ -15,7 +15,7 @@ sint8
 ### Overview
 
 Acquires and sets the shooting function.  
-RICOH THETA Z1 or later.
+RICOH THETA Z1 and later.
 
 ### Value Fields
 

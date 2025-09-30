@@ -10,7 +10,7 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| All | All | v2.50.1 or later | --- | --- |
+| All | All | v2.50.1 and later | --- | --- |
 
 ### Support value
 
@@ -34,7 +34,7 @@ The supported value depends on the shooting mode ([captureMode](capture_mode.md)
 | image | "Fine", "1048576"-"20971520" [byte] \*2\*4 |
 | _liveStreaming | "Auto" |
 
-\*2 RICOH THETA X v1.20 or later
+\*2 RICOH THETA X v1.20 and later
 \*3 The actual bit rate varies depending on the resolution, frame rate, shooting conditions, subject, etc.  
 \*4 Images are treated with the target file size. The actual image file size varies depending on the resolution, shooting conditions, subject, etc.  
 
@@ -48,20 +48,20 @@ The supported value depends on the shooting mode ([captureMode](capture_mode.md)
 |   4K 15fps |  64 |  32 |  16 ||
 |   4K 30fps | 100 |  54 |  32 ||
 |   4K 60fps | 120 |  64 |  32 ||
-| 5.7K  2fps |  16 |  12 |   8 | firmware v2.00.0 or later   |
-|            |  64 |  32 |  16 | firmware v1.40.0 or later   (I-frame only)|
+| 5.7K  2fps |  16 |  12 |   8 | firmware v2.00.0 and later   |
+|            |  64 |  32 |  16 | firmware v1.40.0 and later   (I-frame only)|
 |            |  16 |   8 |   4 | firmware v1.30.0 or earlier |
-| 5.7K  5fps |  40 |  30 |  20 | firmware v2.00.0 or later   |
-|            | 120 |  80 |  40 | firmware v1.40.0 or later   (I-frame only)|
+| 5.7K  5fps |  40 |  30 |  20 | firmware v2.00.0 and later   |
+|            | 120 |  80 |  40 | firmware v1.40.0 and later   (I-frame only)|
 |            |  32 |  16 |   8 | firmware v1.30.0 or earlier |
-| 5.7K 10fps |  80 |  60 |  40 | firmware v2.00.0 or later   |
-|            |  64 |  40 |  20 | firmware v1.40.0 or later   |
+| 5.7K 10fps |  80 |  60 |  40 | firmware v2.00.0 and later   |
+|            |  64 |  40 |  20 | firmware v1.40.0 and later   |
 |            |  48 |  24 |  12 | firmware v1.30.0 or earlier |
 | 5.7K 15fps |  64 |  32 |  16 ||
 | 5.7K 30fps | 120 |  64 |  32 ||
-|   8K  2fps |  64 |  32 |  16 | firmware v1.40.0 or later   (I-frame only)|
+|   8K  2fps |  64 |  32 |  16 | firmware v1.40.0 and later   (I-frame only)|
 |            |  32 |  16 |   8 | firmware v1.30.0 or earlier (I-frame only)|
-|   8K  5fps | 120 |  96 |  40 | firmware v1.40.0 or later   (I-frame only)|
+|   8K  5fps | 120 |  96 |  40 | firmware v1.40.0 and later   (I-frame only)|
 |            |  64 |  32 |  16 | firmware v1.30.0 or earlier (I-frame only)|
-|   8K 10fps | 120 |  96 |  40 | firmware v1.40.0 or later   (I-frame only)|
+|   8K 10fps | 120 |  96 |  40 | firmware v1.40.0 and later   (I-frame only)|
 |            | 120 |  64 |  32 | firmware v1.30.0 or earlier (I-frame only)|

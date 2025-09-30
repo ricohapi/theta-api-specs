@@ -1,26 +1,28 @@
 # 0x99B3 GetPluginLicense
 
-### Operation Code
+**Vendor Extension Operation**  
+Returns the license information for the installed plugin.  
 
-0x99B3
+#### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓<sup>\*1</sup> |   |   |
 
-### Overview
+<sup>\*1</sup>Firmware v2.21.1 and later  
 
-Return the license for the installed plugin.  
-(Vendor Extension Operations)
+| | |
+|:--|:--|
+| Operation Code | `0x99B3` |
+| Operation Parameter 1 | `PluginHandle` |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | License File |
+| Data Direction | R->I |
 
-Operation Parameters as follows.
+### Data
 
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | PluginHandle | Target plugin handle to be acquired |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-### Support model
-
-| X | Z1 | V | SC | S |
-| --- | --- | --- | --- | --- |
-| All | All | v2.21.1 or later | --- | --- |
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | License File | Variable | String | Contents of the license files |

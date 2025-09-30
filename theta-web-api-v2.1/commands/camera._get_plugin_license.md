@@ -8,7 +8,7 @@ Acquires the license for the installed plugin.
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| All | All | v2.21.1 or later | --- | --- |
+| All | All | v2.21.1 and later | --- | --- |
 
 ### Parameters
 

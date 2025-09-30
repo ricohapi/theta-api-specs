@@ -1,50 +1,78 @@
 # 0xD812 BracketParameters
 
-### Device Prop Code
+**Vendor Extension Property**  
+Returns or sets the current setting for the multi bracket shooting.  
 
-0xD812
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓<sup>\*1</sup> | ✓<sup>\*2</sup> |
 
-### Overview
+<sup>\*1</sup>THETA SC firmware v1.10 and later  
+<sup>\*2</sup>THETA S firmware v1.82 and later  
 
-Acquires or sets the multi bracket shooting setting.  
-(Vendor Extension Property)
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Property Code | 2 | UINT16 | `0xD812` |
+| 2 | Datatype | 2 | UINT16 | `0x400A` (AINT128) |
+| 3 | Get/Set | 1 | UINT8 | `0x01` (GET/SET) |
+| 4 | Default Value | 16\*{1|2}\*N | AINT128 | `NULL` |
+| 5 | Current Value | 16\*{1|2}\*N | AINT128 ||
+| 6 | Form Flag | 1 | UINT8 | `0x00` (None) |
 
-### Support model
+### Format of Current Value
 
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | All | v1.10 or later | v01.82 or later |
+#### THETA X
 
-### Support value
+For each capture setting, two data units of 128 bytes are required.  
+The array length `N` must be between 2 and 13.  
 
-The multi bracket shooting setting format is a 16-byte array as defined below (AINT128).
+First 128 byte  
 
-#### For RICOH THETA X or later
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | `ExposureBiasCompensation` | 2 | INT16  | [`0x5010 ExposureBiasCompensation`](./exposure_bias_compensation.md) |
+| 2 | `ExposureIndex`            | 2 | UINT16 | [`0x500F ExposureIndex`](./exposure_index.md) |
+| 3 | `ShutterSpeed`             | 8 | UINT64 | [`0xD00F ShutterSpeed`](./shutter_speed.md) |
+| 4 | `F-number`                 | 2 | UINT16 | [`0x5007 F-number`](./f_number.md) |
+| 5 | `ExposureProgramMode`      | 2 | UINT16 | [`0x500E ExposureProgramMode`](./exposure_program_mode.md) |
 
-The array size should be 2 to 13.
+Second 128 byte  
 
-First element: \<ExposureBiasCompensation\>\<ExposureIndex\>\<ShutterSpeed\>\<F-number\>\<ExposureProgramMode\>  
-Second element: \<Reserved 96 bits\>\<ColorTemperature\>\<Reserved 16 bits\>
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Reserved           | 12 | -- | `0x00` |
+| 2 | `ColorTemperature` | 2 | UINT16 | [`0xD813 ColorTemperature`](./color_temperature.md) |
+| 3 | Reserved           | 2 | -- | `0x00` |
 
-#### For RICOH THETA V firmware v3.00.1 or later
+#### THETA Z1, and V firmware v3.00.1 and later
 
-The array size should be 2 to 19.
+For each capture setting, two data units of 128 bytes are required.  
+The array length `N` must be between 2 and 19.  
 
-First element: \<ExposureBiasCompensation\>\<ExposureIndex\>\<ShutterSpeed\>\<F-number\>\<ExposureProgramMode\>  
-Second element: \<Reserved 96 bits\>\<ColorTemperature\>\<WhiteBalance\>
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | `ExposureBiasCompensation` | 2 | INT16  | [`0x5010 ExposureBiasCompensation`](./exposure_bias_compensation.md) |
+| 2 | `ExposureIndex`            | 2 | UINT16 | [`0x500F ExposureIndex`](./exposure_index.md) |
+| 3 | `ShutterSpeed`             | 4 | UINT64 | [`0xD00F ShutterSpeed`](./shutter_speed.md) |
+| 4 | `F-number`                 | 2 | UINT16 | [`0x5007 F-number`](./f_number.md) |
+| 5 | `ExposureProgramMode`      | 2 | UINT16 | [`0x500E ExposureProgramMode`](./exposure_program_mode.md) |
 
-#### For RICOH THETA V firmware v2.50.1 or prior
+Second 128 byte  
 
-The array size should be 2 to 13.
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Reserved           | 12 | -- | `0x00` |
+| 2 | `ColorTemperature` | 2 | UINT16 | [`0xD813 ColorTemperature`](./color_temperature.md) |
+| 3 | `WhiteBalance`     | 2 | UINT16 | [`0x5005 WhiteBalance`](./white_balance.md) |
 
-\<Reserved 32 bits\>\<ColorTemperature\>\<ExposureIndex\>\<ShutterSpeed\>
+#### THETA V firmware v2.50.1 and earlier
 
-| Field | Bit length | Description |
-|:--|:--|:--|
-| ColorTemperature | 16 bits | Color temperature setting<br>Refer to [0xD813 ColorTemperature](color_temperature.md) for the format. |
-| ExposureIndex | 16 bits | ISO sensitivity<br>Refer to [0x500F ExposureIndex](exposure_index.md) for the format. |
-| ShutterSpeed | 64 bits | Shutter speed<br>Refer to [0xD00F ShutterSpeed](shutter_speed.md) for the format. |
-| ExposureBiasCompensation | 16 bits | Exposure compensation<br>Refer to [0x5010 ExposureBiasCompensation](exposure_bias_compensation.md) for the format. |
-| F-number | 16 bits | Aperture<br>Refer to [0x5007 F-Number](f_number.md) for the format.<br>Set 0 for RICOH THETA V, X. |
-| ExposureProgramMode | 16 bits | Exposure program<br>Refer to [0x500E ExposureProgramMode](exposure_program_mode.md) for the format.<br>RICOH THETA X supports only `0x0001` (Manual program). |
-| WhiteBalance | 16 bits | White balance<br>Refer to [0x5005 WhiteBalance](white_balance.md) for the format. |
+The array length `N` must be between 2 and 13.  
+
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Reserved | 4 | -- | `0x00` |
+| 2 | `ColorTemperature` | 2 | UINT16 | [`0xD813 ColorTemperature`](./color_temperature.md) |
+| 3 | `ExposureIndex`    | 2 | UINT16 | [`0x500F ExposureIndex`](./exposure_index.md) |
+| 4 | `ShutterSpeed`     | 8 | UINT64 | [`0xD00F ShutterSpeed`](./shutter_speed.md) |

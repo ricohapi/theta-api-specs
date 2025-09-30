@@ -15,7 +15,7 @@ utf8s
 ### Overview
 
 Acquires the MAC address of Bluetooth.  
-RICOH THETA V firmware v2.11.1 or later.
+RICOH THETA V firmware v2.11.1 and later.
 
 ### Properties
 
