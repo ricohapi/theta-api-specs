@@ -4,7 +4,7 @@
 
 Starts continuous shooting.   
 The shooting method changes according to the shooting mode ([captureMode](../options/capture_mode.md)) and mode settings.   
-The interval composite shooting and multi bracket shooting are supported by RICOH THETA S (firmware 01.82 or later) and RICOH THETA SC (firmware v1.10 or later) only.
+The interval composite shooting and multi bracket shooting are supported by RICOH THETA S (firmware 01.82 and later) and RICOH THETA SC (firmware v1.10 and later) only.
 
 In the still image shooting mode, interval shooting, interval composite shooting, or multi bracket shooting is started depending on the mode setting. If [exposureDelay](../options/exposure_delay.md) is enabled, self-timer shooting is started.   
 In the movie shooting mode, movie shooting is started.

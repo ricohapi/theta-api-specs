@@ -16,7 +16,7 @@ sint8
 
 Acquires and sets the shutter speed setting of the camera.
 
-It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 or later. Shooting settings are retained separately for both the Still image shooting mode and Video shooting mode.
+It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 and later. Shooting settings are retained separately for both the Still image shooting mode and Video shooting mode.
 
 ### Value Fields
 
@@ -27,7 +27,7 @@ The choise is listed below. There are certain range difference between each mode
     <tr>
       <th style="text-align: left"><a href="capture_mode.md">Capture Mode</a></th>
       <th style="text-align: left"><a href="exposure_program.md">Exposure Program</a></th>
-      <th style="text-align: left">V or later</th>
+      <th style="text-align: left">V and later</th>
     </tr>
   </thead>
   <tbody>
@@ -52,8 +52,8 @@ The choise is listed below. There are certain range difference between each mode
   </tbody>
 </table>
 
-\*1 RICOH THETA V firmware v3.00.1 or later  
-\*2 RICOH THETA Z1 firmware v1.50.1 or later and RICOH THETA V firmware v3.40.1 or later
+\*1 RICOH THETA V firmware v3.00.1 and later  
+\*2 RICOH THETA Z1 firmware v1.50.1 and later and RICOH THETA V firmware v3.40.1 and later
 
 #### Supported value
 
@@ -124,7 +124,7 @@ The choise is listed below. There are certain range difference between each mode
 | 62 | 40\*3 |
 | 63 | 50\*3 |
 
-\*3 RICOH THETA Z1 firmware v2.10.1 or later and RICOH THETA V firmware v3.80.1 or later.  
+\*3 RICOH THETA Z1 firmware v2.10.1 and later and RICOH THETA V firmware v3.80.1 and later.  
 
 ### Properties
 

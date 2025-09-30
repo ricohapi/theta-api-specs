@@ -15,7 +15,7 @@ sint8
 ### Overview
 
 Acquires or sets the target for control by other commands from access points used in client mode.  
-RICOH THETA V firmware v2.00.2 or later.
+RICOH THETA V firmware v2.00.2 and later.
 
 ### Properties
 

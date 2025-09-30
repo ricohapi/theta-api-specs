@@ -22,5 +22,5 @@ Values that can be set differ depending on the shooting mode ([captureMode](capt
 | Shooting mode | Support value |
 |:--|:--|
 | image | 0 (Disabled),<br>1, 2, 3, 4, 5, 6, 7, 8, 9, 10 (Enabled) |
-| video | Same as image on RICOH THETA V firmware v2.50.1 or later<br>Otherwise, 0 (Disabled) |
+| video | Same as image on RICOH THETA V firmware v2.50.1 and later<br>Otherwise, 0 (Disabled) |
 | \_liveStreaming | 0 (Disabled) |

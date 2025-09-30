@@ -13,7 +13,7 @@ This section explains the following flow from shooting a still image through acq
 
 ### 1. Specify the API version
 
-For RICOH THETA V or later, start from "2. Acquire status before shooting" since its API version is set to RICOH THETA API v2.1 by default.
+For RICOH THETA V and later, start from "2. Acquire status before shooting" since its API version is set to RICOH THETA API v2.1 by default.
 
 For RICOH THETA S and RICOH THETA SC, since the API version is set to RICOH THETA API v2.0 when connection is established via wireless LAN, you need to use [clientVersion](../theta-web-api-v2.0/options/client_version.md) to set the API version of the camera to v2.1.
 

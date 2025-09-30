@@ -1,34 +1,28 @@
 # 0x99C1 SetAccessPointProxyPassword
 
-### Operation Code
+**Vendor Extension Operation**  
+Sets the proxy password for the access point in client mode.  
 
-0x99C1
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+|   | ✓<sup>\*1</sup> |   |   |   |
 
-### Overview
+<sup>\*1</sup>Firmware v2.20.3 and later  
 
-Set the password for the proxy information of the access point being used in client mode.
-(Vendor Extension Operations)
+| | |
+|:--|:--|
+| Operation Code | `0x99C1` |
+| Operation Parameter 1 | `AccessPointHandle` |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | `ProxyPassword` dataset |
+| Data Direction | I->R |
 
-Operation parameters are as follows.
+### ProxyPassword Dataset
 
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | AccessPointHandle | Access point handle of the target access point |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| --- | v2.20.3 or later | --- | --- | --- |
-
-### Support value
-
-The proxy password format is predetermined by the following.
-
-| Name | Size | Data Type | Description |
-|:--|:--|:--|:--|
-| ProxyPassword | 64 | String | Password used for proxy authentication. |
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | ProxyPassword | 64 | String | Proxy authentication password |

@@ -15,7 +15,7 @@ sint8
 ### Overview
 
 Acquires or sets the target for control command [My Setting](my_setting.md).  
-RICOH THETA V firmware v2.30.1 or later.
+RICOH THETA V firmware v2.30.1 and later.
 
 ### Value Fields
 

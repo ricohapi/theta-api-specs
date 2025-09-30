@@ -15,7 +15,7 @@ sint8
 ### Overview
 
 Acquire or set the aperture value.  
-RICOH THETA Z1 or later.
+RICOH THETA Z1 and later.
 
 ### Value Fields
 

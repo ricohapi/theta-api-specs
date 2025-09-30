@@ -15,7 +15,7 @@ sint8
 ### Overview
 
 Acquires or sets the self-timer time (sec).   
-Available in the still image shooting mode and the movie shooting mode (RICOH THETA V firmware v2.50.1 or later).
+Available in the still image shooting mode and the movie shooting mode (RICOH THETA V firmware v2.50.1 and later).
 
 ### Value Fields
 

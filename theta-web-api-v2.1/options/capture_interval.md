@@ -16,7 +16,7 @@ The current setting can be acquired by [camera.getOptions](../commands/camera.ge
 
 The value that can be set differs depending on the image format ([fileFormat](file_format.md)) to be shot.
 
-#### For RICOH THETA X or later
+#### For RICOH THETA X and later
 
 <table>
   <thead>

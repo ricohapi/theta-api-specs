@@ -4,13 +4,13 @@
 
 Sets the installed pugin for boot.
 
-For RICOH THETA Z1 or later, use [camera.\_setPluginOrders](camera._set_plugin_orders.md).
+For RICOH THETA Z1 and later, use [camera.\_setPluginOrders](camera._set_plugin_orders.md).
 
 ### Support model
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| All | All | v2.21.1 or later | --- | --- |
+| All | All | v2.21.1 and later | --- | --- |
 
 ### Parameters
 

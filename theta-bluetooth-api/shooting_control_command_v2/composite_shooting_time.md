@@ -15,7 +15,7 @@ sint32
 ### Overview
 
 Acquires or sets the shooting time (sec) for interval composite shooting.  
-RICOH THETA Z1 or later。
+RICOH THETA Z1 and later。
 
 ### Value Fields
 

@@ -20,4 +20,4 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 | megavolume | Set low microphone gain |
 | mute       | Not record audio data \*1 |  
 
-(\*1) RICOH THETA V firmware v2.50.1 or later, or RICOH THETA X firmware v2.50.2 or later
+(\*1) RICOH THETA V firmware v2.50.1 and later, or RICOH THETA X firmware v2.50.2 and later

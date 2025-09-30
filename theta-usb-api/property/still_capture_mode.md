@@ -1,47 +1,43 @@
 # 0x5013 StillCaptureMode
 
-### Device Prop Code
+Returns and sets the current setting of the shooting method.  
 
-0x5013
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Overview
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Property Code | 2 | UINT16 | `0x5013` |
+| 2 | Datatype | 2 | UINT16 | `0x0004` (UINT16) |
+| 3 | Get/Set | 1 | UINT8 | `0x01` (GET/SET) |
+| 4 | Default Value | 2 | UINT16 | `0x0001` |
+| 5 | Current Value | 2 | UINT16 ||
+| 6 | Form Flag | 1 | UINT8 | `0x02` (Enumeration) |
 
-Acquires or sets the shooting method.
+### Supported Values
 
-### Support model
+| Value | ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) | Description |
+|:-:|:-:|:-:|:-:|:-:|:-:|:--|
+| `0x0001` | ✓ | ✓ | ✓ | ✓ | ✓ | Single-shot shooting<sup>\*1</sup> |
+| `0x0003` | ✓ | ✓ | ✓ | ✓ | ✓ | Interval shooting<sup>\*1</sup> |
+| `0x8002` | ✓ | ✓ | ✓ | ✓ | ✓ | **Video Recording mode** |
+| `0x8003` |   | ✓ |   | ✓<sup>\*2</sup> | ✓<sup>\*3</sup> | Interval Composite shooting<sup>\*1</sup> |
+| `0x8004` | ✓ | ✓ | ✓ | ✓<sup>\*2</sup> | ✓<sup>\*3</sup> | Multi Bracket shooting<sup>\*1</sup> |
+| `0x8005` | ✓ | ✓ | ✓ |   | ✓ | **Live Streaming mode** |
+| `0x8006` | ✓ | ✓<sup>\*5</sup> | ✓<sup>\*6</sup> |   |   | Continious shooting<sup>\*1</sup> for THETA X<br>Interval shooting<sup>\*1</sup> Tripod stabilization: OFF for THETA Z1/V |
+| `0x8007` | ✓ | ✓<sup>\*5</sup>  | ✓<sup>\*6</sup> |   |   | Time Shift shooting<sup>\*1</sup> for THETA X<br>Interval shooting<sup>\*1</sup> Tripod stabilization: ON for THETA Z1/V |
+| `0x8008` |   | ✓<sup>\*7</sup> |   |   |   | Burst shooting<sup>\*1</sup> |
 
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | All | All | All |
-
-### Support value
-
-| Value | Description |
-|:--|:--|
-| 0x0001 | Single-shot shooting<br>Value when the shooting mode is set to "Still Image Shooting". |
-| 0x0003 | Interval shooting<br>Can be set when the shooting mode is set to "Still Image Shooting". |
-| 0x8002 | Movie shooting<br>Value when the shooting mode is set to "Movie Shooting". |
-| 0x8003 | Interval composite shooting \*1\*3\*5<br>Can be set when the shooting mode is set to "Still Image Shooting". |
-| 0x8004 | Multi bracket shooting \*1<br>Can be set when the shooting mode is set to "Still Image Shooting". |
-| 0x8005 | Live streaming \*2<br>Value when the shooting mode is set to "Live Streaming". |
-| 0x8006 | Continuous shooting \*6<br>Can be set when the shooting mode is set to "Still Image Shooting".<br><br>Interval shooting (optimized \*4, Tripod stabilization Off)<br>Can be set when the shooting mode is set to "Still Image Shooting". |
-| 0x8007 | Time shift shooting \*6<br>Can be set when the shooting mode is set to "Still Image Shooting".<br><br>Interval shooting (optimized \*4, Tripod stabilization On)<br>Can be set when the shooting mode is set to "Still Image Shooting". |
-| 0x8008 | Burst shooting \*7<br>Can be set when the shooting mode is set to "Still Image Shooting". |
-
-\*1 RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v1.10 or later
-
-\*2 RICOH THETA V or later
-
-\*3 RICOH THETA V is not supported
-
-\*4 RICOH THETA Z1 v1.50.1 or later and RICOH THETA V firmware v3.40.1 or later<br>Top/bottom correction and stitching conditions are optimized.
-
-\*5 RICOH THETA X is not supported
-
-\*6 RICOH THETA X or later
-
-\*7 RICOH THETA Z1 v2.10.1 or later. Enabled only for RICOH THETA Z1
+<sup>\*1</sup>Available only for Still Capture mode  
+<sup>\*2</sup>THETA SC firmware v1.10 and later  
+<sup>\*3</sup>THETA S firmware v1.82 and later  
+<sup>\*4</sup>THETA V firmware v3.00.1 and later  
+<sup>\*5</sup>THETA Z1 firmware v1.50.1 and later  
+<sup>\*6</sup>THETA V firmware v3.40.1 and later  
+<sup>\*7</sup>THETA Z1 firmware v2.10.1 and later  
 
 ### Event
 
-When the shooting mode has been changed by operating the camera, a [DevicePropChanged](../event/device_prop_changed.md) event is informed.
+A [`0x4006 DevicePropChanged`](../event/device_prop_changed.md) event is issued when the shooting mode is changed through camera operation.  

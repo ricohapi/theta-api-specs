@@ -1,15 +1,19 @@
 # 0x1014 GetDevicePropDesc
 
-### Operation Code
+Returns the device property description for the specified device property.  
 
-0x1014
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Overview
-
-Return the Device Property Description for the specified Device Property ([Property](../property.md)).
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | All | All | All |
+| | |
+|:--|:--|
+| Operation Code | `0x1014` |
+| Operation Parameter 1 | `DevicePropCode` |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | `DevicePropDesc` dataset |
+| Data Direction | R->I |

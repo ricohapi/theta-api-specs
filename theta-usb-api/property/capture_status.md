@@ -1,26 +1,28 @@
 # 0xD808 CaptureStatus
 
-### Device Prop Code
+**Vendor Extension Property**  
+Returns the current capture status.  
 
-0xD808
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Overview
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Property Code | 2 | UINT16 | `0xD808` |
+| 2 | Datatype | 2 | UINT16 | `0x0002` (UINT8) |
+| 3 | Get/Set | 1 | UINT8 | `0x00` (GET) |
+| 4 | Default Value | 2 | UINT16 | `0x02` |
+| 5 | Current Value | 2 | UINT16 ||
+| 6 | Form Flag | 1 | UINT8 | `0x02` (Enumeration) |
 
-Acquires the shooting status of the camera.   
-(Vendor Extension Property)
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | All | All | All |
-
-### Support value
+### Supported Values
 
 | Value | Description |
 |:--|:--|
-| 0x00 | Standby for shooting |
-| 0x01 | Continuously shoots in progress<br>- Interval shooting in progress<br>- Interval composite shooting in progress (RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v1.10 or later, RICOH THETA V is not supported, RICOH THETA X is not supported)<br>- Time shift shooting in progress (RICOH THETA V firmware v3.00.1 or later)<br>- Performing movie shooting<br>- Continuous shooting (RICOH THETA X or later) |
-| 0x02 | Self-timer is operating |
-| 0x03 | Multi bracket shooting in progress (RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v1.10 or later) |
-| 0x04 | File post-conversion in progress (RICOH THETA V or later) |
+| `0x00` | Standby for shooting |
+| `0x01` | Shooting in progress<br><li>Interval shooting<li>Interval Composite shooting<li>Time Shift shooting<li>Continuous shooting<li>Video recording |
+| `0x02` | Self-timer in operation |
+| `0x03` | Shooting in progress<li>Multi Bracket shooting |
+| `0x04` | Video Conversion post processing in progress |

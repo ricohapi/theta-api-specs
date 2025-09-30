@@ -26,7 +26,7 @@ Correspondence operation list for each option is as follows.
       <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
     </tr>
     <tr>
-      <td><a href="./options/_auto_bracket.md">_autoBracket</a><br />(RICOH THETA S only; firmware version <span class="firmware_version bracket"></span> or later)</td>
+      <td><a href="./options/_auto_bracket.md">_autoBracket</a><br />(RICOH THETA S only; firmware version <span class="firmware_version bracket"></span> and later)</td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/partially-supported.png" alt="partially supported" title="partially supported" class="support-mark"></td>
@@ -54,28 +54,28 @@ Correspondence operation list for each option is as follows.
       <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
     </tr>
     <tr>
-      <td><a href="./options/client_version.md">clientVersion</a><br />(RICOH THETA S firmware version 01.62 or later)</td>
+      <td><a href="./options/client_version.md">clientVersion</a><br />(RICOH THETA S firmware version 01.62 and later)</td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
       <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
     </tr>
     <tr>
-      <td><a href="./options/_color_temperature.md">_colorTemperature</a><br />(RICOH THETA S only; firmware version 01.82 or later)</td>
+      <td><a href="./options/_color_temperature.md">_colorTemperature</a><br />(RICOH THETA S only; firmware version 01.82 and later)</td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     </tr>
     <tr>
-      <td><a href="./options/_composite_shooting_output_interval.md">_compositeShootingOutputInterval</a><br />(RICOH THETA S only; firmware version 01.82 or later)</td>
+      <td><a href="./options/_composite_shooting_output_interval.md">_compositeShootingOutputInterval</a><br />(RICOH THETA S only; firmware version 01.82 and later)</td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
     </tr>
     <tr>
-      <td><a href="./options/_composite_shooting_time.md">_compositeShootingTime</a><br />(RICOH THETA S only; firmware version 01.82 or later)</td>
+      <td><a href="./options/_composite_shooting_time.md">_compositeShootingTime</a><br />(RICOH THETA S only; firmware version 01.82 and later)</td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -96,7 +96,7 @@ Correspondence operation list for each option is as follows.
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     </tr>
     <tr>
-    <td><a href="./options/exposure_delay.md">exposureDelay</a><br />(RICOH THETA S firmware version 01.42 or later)</td>
+    <td><a href="./options/exposure_delay.md">exposureDelay</a><br />(RICOH THETA S firmware version 01.42 and later)</td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -145,7 +145,7 @@ Correspondence operation list for each option is as follows.
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     </tr>
     <tr>
-      <td><a href="./options/_latest_enabled_exposure_delay_time.md">_latestEnabledExposureDelayTime</a><br />(RICOH THETA S firmware version 01.42 or later)</td>
+      <td><a href="./options/_latest_enabled_exposure_delay_time.md">_latestEnabledExposureDelayTime</a><br />(RICOH THETA S firmware version 01.42 and later)</td>
       <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
       <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
       <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>     

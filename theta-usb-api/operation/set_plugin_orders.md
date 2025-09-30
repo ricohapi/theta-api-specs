@@ -1,53 +1,50 @@
 # 0x99B7 SetPluginOrders
 
-### Operation Code
+**Vendor Extension Operation**  
+Sets the order of plugins displayed on the selection screen.  
 
-0x99B7
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ |   |   |   |
 
-### Overview
+#### THETA X
 
-Sets the plugins for plugin mode.  
-(Vendor Extension Operations)
+| | |
+|:--|:--|
+| Operation Code | `0x99B7` |
+| Operation Parameter 1 | None |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | `PluginHandle` array |
+| Data Direction | I->R |
 
-Operation parameters are as follows.
+### Data
 
-#### RICOH THETA X
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | `PluginHandle` array | Variable | AUINT32 | List of plugin handles |
 
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | Reserved | unused<br>Specify 0x00000000 |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
+1. Registers plugins in the order specified by the `PluginHandle` array.
+2. For unregistered entries, set the PluginHandle value to `0xFFFFFFFF`.
+3. A plugin specified in the n-th element of the array is registered as entry n+1.
+4. If a plugin not specified by this API is already registered on the camera, the plugins specified by this API are registered starting from the first entry.
 
-The plugin handle list format is predetermined by the following.
+#### THETA Z1
 
-| Name | Size | Data Type | Description |
-|:--|:--|:--|:--|
-| PluginHandle array | any | PluginHandle array | List of plugin handle |
+| | |
+|:--|:--|
+| Operation Code | `0x99B7` |
+| Operation Parameter 1 | `PluginHandle` for Plugin 1 |
+| Operation Parameter 2 | `PluginHandle` for Plugin 2 |
+| Operation Parameter 3 | `PluginHandle` for Plugin 3 |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | None |
+| Data Direction | N/A |
 
-1. Register with the order for plugins specified with the PluginHandle array.  
-2. Set 0xFFFFFFFF as a PluginHandle for non-registered numbers. 
-3. Plugins specified in the n-th element of the array are registered in n+1.  
-4. When a plugin not specified in this API is already registered on the camera side, a plugin specified in this API is set from the start.
-
-
-#### RICOH THETA Z1
-
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | PluginHandle 1 | Plugin handle to be set Plugin 1 |
-| 2 | PluginHandle 2 | Plugin handle to be set Plugin 2 |
-| 3 | PluginHandle 3 | Plugin handle to be set Plugin 3 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-When not specifying, set 0xFFFFFFFF. If 0xFFFFFFFF is placed mid-way, it will be moved to the front.  
-Specifying zero plugin will result in an error.
-
-### Support model
-
-| X | Z1 | V | SC | S |
-| --- | --- | --- | --- | --- |
-| All | All | --- | --- | --- |
+If not specified, set the value to `0xFFFFFFFF`.  
+If `0xFFFFFFFF` is placed in the middle of the array, it will be moved to the beginning.  
+Specifying no plugin results in an error.

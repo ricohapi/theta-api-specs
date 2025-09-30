@@ -1,6 +1,6 @@
 # Overview
 
-RICOH THETA API v2.1 (supported by RICOH THETA S firmware v01.62 or later) conforms to [Open Spherical Camera API Version 2.0](https://developers.google.com/streetview/open-spherical-camera/) (OSC) by Google. In addition to APIs defined by OSC, APIs extended for the proprietary to RICOH THETA are provided. Extended APIs can be identified by an "\_" (underscore) prepended to the name of a command or parameter.
+RICOH THETA API v2.1 (supported by RICOH THETA S firmware v01.62 and later) conforms to [Open Spherical Camera API Version 2.0](https://developers.google.com/streetview/open-spherical-camera/) (OSC) by Google. In addition to APIs defined by OSC, APIs extended for the proprietary to RICOH THETA are provided. Extended APIs can be identified by an "\_" (underscore) prepended to the name of a command or parameter.
 
 Wireless LAN is used for communication between a client and RICOH THETA. While wireless LAN connection is ON, RICOH THETA acts as an HTTP server and can use APIs by GET and POST requests.
 
@@ -12,7 +12,7 @@ Obtain the base specifications from the following:
 
 192.168.1.1:80 in direct mode.
 
-In client mode, as in [camera.\_listAccessPoints](commands/camera._list_access_points.md) (RICOH THETA V firmware v2.00.2 or later).
+In client mode, as in [camera.\_listAccessPoints](commands/camera._list_access_points.md) (RICOH THETA V firmware v2.00.2 and later).
 
 ### Request and response example
 

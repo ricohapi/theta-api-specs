@@ -17,7 +17,7 @@ sint8
 Acquires and sets the shooting method for My Settings mode.  
 Can be acquired and set only when in the Still image shooting mode and \_function is the My Settings shooting function.  
 Changing \_function initializes the setting details to Normal shooting.  
-RICOH THETA Z1 or later
+RICOH THETA Z1 and later
 
 ### Value Fields
 
@@ -31,8 +31,8 @@ RICOH THETA Z1 or later
 | 5 | Fixed interval shooting \*1 |
 | 6 | Burst shooting \*2 |
 
-\*1 RICOH THETA Z1 v1.50.1 or later  
-\*2 RICOH THETA Z1 v2.10.1 or later  
+\*1 RICOH THETA Z1 v1.50.1 and later  
+\*2 RICOH THETA Z1 v2.10.1 and later  
 
 ### Properties
 

@@ -17,4 +17,4 @@ The results value when state of [Commands/Execute](../protocols/commands_execute
 | Name | Type | Description |
 |:--|:--|:--|
 | fileUrl | String | URL of the captured still image file |
-| \_dngFileUrl | String | DNG file URL when shooting with raw+<br>(RICOH THETA Z1 or later) |
+| \_dngFileUrl | String | DNG file URL when shooting with raw+<br>(RICOH THETA Z1 and later) |

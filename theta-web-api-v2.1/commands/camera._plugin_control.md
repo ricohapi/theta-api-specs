@@ -8,11 +8,11 @@ Starts or stops plugin.
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| All | All | v2.21.1 or later | --- | --- |
+| All | All | v2.21.1 and later | --- | --- |
 
 ### Parameters
 
-#### For RICOH THETA Z1 or later
+#### For RICOH THETA Z1 and later
 
 | Name | Type | Description |
 |:--|:--|:--|

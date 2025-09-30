@@ -15,8 +15,8 @@ sint8
 ### Overview
 
 Acquires or sets the role of the Bluetooth module.  
-RICOH THETA Z1 firmware v1.31.1 or later.  
-RICOH THETA V firmware v3.21.1 or later.
+RICOH THETA Z1 firmware v1.31.1 and later.  
+RICOH THETA V firmware v3.21.1 and later.
 
 ### Value Fields
 

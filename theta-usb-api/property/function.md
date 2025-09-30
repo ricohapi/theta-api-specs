@@ -1,24 +1,28 @@
 # 0xD824 Function
 
-### Device Prop Code
+**Vendor Extension Property**  
+Returns or sets the current setting of Shooting function.  
 
-0xD824
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ |   |   |   |
 
-### Overview
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Property Code | 2 | UINT16 | `0xD824` |
+| 2 | Datatype | 1 | UINT8 | `0x0002` (UINT8) |
+| 3 | Get/Set | 1 | UINT8 | `0x01` (GET/SET) |
+| 4 | Default Value | 1 | UINT8 | `0x00` (Normal) |
+| 5 | Current Value | 1 | UINT8 ||
+| 6 | Form Flag | 1 | UINT8 | `0x02` (Enumeration) |
 
-Acquires and sets the Shooting function.  
-(Vendor Extension Property)
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | --- | --- | --- |
-
-### Support value
+### Supported Values
 
 | Value | Description |
 |:--|:--|
-| 0x00 | Normal shooting function |
-| 0x01 | Self-timer shooting function (RICOH THETA X is not supported) |
-| 0x02 | My setting shooting function |
+| `0x00` | Normal shooting function |
+| `0x01` | Self-timer shooting function<sup>\*1</sup> |
+| `0x02` | My setting shooting function |
+
+<sup>\*1</sup>Not supported by THETA X

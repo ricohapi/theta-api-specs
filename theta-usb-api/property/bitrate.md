@@ -1,31 +1,33 @@
 # 0xD829 Bitrate
 
-### Device Prop Code
+**Vendor Extension Property**  
+Returns the current value of the bitrate setting for video recording and still capture.  
 
-0xD829
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓<sup>\*1</sup> |   |   |
 
-### Overview
+<sup>\*1</sup>THETA V firmware v2.50.1 and later  
 
-Acquires or sets the movie bit rate.  
-(Vendor Extension Property)
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Property Code | 2 | UINT16 | `0xD829` |
+| 2 | Datatype | 2 | UINT16 | `0x0004` (UINT16) |
+| 3 | Get/Set | 1 | UINT8 | `0x01` (GET/SET) |
+| 4 | Default Value | 2 | UINT16 | `0x0001` for THETA X (Video recording mode)<br>`0x0002` for THETA X (Still Capture mode )<br>`0x0002` for THETA Z1/V (Video recording mode)<br>`0x0000` for THETA Z1/V (Still Capture mode) |
+| 5 | Current Value | 2 | UINT16 ||
+| 6 | Form Flag | 1 | UINT8 | `0x02` (Enumeration) |
 
-### Support model
+### Supported Values
 
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | v2.50.1 or later | --- | --- |
-
-### Support value
-
-#### RICOH THETA X
-
-##### Movie shooting mode
+#### THETA X Video Recording Mode
 
 | Value | Description |
 |:--|:--|
-| 0x0001 | Normal  |
-| 0x0002 | Fine    |
-| 0x0003 | Economy |
+| `0x0001` | Normal  |
+| `0x0002` | Fine    |
+| `0x0003` | Economy |
 
 | Video mode | Fine<br/>[Mbps] | Normal<br/>[Mbps] | Economy<br/>[Mbps] | Remark
 |:--|:--|:--|:--|:--|
@@ -35,34 +37,39 @@ Acquires or sets the movie bit rate.
 |   4K 15fps |  64 |  32 |  16 ||
 |   4K 30fps | 100 |  54 |  32 ||
 |   4K 60fps | 120 |  64 |  32 ||
-| 5.7K  2fps |  16 |  12 |   8 | firmware v2.00.0 or later   |
-|            |  64 |  32 |  16 | firmware v1.40.0 or later   (I-frame only)|
+| 5.7K  2fps |  16 |  12 |   8 | firmware v2.00.0 and later   |
+|            |  64 |  32 |  16 | firmware v1.40.0 and later   (I-frame only)|
 |            |  16 |   8 |   4 | firmware v1.30.0 or earlier |
-| 5.7K  5fps |  40 |  30 |  20 | firmware v2.00.0 or later   |
-|            | 120 |  80 |  40 | firmware v1.40.0 or later   (I-frame only)|
+| 5.7K  5fps |  40 |  30 |  20 | firmware v2.00.0 and later   |
+|            | 120 |  80 |  40 | firmware v1.40.0 and later   (I-frame only)|
 |            |  32 |  16 |   8 | firmware v1.30.0 or earlier |
-| 5.7K 10fps |  80 |  60 |  40 | firmware v2.00.0 or later   |
-|            |  64 |  40 |  20 | firmware v1.40.0 or later   |
+| 5.7K 10fps |  80 |  60 |  40 | firmware v2.00.0 and later   |
+|            |  64 |  40 |  20 | firmware v1.40.0 and later   |
 |            |  48 |  24 |  12 | firmware v1.30.0 or earlier |
 | 5.7K 15fps |  64 |  32 |  16 ||
 | 5.7K 30fps | 120 |  64 |  32 ||
-|   8K  2fps |  64 |  32 |  16 | firmware v1.40.0 or later   (I-frame only)|
+|   8K  2fps |  64 |  32 |  16 | firmware v1.40.0 and later   (I-frame only)|
 |            |  32 |  16 |   8 | firmware v1.30.0 or earlier (I-frame only)|
-|   8K  5fps | 120 |  96 |  40 | firmware v1.40.0 or later   (I-frame only)|
+|   8K  5fps | 120 |  96 |  40 | firmware v1.40.0 and later   (I-frame only)|
 |            |  64 |  32 |  16 | firmware v1.30.0 or earlier (I-frame only)|
-|   8K 10fps | 120 |  96 |  40 | firmware v1.40.0 or later   (I-frame only)|
+|   8K 10fps | 120 |  96 |  40 | firmware v1.40.0 and later   (I-frame only)|
 |            | 120 |  64 |  32 | firmware v1.30.0 or earlier (I-frame only)|
 
-##### Still image shooting mode
+#### THETA X Still Capture Mode
 
 | Value | Description |
 |:--|:--|
-| 0x0002 | High bit rate. |
+| `0x0002` | Fine |
 
-#### RICOH THETA V, Z1
+#### THETA Z1/V Video Recording Mode
 
 | Value | Description |
 |:--|:--|
-| 0x0001 | Normal.<br>In movie shooting mode only. |
-| 0x0002 | High bit rate.<br>In movie shooting mode only. |
-| 0x0000 | Automatic.<br>In still image shooting mode or live streaming mode. |
+| `0x0001` | Normal |
+| `0x0002` | Fine   |
+
+#### THETA Z1/V Still Capture Mode
+
+| Value | Description |
+|:--|:--|
+| `0x0000` | Automatic |

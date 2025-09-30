@@ -9,4 +9,4 @@ This options is read only.
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| v2.80.1 or later | v3.50.2 or later | --- | --- | --- |
+| v2.80.1 and later | v3.50.2 and later | --- | --- | --- |

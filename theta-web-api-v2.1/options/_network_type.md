@@ -18,7 +18,7 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 
 | Value | Description |
 |:--|:--|
-| OFF | Network is off. This value can be gotten only by plugin. (firmware v1.40.0 or later)|
+| OFF | Network is off. This value can be gotten only by plugin. (firmware v1.40.0 and later)|
 | AP | Direct mode |
 | CL | Client mode |
 

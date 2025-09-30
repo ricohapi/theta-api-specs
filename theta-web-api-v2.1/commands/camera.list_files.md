@@ -10,12 +10,12 @@ Acquires a list of still image files and movie files.
 |:--|:--|:--|
 | fileType | String | File types to acquire.<br>(all: All types, image: Still image, video: Movie) |
 | startPosition | Integer | (Optional)<br>Position to start acquiring the file list.<br>If a number larger than the number of existing files is specified, a null list is acquired.<br>Default is the top of the list. |
-| \_startFileUrl | String | (Optional)<br>First file to return to the list.<br>The list is acquired starting from the specified file position.<br>(RICOH THETA V or later) |
+| \_startFileUrl | String | (Optional)<br>First file to return to the list.<br>The list is acquired starting from the specified file position.<br>(RICOH THETA V and later) |
 | entryCount | Integer | Number of still image and movie files to acquire.<br>If the number of existing files is smaller than the specified number of files, all available files are only acquired.<br>Note that a thumbnail can be acquired for a single file only. |
 | maxThumbSize | Integer | Thumbnail.<br>(640: Acquire thumbnail, 0: Do not acquire thumbnail)<br>Be sure to specify this parameter regardless of the value of \_detail. |
 | \_detail | Boolean | (Optional)<br>Specifies whether or not to acquire the file details.<br>Default is "true".<br>If set to "false", "name", "fileUrl", "size", "dateTime", "isProcessed", "previewUrl", and "\_favorite" can only be acquired. |
 | \_sort | String | (Optional)<br>Specifies the sort order.<br>Choose from "newest" (in the descending order of the shooting date/time) and "oldest" (in the ascending order of the shooting date/time).<br>Default is "newest". |
-| \_storage | String | (Optional)<br>Specifies the srorage.<br>"IN" : internal storage<br>"SD" : external storage (SD card)<br>"Default" : current storage<br>Default is "Default".<br>(RICOH THETA X Version 2.00.0 or later) |
+| \_storage | String | (Optional)<br>Specifies the srorage.<br>"IN" : internal storage<br>"SD" : external storage (SD card)<br>"Default" : current storage<br>Default is "Default".<br>(RICOH THETA X Version 2.00.0 and later) |
 
 ### Results
 
@@ -40,18 +40,18 @@ Acquires a list of still image files and movie files.
 | thumbnail | String | Thumbnail.<br>Can be acquired if Base64-<br>encoded maxThumbSize is enabled.<br>Can be acquired when "\_detail" is "true". |
 | \_thumbSize | Integer | Thumbnail file size (bytes).<br>Can be acquired if maxThumbSize is enabled.<br>Can be acquired when "\_detail" is "true". |
 | \_intervalCaptureGroupId | String | Group ID of a still image shot by interval shooting.<br>Can be obtained if a still image was shot by interval shooting.<br>Can be acquired when "\_detail" is "true". |
-| \_compositeShootingGroupId | String | Group ID of a still image shot by interval composite shooting.<br>Can be obtained if a still image was shot by interval composite shooting.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA Z1, RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v1.10 or later) |
-| \_autoBracketGroupId | String | Group ID of a still image shot by multi bracket shooting.<br>Can be obtained if a still image was shot by multi bracket shooting.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA X, RICOH THETA Z1, RICOH THETA V, RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v1.10 or later) |
+| \_compositeShootingGroupId | String | Group ID of a still image shot by interval composite shooting.<br>Can be obtained if a still image was shot by interval composite shooting.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA Z1, RICOH THETA S firmware v01.82 and later and RICOH THETA SC firmware v1.10 and later) |
+| \_autoBracketGroupId | String | Group ID of a still image shot by multi bracket shooting.<br>Can be obtained if a still image was shot by multi bracket shooting.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA X, RICOH THETA Z1, RICOH THETA V, RICOH THETA S firmware v01.82 and later and RICOH THETA SC firmware v1.10 and later) |
 | \_recordTime | Integer | Video shooting time (sec).<br>Can be obtained for a movie file.<br>Can be acquired when "\_detail" is "true". |
 | isProcessed | Boolean | Whether or not image processing has been completed. |
 | previewUrl | String | URL of the file being processed. |
-| \_codec | String | Codec.<br>"H.264/MPEG-4 AVC"<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA V or later) |
-| \_projectionType | String | Projection type of movie file.<br>"Equirectangular", "Dual-Fisheye" or "Fisheye".<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA V or later) |
-| \_continuousShootingGroupId | String | continuousShootingGroupId.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA X or later) |
-| \_frameRate | Integer | Frame rate.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA Z1 Version 3.01.1 or later, RICOH THETA X or later) |
-| \_favorite | Boolean | Favorite.<br>(RICOH THETA X or later) |
-| \_imageDescription | String | Image description.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA X or later) |
-| \_storageID | String | Storage ID.<br />Can be acquired when "\_detail" is "true".<br>(RICOH THETA X Version 2.00.0 or later) |
+| \_codec | String | Codec.<br>"H.264/MPEG-4 AVC"<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA V and later) |
+| \_projectionType | String | Projection type of movie file.<br>"Equirectangular", "Dual-Fisheye" or "Fisheye".<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA V and later) |
+| \_continuousShootingGroupId | String | continuousShootingGroupId.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA X and later) |
+| \_frameRate | Integer | Frame rate.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA Z1 Version 3.01.1 and later, RICOH THETA X and later) |
+| \_favorite | Boolean | Favorite.<br>(RICOH THETA X and later) |
+| \_imageDescription | String | Image description.<br>Can be acquired when "\_detail" is "true".<br>(RICOH THETA X and later) |
+| \_storageID | String | Storage ID.<br />Can be acquired when "\_detail" is "true".<br>(RICOH THETA X Version 2.00.0 and later) |
 
 ### Restriction
 

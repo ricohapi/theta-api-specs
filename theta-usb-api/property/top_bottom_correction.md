@@ -1,82 +1,56 @@
 # 0xD825 TopBottomCorrection
 
-### Device Prop Code
+**Vendor Extension Property**  
+Returns or sets the current setting of top/bottom correction (zenith correction).  
+For THETA Z1/V, this property can be used only for still capture mode.  
+For THETA X, this property can also be applied to video recording mode.  
 
-0xD825
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓<sup>\*1</sup> |   |   |
 
-### Overview
+<sup>\*1</sup>THETA V firmware v3.00.1 and later  
 
-Acquires and sets the top/bottom correction setting for still image.  
-On the RICOH THETA X, this can also be applied to video.  
-(Vendor Extension Property)
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Property Code | 2 | UINT16 | `0xD825` |
+| 2 | Datatype | 1 | UINT8 | `0x0002` (UINT8) |
+| 3 | Get/Set | 1 | UINT8 | `0x01` (GET/SET) |
+| 4 | Default Value | 1 | UINT8 | `0x00` |
+| 5 | Current Value | 1 | UINT8 ||
+| 6 | Form Flag | 1 | UINT8 | `0x02` (Enumeration) |
 
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | v3.00.1 or later | --- | --- |
-
-### Support value
+### Supported Values
 
 | Value | Description |
 |:--|:--|
-| 0x00 | Top/bottom correction is performed. |
-| 0x01 | Refer to top/bottom correction when shooting with "0x01" |
-| 0x02 | Performs top/bottom correction and then saves the parameters. |
-| 0x03 | Performs top/bottom correction using the saved parameters. |
-| 0x04 | Does not perform top/bottom correction. |
-| 0x05 | Top/bottom correction is performed. The parameters used for top/bottom correction for the first image are saved and used for the 2nd and subsequent images. (RICOH THETA X or later) |
+| `0x00` | `Apply` Performs top/bottom correction (zenith correction) |
+| `0x01` | `ApplyAuto` Refer to [ApplyAuto](#applyauto) section |
+| `0x02` | `ApplySave` Performs top/bottom correction and saves the zenith parameters |
+| `0x03` | `ApplyLoad` Performs top/bottom correction using the saved zenith parameters |
+| `0x04` | `Disapply` Not performs top/bottom correction  |
+| `0x05` | `ApplySemiAuto`<sup>\*1</sup>The first shot operates with `ApplySave`, and the second and subsequent shots operate with `ApplyLoad`. |
 
-#### Restrictions based on the shooting method
+<sup>\*1</sup>Supported by only THETA X  
 
-<table>
-    <thead>
-      <tr>
-        <th width="14%">Model</th>
-        <th width="43%">Shooting method</th>
-        <th width="43%">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td rowspan="2">V, Z1</td>
-        <td>Move interval shooting<br>Interval composite shooting<br>Time shift shooting</td>
-        <td>Shoots with "Apply" regardless of the specified Key</td>
-      </tr>
-      <tr>
-        <td>Fixed interval shooting<br>Multi-bracketing shooting</td>
-        <td>Shoots with "ApplyAuto" regardless of the specified Key</td>
-      </tr>
-    </tbody>
-  </table>  
+> [!NOTE]  
+> For THETA Z1/V,  
+> `Apply` is always executed regardless of the setting in Interval Shooting (tripod stabilization: OFF), Interval Composite Shooting, and Time-shift Shooting modes.  
+> `ApplyAuto` is always executed regardless of the setting in Interval shooting (tripod stabilization: ON) and Multi bracketing shooting modes.  
 
-#### Top/bottom correction when shooting with "0x01"
-<table>
-    <thead>
-      <tr>
-        <th width="14%">Model</th>
-        <th width="43%">Shooting method</th>
-        <th width="43%">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td rowspan="2">V, Z1</td>
-        <td>Interval shooting<br>Fixed interval shooting<br>Multi-bracketing shooting</td>
-        <td>The parameters used for top/bottom correction for the first image are saved and used for the 2nd and subsequent images.</td>
-      </tr>
-      <tr>
-        <td>Normal shooting</td>
-        <td>Top/bottom correction is performed.</td>
-      </tr>
-      <tr>
-        <td rowspan="2">X</td>
-        <td>Multi-bracketing shooting</td>
-        <td>The parameters used for top/bottom correction for the first image are saved and used for the 2nd and subsequent images.</td>
-      </tr>
-      <tr>
-        <td>Except for Multi-bracketing shooting</td>
-        <td>Top/bottom correction is performed.</td>
-      </tr>
-    </tbody>
-  </table>  
+### ApplyAuto
+
+#### THETA X
+
+| Shooting Method | Description |
+|:--|:--|
+| Multi bracketing shooting | `ApplySemiAuto` is executed |
+| Otherwise | `Apply` is executed |
+
+#### THETA Z1/V
+
+| Shooting Method | Description |
+|:--|:--|
+| Interval shooting<br>Interval shooting (tripod stabilization: ON)<br>Multi bracketing shooting | Same behavior as `ApplySemiAuto` |
+| Otherwise | `Apply` is executed |

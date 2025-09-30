@@ -9,7 +9,7 @@ For RICOH THETA X, only the access points registered with [camera._setAccessPoin
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| v1.10.1 or later | All | v2.00.2 or later | --- | --- |
+| v1.10.1 and later | All | v2.00.2 and later | --- | --- |
 
 ### Parameters
 
@@ -35,5 +35,5 @@ None.
 | defaultGateway | String | Default Gateway<br>This setting can be acquired when "ipAddressAllocation" is "static" |
 | _proxy | Object | Proxy information to be used for the access point. *2 *3<br>Also refer to [_proxy](../options/_proxy.md) option spec to get each parameter.  |
 
-*2 THETA Z1 Version 2.20.3 or later  
-*3 THETA X Version 2.00.0 or later
+*2 THETA Z1 Version 2.20.3 and later  
+*3 THETA X Version 2.00.0 and later

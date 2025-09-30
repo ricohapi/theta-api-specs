@@ -8,7 +8,7 @@ Shows the meta information for the specified still image.
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| All | All | v2.00.2 or later | --- | --- |
+| All | All | v2.00.2 and later | --- | --- |
 
 ### Parameters
 

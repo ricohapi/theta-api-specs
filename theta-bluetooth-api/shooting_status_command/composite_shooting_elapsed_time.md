@@ -15,7 +15,7 @@ sint32
 ### Overview
 
 Acqures the elapsed time for interval composite shooting (sec).  
-RICOH THETA Z1 or later.
+RICOH THETA Z1 and later.
 
 ### Properties
 

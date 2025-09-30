@@ -1,66 +1,48 @@
 # 0x99B8 GetPluginOrders
 
-### Operation Code
+**Vendor Extension Operation**  
+Returns the order of plugins displayed on the selection screen.  
 
-0x99B8
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ |   |   |   |
 
-### Overview
+#### THETA X
 
-Return the plugins for plugin mode.  
-(Vendor Extension Operations)
+| | |
+|:--|:--|
+| Operation Code | `0x99B8` |
+| Operation Parameter 1 | None |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | `PluginHandle` array |
+| Data Direction | R->I |
 
-Operation parameters are as follows.
+### Data
 
-#### RICOH THETA X
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | `PluginHandle` array | Variable | AUINT32 | List of plugin handles |
 
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | Reserved | unused<br>Specify 0x00000000 |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
+A `PluginHandle` with an unregistered number returns `0xFFFFFFFF`.  
 
-Response parameters are as follows.
+#### THETA Z1
 
-| No. | Response Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | Reserved | unused<br>Specify 0x00000000 |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-The plugin handle list format is predetermined by the following.
-
-| Name | Size | Data Type | Description |
-|:--|:--|:--|:--|
-| PluginHandle array | any | PluginHandle array | List of plugin handle |
-
-A PluginHandle with an unregistered number will respond 0xFFFFFFFF.
-
-#### RICOH THETA Z1
-
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | Reserved | unused<br>Specify 0x00000000 |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-Response parameters are as follows.
-
-| No. | Response Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | PluginHandle 1 | Plugin handle for Plugin 1 |
-| 2 | PluginHandle 2 | Plugin handle for Plugin 2 |
-| 3 | PluginHandle 3 | Plugin handle for Plugin 3 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | --- | --- | --- |
+| | |
+|:--|:--|
+| Operation Code | `0x99B8` |
+| Operation Parameter 1 | None |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | None |
+| Data Direction | N/A |
+| Response Parameter 1 | `PluginHandle` for Plugin 1 |
+| Response Parameter 2 | `PluginHandle` for Plugin 2 |
+| Response Parameter 3 | `PluginHandle` for Plugin 3 |
+| Response Parameter 4 | None |
+| Response Parameter 5 | None |

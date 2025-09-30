@@ -1,26 +1,25 @@
 # 0x99A6 DeleteAccessPoint
 
-### Operation Code
+**Vendor Extension Operation**
 
-0x99A6
+Deletes the access point information for use in client mode.  
 
-### Overview
+#### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+|   | ✓ | ✓<sup>\*1</sup> |   |   |
 
-Deletes the access point information used in client mode.  
-(Vendor Extension Operations)
+<sup>\*1</sup>Firmware v2.00.2 and later  
 
-Operation parameters are as follows.
+| | |
+|:--|:--|
+| Operation Code | `0x99A6` |
+| Operation Parameter 1 | `AccessPointHandle` |
+| Operation Parameter 2 | None<sup>\*2</sup> |
+| Operation Parameter 3 | None<sup>\*2</sup> |
+| Operation Parameter 4 | None<sup>\*2</sup> |
+| Operation Parameter 5 | None<sup>\*2</sup> |
+| Data | None |
+| Data Direction | N/A |
 
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | AccessPointHandle | Access point handle of the access point to delete |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| ---| All | v2.00.2 or later | --- | --- |
+<sup>\*2</sup>Unused. Specify `0x00000000`.  

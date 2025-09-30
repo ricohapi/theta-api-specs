@@ -12,7 +12,7 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| All | All | v3.00.1 or later | --- | --- |
+| All | All | v3.00.1 and later | --- | --- |
 
 ### Support value
 
@@ -20,13 +20,13 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 |:--|:--|
 | Apply | Top/bottom correction is performed. |
 | ApplyAuto | Refer to top/bottom correction when shooting with "ApplyAuto" |
-| ApplySemiAuto | Top/bottom correction is performed. The parameters used for top/bottom correction for the first image are saved and used for the 2nd and subsequent images.(RICOH THETA X or later) |
+| ApplySemiAuto | Top/bottom correction is performed. The parameters used for top/bottom correction for the first image are saved and used for the 2nd and subsequent images.(RICOH THETA X and later) |
 | ApplySave | Performs top/bottom correction and then saves the parameters. |
 | ApplyLoad | Performs top/bottom correction using the saved parameters. |
 | Disapply | Does not perform top/bottom correction. |
 | Manual\*1 | Performs the top/bottom correction with the specified front position. The front position can be specified with [_topBottomCorrectionRotation](../options/_top_bottom_correction_rotation.md). |
 
-\*1 RICOH THETA X firmware v1.20.0 or later
+\*1 RICOH THETA X firmware v1.20.0 and later
 
 #### Restrictions based on the shooting method
 

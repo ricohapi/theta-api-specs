@@ -1,52 +1,51 @@
-# 0xD834 Image Stitching
+# 0xD834 ImageStitching
 
-### Device Prop Code
+**Vendor Extension Property**  
+Returns or sets the current setting of stitching for still capture mode.  
 
-0xD834
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓<sup>\*1</sup> |   |   |   |
 
-### Overview
+<sup>\*1</sup>THETA Z1 v2.10.1 and later  
 
-Still image stitching setting during shooting.  
-(Vendor Extension Property)
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Property Code | 2 | UINT16 | `0xD834` |
+| 2 | Datatype | 1 | UINT8 | `0x0004` (UINT16) |
+| 3 | Get/Set | 1 | UINT8 | `0x01` (GET/SET) |
+| 4 | Default Value | 2 | UINT16 | `0x0001` (Auto) |
+| 5 | Current Value | 2 | UINT16 ||
+| 6 | Form Flag | 1 | UINT8 | `0x02` (Enumeration) |
 
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | v2.10.1 or later | --- | --- | --- |
-
-### Support value
+### Supported Values
 
 | Value | Description |
 |:--|:--|
-| 0x0001 | Automatic<br>Refer to stitching when shooting with "0x0001" |
-| 0x0002 | Does not perform stitching |
-| 0x0003 | Performs static stitching |
-| 0x0004 | Performs dynamic stitching |
-| 0x0005 | (RICOH THETA X)<br>Performs semi-dynamic stitching<br>Saves dynamic distortion correction parameters for the first image and then uses them for the 2nd and subsequent images<br><br>(RICOH THETA Z1)<br>Reserved |
-| 0x0006 | Performs dynamic stitching and then saves distortion correction parameters |
-| 0x0007 | Performs stitching using the saved distortion correction parameters |
+| `0x0001` | `auto` Performs stitching. Refer to [Auto](#auto) section |
+| `0x0002` | `none` Not performs stitching |
+| `0x0003` | `static` Performs static stitching |
+| `0x0004` | `dynamic` Performs dynamic stitching |
+| `0x0005` | `dynamicSemiAuto`<sup>\*2</sup> The first shot operates with `dynamicSave`, and the second and subsequent shots operate with `dynamicLoad`. |
+| `0x0006` | `dynamicSave` Performs dynamic stitching and saves the stitching parameters |
+| `0x0007` | `dynamicLoad` Performs dynamic stitching using the saved stitching parameters |
 
-For "0x0002", captured still images are saved in a Dual-Fisheye format. For other than "0x0002", captured still images are saved in an Equirectangular format.  
+<sup>\*2</sup>Supported by only THETA X  
 
-#### Stitching when shooting with "0x0001"
-<table>
-    <thead>
-      <tr>
-        <th width="14%">Model</th>
-        <th width="43%">Shooting method</th>
-        <th width="43%">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td rowspan="2">X</td>
-        <td>Multi-bracketing shooting</td>
-        <td>Performs semi-dynamic stitching</td>
-      </tr>
-      <tr>
-        <td>Except for Multi-bracketing shooting</td>
-        <td>Performs dynamic stitching</td>
-      </tr>
-    </tbody>
-  </table>
+### auto
+
+#### THETA X
+
+| Shooting Method | Description |
+|:--|:--|
+| Multi bracketing shooting | `dynamicSemiAuto` is executed |
+| Otherwise | `dynamic` is executed |
+
+#### THETA Z1
+
+| Shooting Method | Description |
+|:--|:--|
+| Interval shooting mode | `static` is executed |
+| Interval shooting (tripod stabilization: ON) | Same behavior as `dynamicSemiAuto` |
+| Otherwise | `dynamic` is executed |

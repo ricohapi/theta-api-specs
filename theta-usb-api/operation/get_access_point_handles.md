@@ -1,34 +1,29 @@
 # 0x99A3 GetAccessPointHandles
 
-### Operation Code
+**Vendor Extension Operations**  
+Returns the list of access point handles used in client mode.  
 
-0x99A3
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+|   | ✓ | ✓<sup>\*1</sup> |   |   |
 
-### Overview
+<sup>\*1</sup>Firmware v2.00.2 and later  
 
-Return the access point handle list used in client mode.  
-(Vendor Extension Operations)
+| | |
+|:--|:--|
+| Operation Code | `0x99A3` |
+| Operation Parameter 1 | None |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | `AccessPointHandle` array |
+| Data Direction | R->I |
 
-Operation parameters are as follows.
 
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | Reserved | unused<br>Specify 0x00000000 |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
+### Data
 
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| --- | All | v2.00.2 or later | --- | --- |
-
-### Support value
-
-The access point handle list format is predetermined by the following.
-
-| Name | Size | Data Type | Description |
-|:--|:--|:--|:--|
-| AccessPointHandle array | any | AccessPointHandle array | List of access point handle |
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | `AccessPointHandle` array | Variable | AUINT32 | The list of access point handles |

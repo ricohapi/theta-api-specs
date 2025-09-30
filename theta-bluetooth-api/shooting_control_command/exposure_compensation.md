@@ -16,7 +16,7 @@ sint8
 
 Acquires and sets the EV compensation value of the camera.
 
-It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 or later. Shooting settings are retained separately for both the Still image shooting mode and Video shooting mode.
+It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 and later. Shooting settings are retained separately for both the Still image shooting mode and Video shooting mode.
 
 ### Value Fields
 

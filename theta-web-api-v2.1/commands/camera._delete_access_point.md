@@ -9,7 +9,7 @@ Only the access points registered with [camera._setAccessPoint](camera._set_acce
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| v1.10.1 or later | All | v2.00.2 or later | --- | --- |
+| v1.10.1 and later | All | v2.00.2 and later | --- | --- |
 
 ### Parameters
 

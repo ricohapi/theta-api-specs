@@ -19,8 +19,8 @@ None.
 | manufacturer | String | Manufacturer name |
 | model | String | Model |
 | serialNumber | String | Serial number |
-| \_wlanMacAddress | String | MAC address of wireless LAN (\*1)<br>(RICOH THETA V firmware v2.11.1 or later) |
-| \_bluetoothMacAddress | String | MAC address of Bluetooth<br>(RICOH THETA V firmware v2.11.1 or later) |
+| \_wlanMacAddress | String | MAC address of wireless LAN (\*1)<br>(RICOH THETA V firmware v2.11.1 and later) |
+| \_bluetoothMacAddress | String | MAC address of Bluetooth<br>(RICOH THETA V firmware v2.11.1 and later) |
 | firmwareVersion | String | Firmware version |
 | supportUrl | String | URL of the support page |
 | gps | Boolean | Presence of GPS |

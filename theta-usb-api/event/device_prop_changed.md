@@ -1,12 +1,16 @@
 # 0x4006 DevicePropChanged
 
-### Event Code
+Notification of device property change.  
+Property changes made by [`0x1016 SetDevicePropValue`](../operation/set_device_prop_value.md) are not notified.  
 
-0x4006
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Overview
-
-Notification of a Device Property change.
-
-The property changed by [SetDevicePropValue](../operation/set_device_prop_value.md) is not notified.  
-However the change is notified when the capture mode is changed by camera body operation.
+| | |
+|:--|:--|
+| Event Code | `0x4006` |
+| Parameter 1 | `DevicePropCode` |
+| Parameter 2 | None |
+| Parameter 3 | None |

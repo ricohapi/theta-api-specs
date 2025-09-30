@@ -1,12 +1,10 @@
 # THETA USB API v2
 
-### Developer Guide
+Starting with RICOH THETA S firmware version 1.42, camera operations such as shooting via USB connection are supported. The communication protocol is based on the Media Transfer Protocol (MTP), with extensions specific to RICOH THETA.  
 
-[Overview](./overview.md)  
+The base specifications can be obtained from [MTP 1.1 Specifications Document](https://www.usb.org/document-library/media-transfer-protocol-v11-spec-and-mtp-v11-adopters-agreement).
 
-### API Reference
-
-#### Operations
+### Operation
 
 [0x1001 GetDeviceInfo](./operation/get_device_info.md)  
 [0x1002 OpenSession](./operation/open_session.md)  
@@ -53,9 +51,17 @@
 [0x99C3 SetEthernetProxy](./operation/set_ethernet_proxy.md)  
 [0x99C4 SetEthernetProxyPassword](./operation/set_ethernet_proxy_password.md)  
 
-#### Properties
+### Event
 
-[Overview](./property.md)  
+[0x4002 ObjectAdded](./event/object_added.md)  
+[0x4006 DevicePropChanged](./event/device_prop_changed.md)  
+[0x4008 DeviceInfoChanged](./event/device_info_changed.md)  
+[0x400A StoreFull](./event/store_full.md)  
+[0x400C StorageInfoChanged](./event/storage_info_changed.md)  
+[0x400D CaptureComplete](./event/capture_complete.md)  
+
+### Property
+
 [0x5001 BatteryLevel](./property/battery_level.md)  
 [0x5002 FunctionalMode](./property/functional_mode.md)  
 [0x5003 ImageSize](./property/image_size.md)  
@@ -115,18 +121,8 @@
 [0xD834 Image Stitching](./property/image_stitching.md)  
 [0xD837 CameraMode](./property/camera_mode.md)  
 [0xD839 BurstOption](./property/burst_option.md)  
-[0xD83A White Balance Auto Strength](./property/white_balance_auto_strength.md)  
-[0xD83B Water Housing](./property/water_housing.md)  
-[0xD83C Water Housing Stitching](./property/water_housing_stitching.md)  
+[0xD83A WhiteBalanceAutoStrength](./property/white_balance_auto_strength.md)  
+[0xD83B WaterHousing](./property/water_housing.md)  
+[0xD83C WaterHousingStitching](./property/water_housing_stitching.md)  
 [0xD83E ExposureStatus](./property/exposure_status.md)  
 [0xD840 hdrBracket](./property/hdr_bracket.md)  
-
-
-#### Events
-
-[0x4002 ObjectAdded](./event/object_added.md)  
-[0x4006 DevicePropChanged](./event/device_prop_changed.md)  
-[0x4008 DeviceInfoChanged](./event/device_info_changed.md)  
-[0x400A StoreFull](./event/store_full.md)  
-[0x400C StorageInfoChanged](./event/storage_info_changed.md)  
-[0x400D CaptureComplete](./event/capture_complete.md)  

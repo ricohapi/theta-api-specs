@@ -28,7 +28,7 @@ Return information related to connected access point and/or client device around
 |[`_dhcpLeaseAddress`](#_dhcpleaseaddress-object)\*2 |Object Array |client devices information|
 
 \*1 : IPv4 address format  
-\*2 : RICOH THETA X firmware v2.61.0 or later  
+\*2 : RICOH THETA X firmware v2.61.0 and later  
 
 ### _dhcpLeaseAddress Object
 

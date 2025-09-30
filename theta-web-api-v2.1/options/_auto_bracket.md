@@ -14,14 +14,14 @@ For "_bracketParameters", all parameters must be specified.
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| All | All | All | v1.10 or later | v01.82 or later |
+| All | All | All | v1.10 and later | v01.82 and later |
 
 ### Support value
 
 | Key | Description |
 |:--|:--|
-| \_bracketNumber | Number of shots in multi bracket shooting.<br>2 to 13 (RICOH THETA V firmware v2.50.1  or prior, RICOH THETA X); 2 to 19 (RICOH THETA V firmware v3.00.1 or after). |
-| \_bracketParameters | Parameter array specified for multi bracket shooting.<br>Specify [iso](iso.md), [shutterSpeed](shutter_speed.md), and [\_colorTemperature](_color_temperature.md) for RICOH THETA V firmware v2.50.1 or prior;<br>or specify [iso](iso.md) \*1, [shutterSpeed](shutter_speed.md) \*1, [\_colorTemperature](_color_temperature.md) \*1, [exposureProgram](exposure_program.md) \*3, [aperture](aperture.md) \*1\*2, [exposureCompensation](exposure_compensation.md) \*1, and [whiteBalance](white_balance.md) for RICOH THETA V firmware v3.00.1 or later. |
+| \_bracketNumber | Number of shots in multi bracket shooting.<br>2 to 13 (RICOH THETA V firmware v2.50.1  and earlier, RICOH THETA X); 2 to 19 (RICOH THETA V firmware v3.00.1 or after). |
+| \_bracketParameters | Parameter array specified for multi bracket shooting.<br>Specify [iso](iso.md), [shutterSpeed](shutter_speed.md), and [\_colorTemperature](_color_temperature.md) for RICOH THETA V firmware v2.50.1 and earlier;<br>or specify [iso](iso.md) \*1, [shutterSpeed](shutter_speed.md) \*1, [\_colorTemperature](_color_temperature.md) \*1, [exposureProgram](exposure_program.md) \*3, [aperture](aperture.md) \*1\*2, [exposureCompensation](exposure_compensation.md) \*1, and [whiteBalance](white_balance.md) for RICOH THETA V firmware v3.00.1 and later. |
 
 \*1: Optional<br>
 \*2: Only RICOH THETA Z1 supports `aperture` option.  
@@ -29,7 +29,7 @@ For "_bracketParameters", all parameters must be specified.
 
 ### Example
 
-#### Options (for RICOH THETA V firmware v2.50.1 or prior)
+#### Options (for RICOH THETA V firmware v2.50.1 and earlier)
 
 ```
 {
@@ -56,7 +56,7 @@ For "_bracketParameters", all parameters must be specified.
 }
 ```
 
-#### Options (for RICOH THETA V firmware v3.00.1 or later)
+#### Options (for RICOH THETA V firmware v3.00.1 and later)
 
 ```
 {

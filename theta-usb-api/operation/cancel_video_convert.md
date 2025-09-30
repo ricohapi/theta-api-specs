@@ -1,16 +1,23 @@
 # 0x99AE CancelVideoConvert
 
-### Operation Code
+**Vendor Extension Operation**  
+Cancels the video format conversion.  
 
-0x99AE
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓<sup>\*1</sup> | ✓<sup>\*2</sup> |   |   |
 
-### Overview
+<sup>\*1</sup>Firmware v1.31.1 and later  
+<sup>\*2</sup>Firmware v3.21.1 and later  
 
-Cancels the movie format conversion.  
-(Vendor Extension Operations)
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | v1.31.1 or later | v3.21.1 or later | --- | --- |
+| | |
+|:--|:--|
+| Operation Code | `0x99AE` |
+| Operation Parameter 1 | None |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | None |
+| Data Direction | N/A |

@@ -1,36 +1,27 @@
 # 0x99B9 GetPluginState
 
-### Operation Code
+**Vendor Extension Operation**  
+Returns the status of plugin mode.  
 
-0x99B9
+#### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓<sup>\*1</sup> |   |   |
 
-### Overview
+<sup>\*1</sup>Firmware v3.00.1 and later  
 
-Return the status of plugin mode.  
-(Vendor Extension Operations)
-
-Operation parameters are as follows.
-
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | Reserved | unused<br>Specify 0x00000000 |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-Response parameters are as follows.
-
-| No. | Response Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | PluginState | Plugin mode status<br>(0: Plugin is stop, 1: Plugin is running) |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | v3.00.1 or later | --- | --- |
+| | |
+|:--|:--|
+| Operation Code | `0x99B9` |
+| Operation Parameter 1 | None |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | None |
+| Data Direction | N/A |
+| Response Parameter 1 | `0`: Plugin is stopped<br>`1`: Plugin is running |
+| Response Parameter 2 | None |
+| Response Parameter 3 | None |
+| Response Parameter 4 | None |
+| Response Parameter 5 | None |

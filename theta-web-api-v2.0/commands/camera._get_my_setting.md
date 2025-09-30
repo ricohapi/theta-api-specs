@@ -3,7 +3,7 @@
 ### Overview
 
 Acquires the still image shooting properties set by the [camera.\_setMySetting](camera._set_my_setting.md) command.   
-(RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v1.10 or later only)
+(RICOH THETA S firmware v01.82 and later and RICOH THETA SC firmware v1.10 and later only)
 
 Refer to My Settings in [Options Overview](../options.md) for properties available for acquisition.
 

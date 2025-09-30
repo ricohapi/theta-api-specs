@@ -11,7 +11,7 @@
 ### Overview
 
 Acquires or sets the plugins for plugin mode.  
-RICOH THETA Z1 or later.
+RICOH THETA Z1 and later.
 
 ### Value Fields
 

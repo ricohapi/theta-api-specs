@@ -1,15 +1,19 @@
 # 0x1017 ResetDevicePropValue
 
-### Operation Code
+Resets the default value of the specified device property.  
 
-0x1017
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Overview
-
-Reset the initial value for Device Properties ([Property](../property.md)).
-
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | All | --- | --- |
+| | |
+|:--|:--|
+| Operation Code | `0x1017` |
+| Operation Parameter 1 | `DevicePropCode` |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | None |
+| Data Direction | N/A |

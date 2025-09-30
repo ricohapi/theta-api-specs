@@ -10,14 +10,14 @@
 
 ### Overview
 
-Acquires and registers shooting conditions in My Settings. RICOH THETA V firmware v2.30.1 or later.
+Acquires and registers shooting conditions in My Settings. RICOH THETA V firmware v2.30.1 and later.
 
 Conditions registered in My Settings are updated when the camera is turned on for RICOH THETA V.  
-Conditions registered in My Settings are updated when switching to My Settings mode for RICOH THETA Z1 or later.
+Conditions registered in My Settings are updated when switching to My Settings mode for RICOH THETA Z1 and later.
 
 If [My Setting Capture Mode](my_setting_capture_mode.md) is video capture mode, mandatory value field must be set zero.
 
-### Value Fields (RICOH THETA Z1 or later)
+### Value Fields (RICOH THETA Z1 and later)
 
 | Name | Type | Description |
 |:--|:--|:--|
@@ -85,7 +85,7 @@ Requests for data in the following format for [BurstOption](../shooting_control_
 
 ### Value Fields (RICOH THETA V)
 
-#### For RICOH THETA V firmware v3.00.1 or later
+#### For RICOH THETA V firmware v3.00.1 and later
 
 | Name | Type | Description |
 |:--|:--|:--|
@@ -95,7 +95,7 @@ Requests for data in the following format for [BurstOption](../shooting_control_
 | [Aperture](../shooting_control_command_v2/aperture.md) | sint8 | Aperture Value<br>Set AUTO only. |
 | [Shutter Speed](shutter_speed.md) | sint8 | Shutter Speed |
 | [ISO](iso.md) | sint16 | ISO Sensitivity |
-| [ISO Auto High Limit](../shooting_control_command_v2/iso_auto_high_limit.md)\* | sint16 | ISO Sensitivity Upper Limit<br>Set -1 for choise "Do not update My Setting condition."<br>(RICOH THETA V firmware v3.03.1 or later) |
+| [ISO Auto High Limit](../shooting_control_command_v2/iso_auto_high_limit.md)\* | sint16 | ISO Sensitivity Upper Limit<br>Set -1 for choise "Do not update My Setting condition."<br>(RICOH THETA V firmware v3.03.1 and later) |
 | [Exposure Compensation](exposure_compensation.md) | sint8 | EV Compensation |
 | [White Balance](white_balance.md) | sint8 | White Balance |
 | [Color Temperature](color_temperature.md) | sint16 | Color Temperature |
@@ -105,7 +105,7 @@ Requests for data in the following format for [BurstOption](../shooting_control_
 
 \* Persistence options. Can be set the choice "Do not update My Setting condition on power-on."<br>In that case, the camera will start up with the option values stored on turn-off even if another My Setting condition is registered.
 
-#### RICOH THETA V firmware v2.50.1 or prior
+#### RICOH THETA V firmware v2.50.1 and earlier
 
 | Name | Type | Description |
 |:--|:--|:--|

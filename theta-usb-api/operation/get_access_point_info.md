@@ -1,43 +1,37 @@
 # 0x99A4 GetAccessPointInfo
 
-### Operation Code
+**Vendor Extension Operation**  
+Returns the detailed access point information used in client mode.  
 
-0x99A4
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+|   | ✓ | ✓<sup>\*1</sup> |   |   |
 
-### Overview
+<sup>\*1</sup>Firmware v2.00.2 and later  
 
-Return the detailed access point information used in client mode.  
-(Vendor Extension Operations)
+| | |
+|:--|:--|
+| Operation Code | `0x99A4` |
+| Operation Parameter 1 | `AccessPointHandle` |
+| Operation Parameter 2 | None |
+| Operation Parameter 3 | None |
+| Operation Parameter 4 | None |
+| Operation Parameter 5 | None |
+| Data | `AccessPointInfo` dataset |
+| Data Direction | R->I |
 
-Operation Parameters as follows
+### AccessPointInfo Dataset
 
-| No. | Operation Parameter | RICOH THETA Specification |
-|:--|:--|:--|
-| 1 | AccessPointHandle | Access point handle of the target access point |
-| 2 | Reserved | unused<br>Specify 0x00000000 |
-| 3 | Reserved | unused<br>Specify 0x00000000 |
-| 4 | Reserved | unused<br>Specify 0x00000000 |
-| 5 | Reserved | unused<br>Specify 0x00000000 |
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | SSID | Variable | String | SSID |
+| 2 | SSID Stealth | 1 | UINT8 | `0`: Disabled<br>`1`: Eabled |
+| 3 | Security | Variable | String | Authentication mode<br>`none`, `WEP`, `WPA/WPA2 PSK` |
+| 4 | Connection Priority | 1 | UINT8 | `1` to `5` |
+| 5 | IP Address Allocation | 1 | UINT8 | `0`: Dynamic<br>`1`: Static |
+| 6 | IP Address | 4 | UINT32 | IP address assigned to camera<sup>\*2</sup> |
+| 7 | Subnet Mask | 4 | UINT32 | Subnet mask<sup>\*2</sup> |
+| 8 | Default Gateway | 4 | UINT32 | Default gateway<sup>\*2</sup> |
 
-### Support model
-
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| ---| All | v2.00.2 or later | --- | --- |
-
-### Support value
-
-The access point information format is predetermined by the following.
-
-\<SSID\>\<SSID Stealth\>\<Security\>\<ConnectionPriority\>\<IpAddressAllocation\>\<IPAddress\>\<SubnetMask\>\<DefaultGateway\>
-
-| Name | Size | Data Type | Description |
-|:--|:--|:--|:--|
-| SSID | any | String | SSID |
-| SSID Stealth | 1 | UINT8 | SSID stealth<br>(0: Disabled, 1: Enabled) |
-| Security | any | String | Authentication mode<br>("none", "WEP", "WPA/WPA2 PSK") |
-| ConnectionPriority | 1 | UINT8 | Connection priority |
-| IpAddressAllocation | 1 | UINT8 | IP address allocation<br>(0: Dynamic, 1: Static) |
-| IPAddress | 4 | UINT32 | IP address assigned to camera<br>This can be acquired when IpAddressAllocation is "Static" |
-| SubnetMask | 4 | UINT32 | Subnet mask<br>This can be acquired when IpAddressAllocation is "Static" |
-| DefaultGateway | 4 | UINT32 | Default gateway<br>This can be acquired when IpAddressAllocation is "Static" |
+<sup>\*2</sup>This can be acquired when IP Address Allocation is `1`.  

@@ -1,90 +1,91 @@
 # 0xD00F ShutterSpeed
 
-### Device Prop Code
+**Vendor Extention Property**  
+Returns and Sets the current setting of the shutter speed (seconds).  
+This setting is available in video recording mode on RICOH THETA V firmware v3.00.1 and later. Shooting settings are maintained separately for still capture mode and video recording mode.  
 
-0xD00F
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Overview
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Property Code | 2 | UINT16 | `0xD00F` |
+| 2 | Datatype | 2 | UINT16 | `0x0008` (UINT64) |
+| 3 | Get/Set | 1 | UINT8 | `0x01` (GET/SET) |
+| 4 | Default Value | 8 | UINT64 | `0x0000` ||
+| 5 | Current Value | 8 | UINT64 ||
+| 6 | Form Flag | 1 | UINT8 | `0x02` (Enumeration) |
 
-Acquires or sets the shutter speed (sec).   
-(Vendor Extension Property)
+### Supported Values
 
-It can be set for video shooting mode at RICOH THETA V firmware v3.00.1 or later. Shooting settings are retained separately for both the Still image shooting mode and Video shooting mode.
+The following values are supported when the exposure program ([`0x500E ExposureProgramMode`](./exposure_program_mode.md)) is set to `0x0002` Manual or `0x0004` Shutter Priority.  
 
-### Support model
+> [!NOTE]
+> To specify a value of `1/100`, set `1` in the upper 4 bytes and `100` in the lower 4 bytes of the UINT64.
+This format follows the RATIONAL type as defined in TIFF.  
 
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | All | All | All |
+`1,25000` (1/25000 sec)<sup>\*1</sup>,  
+`1,20000` (1/20000 sec), `1,16000` (1/16000 sec), `1,12500` (1/12500 sec)<sup>\*1</sup>, `1,12800` (1/12800 sec),  
+`1,10000` (1/10000 sec), `1,8000` (1/8000 sec),`1,6400` (1/6400 sec), `1,5000` (1/5000 sec), `1,4000` (1/4000 sec),  
+`1,3200` (1/3200 sec), `1,2500` (1/2500 sec), `1,2000` (1/2000 sec), `1,1600` (1/1600 sec), `1,1250` (1/1250 sec),  
+`1,1000` (1/1000 sec), `1,800` (1/800 sec), `1,640` (1/640 sec), `1,500` (1/500 sec), `1,400` (1/400 sec),  
+`1,320` (1/320 sec), `1,250` (1/250 sec), `1,200` (1/200 sec), `1,160` (1/160 sec), `1,125` (1/125 sec),  
+`1,100` (1/100 sec), `1,80` (1/80 sec), `1,60` (1/60 sec), `1,50` (1/50 sec), `1,40` (1/40 sec),  
+`1,30` (1/30 sec), `1,25` (1/25 sec), `1,20` (1/20 sec), `1,15` (1/15 sec), `1,13` (1/13 sec),  
+`1,10` (1/10 sec), `1,8` (1/8 sec), `1,6` (1/6 sec), `1,5` (1/5 sec), `1,4` (1/4 sec),  
+`1,3` (1/3 sec), `10,25` (1/2.5 sec), `1,2` (1/2 sec), `10,16` (1/1.6 sec), `10,13` (1/1.3 sec),  
+`1,1` (1 sec), `13,10` (1.3 sec), `16,10` (1.6 sec), `2,1` (2 sec), `25,10` (2.5 sec),  
+`32,10` (3 sec), `4,1` (4 sec), `5,1` (5 sec), `6,1` (6 sec), `8,1` (8 sec),  
+`10,1` (10 sec), `13,1` (13 sec), `15,1` (15 sec), `20,1` (20 sec), `25,1` (25 sec),  
+`30,1` (30 sec), `40,1` (40 sec)<sup>\*2\*3</sup>, `50,1` (50 sec)<sup>\*2\*3</sup>, `60,1` (60 sec),  
+`0,0` (Automatic)  
 
-### Support value
+<sup>\*1</sup>Available only for THETA Z1/V  
+<sup>\*2</sup>For THETA Z1, available with firmware v2.10.1 and later  
+<sup>\*3</sup>For THETA V, available with firmware v3.80.1 and later  
 
-Similar to the RATIONAL type of the Exif2.3 standard.   
-For example, "1/8000" is expressed as "1, 8000".
+#### THETA X
 
-The choise is listed below. There are certain range difference between each models and settings.
+| Shooting mode | ExposureProgramMode | Supported Range |
+|:--|:--|:--|
+| Still capture mode   | Manual           | 1/16000 sec to 60 sec |
+|                      | Shutter priority | 1/16000 sec to 15 sec |
+| Video recording mode | Manual           | 1/16000 sec to 1/30 sec |
+|                      | Shutter priority | 1/16000 sec to 1/30 sec |
+| Otherwise            | --               | `0` (Automatic) |
 
-<table border="0">
-  <thead>
-    <tr>
-      <th style="text-align: left">Shooting mode</th>
-      <th style="text-align: left"><a href="exposure_program_mode.md">ExposureProgramMode</a></th>
-      <th style="text-align: left">X or later</th>
-      <th style="text-align: left">V or later</th>
-      <th style="text-align: left">SC</th>
-      <th style="text-align: left">S</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="2">Still image shooting mode</td>
-      <td>Manual</td>
-      <td>1/16000 to 60</td>
-      <td>1/25000 to 60</td>
-      <td>1/8000 to 60</td>
-      <td>1/6400 to 60</td>
-    </tr>
-    <tr>
-      <td>Shutter priority</td>
-      <td>1/16000 to 15</td>
-      <td>1/25000 to 1/8<br>1/25000 to 15 <span class="mintext">*2</span></td>
-      <td>1/8000 to 1/8</td>
-      <td>1/6400 to 1/8</td>
-    </tr>
-    <tr>
-      <td>Video shooting mode <span class="mintext">*1</span></td>
-      <td>Manual or Shutter priority</td>
-      <td>1/16000 to 1/30</td>
-      <td>1/25000 to 1/30</td>
-      <td>--</td>
-      <td>--</td>
-    </tr>
-    <tr>
-      <td colspan="2">Otherwise</td>
-      <td colspan="3">0 (AUTO)</td>
-    </tr>
-  </tbody>
-</table>
+#### THETA Z1/V
 
-\*1 RICOH THETA Z1 and RICOH THETA V firmware v3.00.1 or later  
-\*2 RICOH THETA Z1 firmware v1.50.1 or later and RICOH THETA V firmware v3.40.1 or later
+| Shooting mode | ExposureProgramMode | Supported Range |
+|:--|:--|:--|
+| Still capture mode   | Manual           | 1/25000 sec to 60 sec |
+|                      | Shutter priority | 1/25000 sec to 1/8 sec<br>1/25000 sec to 15 sec<sup>\*4\*5</sup> |
+| Video recording mode | Manual           | 1/25000 sec to 1/30 sec<sup>\*6</sup> |
+|                      | Shutter priority | 1/25000 sec to 1/30 sec<sup>\*6</sup> |
+| Otherwise            | --               | `0` (Automatic) |
 
-#### Support value
+<sup>\*4</sup>For THETA Z1, change the spec with firmware v1.50.1 and later  
+<sup>\*5</sup>For THETA V, change the spec with firmware v3.40.1 and later  
+<sup>\*6</sup>For THETA V, available with firmware v3.00.1 and later  
 
-1/25000, 1/20000, 1/16000, 1/12800 \*3, 1/12500 \*4, 1/10000, 1/8000,  
- 1/6400, 1/5000, 1/4000, 1/3200, 1/2500,  
- 1/2000, 1/1600, 1/1250, 1/1000, 1/800,  
- 1/640, 1/500, 1/400, 1/320, 1/250,  
- 1/200, 1/160, 1/125, 1/100, 1/80,  
- 1/60, 1/50, 1/40, 1/30, 1/25,  
- 1/20, 1/15, 1/13, 1/10, 1/8,  
- 1/6, 1/5, 1/4, 1/3, 10/25,  
- 1/2, 10/16, 10/13, 1, 13/10,  
- 16/10, 2/1, 25/10, 32/10, 4/1,  
-5/1, 6/1, 8/1, 10/1, 13/1,  
- 15/1, 20/1, 25/1, 30/1, 40/1 \*5, 50/1 \*5, 60/1,  
-0 (AUTO, setting is not available)
+#### THETA SC
 
-\*3 Enabled only for RICOH THETA X.  
-\*4 No support for RICOH THETA X.  
-\*5 RICOH THETA Z1 firmware v2.10.1 or later and RICOH THETA V firmware v3.80.1 or later. For RICOH THETA X, all versions are supported.  
+| Shooting mode | ExposureProgramMode | Supported Range |
+|:--|:--|:--|
+| Still capture mode   | Manual           | 1/8000 sec to 60 sec |
+|                      | Shutter priority | 1/8000 sec to 1/8 sec |
+| Video recording mode | Manual           | -- (Not supported) |
+|                      | Shutter priority | -- (Not supported) |
+| Otherwise            | --               | `0` (Automatic) |
+
+#### THETA S
+
+| Shooting mode | ExposureProgramMode | Supported Range |
+|:--|:--|:--|
+| Still capture mode   | Manual           | 1/6400 sec to 60 sec |
+|                      | Shutter priority | 1/6400 sec to 1/8 sec |
+| Video recording mode | Manual           | -- (Not supported) |
+|                      | Shutter priority | -- (Not supported) |
+| Otherwise            | --               | `0` (Automatic) |

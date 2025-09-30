@@ -35,8 +35,8 @@ Acquires a list of still image files and movie files.
 | width | Integer | Horizontal size of image (pixels) |
 | height | Integer | Vertical size of image (pixels) |
 | \_intervalCaptureGroupId | String | Group ID of a still image shot by interval shooting.<br>Can be obtained if a still image was shot by interval shooting. |
-| \_compositeShootingGroupId | String | Group ID of a still image shot by interval composite shooting.<br>Can be obtained if a still image was shot by interval composite shooting.<br>(RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v1.10 or later) |
-| \_autoBracketGroupId | String | Group ID of a still image shot by multi bracket shooting.<br>Can be obtained if a still image was shot by multi bracket shooting.<br>(RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v1.10 or later) |
+| \_compositeShootingGroupId | String | Group ID of a still image shot by interval composite shooting.<br>Can be obtained if a still image was shot by interval composite shooting.<br>(RICOH THETA S firmware v01.82 and later and RICOH THETA SC firmware v1.10 and later) |
+| \_autoBracketGroupId | String | Group ID of a still image shot by multi bracket shooting.<br>Can be obtained if a still image was shot by multi bracket shooting.<br>(RICOH THETA S firmware v01.82 and later and RICOH THETA SC firmware v1.10 and later) |
 | recordTime | Integer | Video shooting time (sec)<br>Can be obtained for a movie file. |
 
 ### Restriction

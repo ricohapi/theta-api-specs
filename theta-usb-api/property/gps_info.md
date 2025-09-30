@@ -1,32 +1,35 @@
 # 0xD801 GpsInfo
 
-### Device Prop Code
+**Vendor Extension Property**  
+Returns and sets the current value of GPS information.  
 
-0xD801
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Overview
+| Field Order | Field Name | Size | Data Type | Description |
+|:-:|:--|:-:|:--|:--|
+| 1 | Property Code | 2 | UINT16 | `0xD801` |
+| 2 | Datatype | 2 | UINT16 | `0xFFFF` (STRING) |
+| 3 | Get/Set | 1 | UINT8 | `0x01` (GET/SET) |
+| 4 | Default Value | 1 | STRING | `\0` |
+| 5 | Current Value | 60 | STRING ||
+| 6 | Form Flag | 1 | UINT8 | `0x00` (None) |
 
-Acquire or set the GPS information.  
-(Vendor Extension Property)
+### Format of Current Value
 
-### Support model
+`latitude`,`longitude` `altitude`m@`date-time` `timezone`,`datum`  
+e.g. `35.681236,139.767125 12.50m@20250904T103045.0 +0900,WGS84`  
 
-| X | Z1 | V | SC | S |
-|:--|:--|:--|:--|:--|
-| All | All | All | All | All |
-
-### Support value
-
-Current Value formats are as shown below.  
-If null character is set, the already configured GPS information will be deleted.
-
-\<latitude\>,\<longitude\>\<altitude\>m@\<date-time\>\<timezone\>,\<datum\>
-
-| Field | Value | Description |
+| Field Name | Format | Description |
 |:--|:--|:--|
-| latitude | "{\|-}nn.mmmmmm" | WGS84 / -90.000000 -- 90.000000 |
-| longitude | "{\|-}nnn.mmmmmm" | WGS84 / -180.000000 -- 180.000000 |
-| altitude | "{+\|-}nnnn.mm" | Unit: Meters<br>GPSAltitudeRef 0: Height above sea level 1: Height below sea level |
-| date-time | "YYYYMMDDThhmmss{\|.s}" | DateTime character string<br>The set value includes a decimal point. It is not included in the read value |
-| timezone | "{+\|-}hhmm" or "Z" | DateTime character string<br>The only set value is supported. It is not included in the read value |
-| datum | "WGS84" | Only WGS84 is supported |
+| `latitude` | "{\|-}nn.mmmmmm" | [-90.000000, 90.000000] |
+| `longitude` | "{\|-}nnn.mmmmmm" | [-180.000000, 180.000000] |
+| `altitude` | "{+\|-}nnnn.mm" | [m] |
+| `date-time` | "YYYYMMDDThhmmss{\|.s}" | Fractional seconds shall be ignored. |
+| `timezone` | "{+\|-}hhmm" or "Z" | "Z" means UTC |
+| `datum` | "WGS84" | Only WGS84 is supported |
+
+> [!TIP]
+> If a null character is set, the previously configured GPS information will be deleted.  

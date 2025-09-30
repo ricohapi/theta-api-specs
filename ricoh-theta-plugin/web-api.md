@@ -1,13 +1,22 @@
 # Web API
 
-The plugin can use the camera's Web API (http\://localhost:8080/). When using the Web API from the plugin, digest authentication is not required regardless of the wireless LAN mode. (NOTE: Since bugs are found in this part, digest authentication is required for RICOH THETA V firmware v2.50.1 or earlier.) For detailed specifications of the WebAPI, please refer [here](../core/products/theta-api.md)
+The plugin can access the [THETA Web API v2.1](../theta-web-api-v2.1/README.md) via `http://localhost:8080/`.  
+When the plugin uses the Web API to communicate with localhost, digest authentication is not required, regardless of the wireless LAN mode.  
 
-The Web API can not be used when the plugin controls the camera device using the [Camera API](camera-api.md).
+> [!IMPORTANT]  
+> Due to known bugs, digest authentication is required on RICOH THETA V with firmware version 2.50.1 and earlier.  
 
-The following are restricted for "RICOH THETA Z1 51GB", "RICOH THETA X" sold in Japan.
-* Plugins operation in the client mode
-* Developing plugins
+> [!NOTE]
+> Some Web API functions cannot be used while the plugin has control of the camera resources via the [Camera API](camera-api.md).    
 
-For more details see [here](https://topics.theta360.com/en/news/2021-04-28/)
+> [!NOTE]
+> Some Web API functions e.g. video recording cannot be used by plugin for THETA X.  
 
-If you are Japan residence and would like to develop plugin using RICOH THETA Z1 51GB or RICOH THETA X, please see [here](https://webform.ricoh.com/form/pub/e00101/support51gb)
+> [!WARNING]  
+> The following features are restricted on the "RICOH THETA Z1 51GB" and "RICOH THETA X" models sold in Japan:  
+> 
+> * Plugin operation in WLAN client mode  
+> * Plugin development  
+> 
+> For more details, please see [here](https://topics.theta360.com/en/news/2021-04-28/).  
+> If you reside in Japan and would like to develop plugins using the RICOH THETA Z1 51GB or RICOH THETA X, please see [here](https://webform.ricoh.com/form/pub/e00101/support51gb).  

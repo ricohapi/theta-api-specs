@@ -589,30 +589,30 @@ Supported properties are listed below.
 ![partially supported](./assets/img/partially-supported.png "partially supported"): Partially supported  
 ![not supported](./assets/img/not-supported.png "not supported"): Not supported  
 
-\*01 RICOH THETA S firmware v01.82 or later and RICOH THETA SC firmware v1.10 or later  
-\*11 RICOH THETA V or later  
-\*12 RICOH THETA V firmware v2.00.2 or later  
-\*13 RICOH THETA V firmware v2.30.1 or later  
-\*14 RICOH THETA V firmware v2.50.1 or later  
-\*15 RICOH THETA V firmware v3.00.1 or later  
-\*16 RICOH THETA V firmware v3.21.1 or later  
-\*17 RICOH THETA V firmware v3.40.1 or later  
+\*01 RICOH THETA S firmware v01.82 and later and RICOH THETA SC firmware v1.10 and later  
+\*11 RICOH THETA V and later  
+\*12 RICOH THETA V firmware v2.00.2 and later  
+\*13 RICOH THETA V firmware v2.30.1 and later  
+\*14 RICOH THETA V firmware v2.50.1 and later  
+\*15 RICOH THETA V firmware v3.00.1 and later  
+\*16 RICOH THETA V firmware v3.21.1 and later  
+\*17 RICOH THETA V firmware v3.40.1 and later  
 \*18 RICOH THETA V is not supported  
-\*21 RICOH THETA Z1 or later  
-\*22 RICOH THETA Z1 firmware v1.11.1 or later  
-\*23 RICOH THETA Z1 firmware v1.31.1 or later  
-\*24 RICOH THETA Z1 firmware v1.50.1 or later  
+\*21 RICOH THETA Z1 and later  
+\*22 RICOH THETA Z1 firmware v1.11.1 and later  
+\*23 RICOH THETA Z1 firmware v1.31.1 and later  
+\*24 RICOH THETA Z1 firmware v1.50.1 and later  
 \*25 RICOH THETA Z1 is not supported  
 \*26 RICOH THETA Z1 only    
-\*27 RICOH THETA Z1 firmware v2.10.1 or later  
-\*28 RICOH THETA Z1 firmware v2.20.3 or later  
-\*29 RICOH THETA Z1 firmware v3.30.2 or later  
-\*31 RICOH THETA X or later  
+\*27 RICOH THETA Z1 firmware v2.10.1 and later  
+\*28 RICOH THETA Z1 firmware v2.20.3 and later  
+\*29 RICOH THETA Z1 firmware v3.30.2 and later  
+\*31 RICOH THETA X and later  
 \*32 RICOH THETA X is not supported  
-\*33 RICOH THETA X firmware v1.20.0 or later  
-\*34 RICOH THETA X firmware v1.40.0 or later  
-\*35 RICOH THETA X firmware v2.00.0 or later  
-\*36 RICOH THETA X firmware v2.10.1 or later  
-\*37 RICOH THETA X firmware v2.50.2 or later  
-\*38 RICOH THETA X firmware v2.61.0 or later  
-\*39 RICOH THETA X firmware v2.80.1 or later  
+\*33 RICOH THETA X firmware v1.20.0 and later  
+\*34 RICOH THETA X firmware v1.40.0 and later  
+\*35 RICOH THETA X firmware v2.00.0 and later  
+\*36 RICOH THETA X firmware v2.10.1 and later  
+\*37 RICOH THETA X firmware v2.50.2 and later  
+\*38 RICOH THETA X firmware v2.61.0 and later  
+\*39 RICOH THETA X firmware v2.80.1 and later  

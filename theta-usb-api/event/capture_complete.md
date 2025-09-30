@@ -1,10 +1,15 @@
 # 0x400D CaptureComplete
 
-### Event Code
+Notification of shooting completion.  
 
-0x400D
+### Supported Models
+| ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) |
+|:-:|:-:|:-:|:-:|:-:|
+| ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Overview
-
-Notifies that shooting is finished.  
-In RICOH THETA, this event may be raised when the shooting is canceled during running self-timer.
+| | |
+|:--|:--|
+| Event Code | `0x400D` |
+| Parameter 1 | `TransactionID` |
+| Parameter 2 | None |
+| Parameter 3 | None |

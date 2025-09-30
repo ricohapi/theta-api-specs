@@ -14,7 +14,7 @@ Under the following conditions, in order to apply set value, [_bluetoothPower](_
 
 | X | Z1 | V | SC | S |
 |:--|:--|:--|:--|:--|
-| --- | v1.50.1 or later | v3.40.1 or later | --- | --- |
+| --- | v1.50.1 and later | v3.40.1 and later | --- | --- |
 
 This option is available for THETA Plugin only.
 

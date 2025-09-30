@@ -15,7 +15,7 @@ sint16
 ### Overview
 
 Acquires and sets the top/bottom correction setting for still image.  
-RICOH THETA V firmware v3.00.1 or later.
+RICOH THETA V firmware v3.00.1 and later.
 
 ### Value Fields
 
