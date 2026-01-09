@@ -110,6 +110,7 @@ The side where the shutter button is located is defined as Rear, for all THETA m
 | [RDTC](#rdtc) | ✓ | ✓ | ✓ | ✓ |   |   | ✓ |   |   | Ambient magnetic field |
 | RDTD | ✓ | ✓ | ✓ | ✓ |   |   |   |   |   | *Details Not Disclosed* |
 | [RDTG](#rdtg) | ✓ | ✓ | ✓ | ✓ | ✓ |   |   |   |   | Timestamp for each video frame |
+| [RDG2](#rdg2) |   |   | ✓<br> \*3 |   |   |   |   |   |   | Exposure control for each video frame |
 | RDTH |   |   |   |   | ✓ |   |   |   |   | Quarternion for each video frame |
 | RDTI | ✓ | ✓ | ✓ | ✓ |   |   |   |   |   | *Details Not Disclosed* |
 | [RDTL](#rdtl) | ✓ <br> \*1 | ✓ <br> \*1 |   |   |   |   |   |   |   | GNSS location |
@@ -124,6 +125,7 @@ The side where the shutter button is located is defined as Rear, for all THETA m
 
 \*1 : Serial number started with `AA12` or `YR12` (shipped to China) will not store this type data in any case.  
 \*2 : RICOH THETA X firmware v2.61.0 and later.  
+\*3 : RICOH THETA Z1 firmware v3.60.3 and later.  
 
 ### RDT* Atom
 
@@ -188,6 +190,21 @@ This timestamp indicates the center of exposure considering with exposure time a
 | Data | Format | Bytes | Description |
 | :--- | :---: | :---: | :--- |
 | timestamp | `uint64` | 8 | [nsec] |
+
+#### RDG2
+
+RDG2 stores timestamp information and exposure control information for each video frame.  
+This timestamp indicates the center of exposure considering with exposure time and rolling shutter skew.
+
+| Data | Format | Bytes | Description |
+| :--- | :---: | :---: | :--- |
+| timestamp | `uint64` | 8 | [nsec] |
+| exposure program | `uint8` | 1 | `1` : Manual<br>`2`: Automatic<br>`3`: Aperture Priority<br>`4`: Shutter Priority<br>`5`: ISO Sensitivity Priority |
+| (reserved) | `uint8` | 1 ||
+| Bv value | `int16[2]` | 4 | numerator/denominator, Brightness Value |
+| Tv value | `int16[2]` | 4 | numerator/denominator, Shutter Speed |
+| Av value | `int16[2]` | 4 | numerator/denominator, Aperture Value |
+| Sv value | `int16[2]` | 4 | numerator/denominator, ISO Sensitivity |
 
 #### RDTL
 

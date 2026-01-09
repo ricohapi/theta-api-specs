@@ -86,6 +86,7 @@
 [Delete My Setting](./shooting_control_command_v2/delete_my_setting.md)  
 [Function](./shooting_control_command_v2/function.md)  
 [Iso Auto High Limit](./shooting_control_command_v2/iso_auto_high_limit.md)  
+[Mode Memory](./shooting_control_command_v2/mode_memory.md)  
 [Shooting Method](./shooting_control_command_v2/shooting_method.md)  
 [Top Bottom Correction](./shooting_control_command_v2/top_bottom_correction.md)  
 [White Balance Auto Strength](./shooting_control_command_v2/white_balance_auto_strength.md)  

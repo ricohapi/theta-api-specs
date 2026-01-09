@@ -396,7 +396,7 @@ Supported characteristics are listed below.
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
     </tr>
-    <tr><th rowspan="11">Shooting Control Command v2 *12</th>
+    <tr><th rowspan="12">Shooting Control Command v2 *12</th>
       <td><a href="shooting_control_command_v2/aperture.md">Aperture</a></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
@@ -452,6 +452,13 @@ Supported characteristics are listed below.
       <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
       <td><img src="assets/img/partially-supported.png" alt="some model Mandatory" title="some model Mandatory" class="support-mark"></td>
       <td><img src="assets/img/partially-supported.png" alt="some model Mandatory" title="some model Mandatory" class="support-mark"></td>
+    </tr><tr>
+      <td><a href="shooting_control_command_v2/burst_mode.md">Mode Memory *25</a></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
+      <td><img src="assets/img/not-supported.png" alt="Excluded" title="Excluded" class="support-mark"></td>
     </tr><tr>
       <td><a href="shooting_control_command_v2/shooting_method.md">Shooting Method</a></td>
       <td><img src="assets/img/supported.png" alt="Mandatory" title="Mandatory" class="support-mark"></td>
@@ -618,5 +625,6 @@ Supported characteristics are listed below.
 \*22 RICOH THETA Z1 firmware v2.20.3 and later  
 \*23 RICOH THETA Z1 firmware v3.10.2 and later  
 \*24 RICOH THETA Z1 firmware v3.50.2 and later  
+\*25 RICOH THETA Z1 firmware v3.60.3 and later  
 \*31 RICOH THETA X firmware v2.20.1 and later  
 \*32 RICOH THETA X firmware v2.80.1 and later  

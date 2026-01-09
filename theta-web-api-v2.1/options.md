@@ -367,6 +367,14 @@ Supported properties are listed below.
     <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
   </tr>
   <tr>
+    <td><a href="./options/_mode_memory.md">_modeMemory</a> <span class="mintext">*30</span></td>
+    <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
+    <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
+    <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
+    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
+    <td><img src="./assets/img/not-supported.png" alt="not supported" title="not supported" class="support-mark"></td>
+  </tr>
+  <tr>
     <td><a href="./options/_network_type.md">_networkType</a> <span class="mintext">*11</span></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
     <td><img src="./assets/img/supported.png" alt="supported" title="supported" class="support-mark"></td>
@@ -607,6 +615,7 @@ Supported properties are listed below.
 \*27 RICOH THETA Z1 firmware v2.10.1 and later  
 \*28 RICOH THETA Z1 firmware v2.20.3 and later  
 \*29 RICOH THETA Z1 firmware v3.30.2 and later  
+\*30 RICOH THETA Z1 firmware v3.60.3 and later  
 \*31 RICOH THETA X and later  
 \*32 RICOH THETA X is not supported  
 \*33 RICOH THETA X firmware v1.20.0 and later  

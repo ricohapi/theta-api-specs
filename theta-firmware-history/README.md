@@ -1,5 +1,23 @@
 # THETA Firmware History
 
+## THETA Z1 firmware v3.60.3 (2026.01.27)
+
+### WebAPI
+* [camera.startCapture](../theta-web-api-v2.1/commands/camera.start_capture.md) : Add `_fileUrls` for video recording mode
+* [fileFormat](../theta-web-api-v2.1/options/file_format.md) : Update new option video format
+* [_modeMemory](../theta-web-api-v2.1/options/_mode_memory.md) : New Added
+
+### Bluetooth-API
+* [File Format](../theta-bluetooth-api/shooting_control_command/file_format.md) : Update new option video format
+* [Mode Memory](../theta-bluetooth-api/shooting_control_command_v2/mode_memory.md) : New Added
+
+### USB-API
+* [0x5003 ImageSize](../theta-usb-api/property/image_size.md) : Update new option movie shooting mode
+* [0xD841 ModeMemory](../theta-usb-api/property/mode_memory.md) : New Added
+
+### Others
+* [THETA Metadata Spec](../theta-metadata/README.md#rdg2) : Add `RDG2` box
+
 ## THETA Z1 firmware v3.51.0 (2025.08.26)
 
 No API Update

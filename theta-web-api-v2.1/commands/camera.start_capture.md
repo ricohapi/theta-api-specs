@@ -57,7 +57,7 @@ None.
 #### Remark
 
 For movie shooting, the response includes `_fileUrls` information at the timing of `camera.startCapture`.   
-This feature is available with THETA X firmware v2.61.0 and later.  
+This feature is available with THETA X firmware v2.61.0 and later, THETA Z1 firmware v3.60.3 and later.  
 
 ```
 {

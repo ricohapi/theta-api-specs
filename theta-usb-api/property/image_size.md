@@ -41,8 +41,11 @@ Returns and sets the current setting of image size.
 |                      | `1920x960\0`  |
 |                      | `3648x3648\0`<sup>\*2</sup> |
 |                      | `2688x2688\0`<sup>\*2</sup> |
+|                      | `3648x3648 DualTrack\0`<sup>\*3</sup> |
+|                      | `2688x2688 DualTrack\0`<sup>\*3</sup> |
 
 <sup>\*2</sup>THETA Z1 firmware v3.01.1 and later. This mode outputs two fisheye video for each lens. The MP4 file name ending with `_0` is the video file on the front lens, and `_1` is back lens. This mode does not record audio track to MP4 file.  
+<sup>\*3</sup> RICOH THETA Z1 firmware v3.60.3 and later. This mode outputs one MP4 video file which contains two video tracks. First video track is for the front lens, and second video track is for the back lens.  
 
 #### THETA V
 

@@ -126,3 +126,4 @@ The base specifications can be obtained from [MTP 1.1 Specifications Document](h
 [0xD83C WaterHousingStitching](./property/water_housing_stitching.md)  
 [0xD83E ExposureStatus](./property/exposure_status.md)  
 [0xD840 hdrBracket](./property/hdr_bracket.md)  
+[0xD841 modeMemory](./property/mode_memory.md)  
