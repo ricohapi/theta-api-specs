@@ -18,8 +18,8 @@ The current setting can be acquired by [camera.getOptions](../commands/camera.ge
 
 | Value | Description |
 |:--|:--|
-| 1 | Manual program<br>Manually set the ISO sensitivity ([iso](iso.md)) setting, shutter speed ([shutterSpeed](shutter_speed.md)) and aperture ([aperture](aperture.md), RICOH THETA Z1). |
+| 1 | Manual<br>Manually set the ISO sensitivity ([iso](iso.md)) setting, shutter speed ([shutterSpeed](shutter_speed.md)) and aperture ([aperture](aperture.md), RICOH THETA Z1). |
 | 2 | Normal program<br>Exposure settings are all set automatically. |
-| 3 | Aperture priority program<br>Manually set the aperture ([aperture](aperture.md)).<br>(RICOH THETA Z1) |
-| 4 | Shutter priority program<br>Manually set the shutter speed ([shutterSpeed](shutter_speed.md)). |
-| 9 | ISO priority program<br>Manually set the ISO sensitivity ([iso](iso.md)) setting. |
+| 3 | Aperture priority<br>Manually set the aperture ([aperture](aperture.md)).<br>(RICOH THETA Z1) |
+| 4 | Shutter priority<br>Manually set the shutter speed ([shutterSpeed](shutter_speed.md)). |
+| 9 | ISO Sensitivity priority<br>Manually set the ISO sensitivity ([iso](iso.md)) setting. |

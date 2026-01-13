@@ -25,7 +25,7 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 - Filters
 - Interval shooting: number of shots / interval
 - Multi-bracket shooting: number of shots / parameters
-- Interval composite shooting: duration / intermediate saving
+- Interval composite shooting: total shooting time / output interval
 - Time-shift shooting settings (excluding shooting order)
 - Burst shooting options
 - Geotag data

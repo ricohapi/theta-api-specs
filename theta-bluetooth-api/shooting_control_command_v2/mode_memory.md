@@ -30,7 +30,7 @@ This API is available with RICOH THETA Z1 firmware v3.60.3 and later.
 - Filters
 - Interval shooting: number of shots / interval
 - Multi-bracket shooting: number of shots / parameters
-- Interval composite shooting: duration / intermediate saving
+- Interval composite shooting: total shooting time / output interval
 - Time-shift shooting settings (excluding shooting order)
 - Burst shooting options
 - Geotag data
