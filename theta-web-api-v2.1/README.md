@@ -96,6 +96,7 @@
 [_maxRecordableTime](./options/_max_recordable_time.md)  
 [_microphone](./options/_microphone.md)  
 [_microphoneChannel](./options/_microphone_channel.md)  
+[_modeMemory](./options/_mode_memory.md)  
 [_networkType](./options/_network_type.md)  
 [offDelay](./options/off_delay.md)  
 [_password](./options/_password.md)  

@@ -25,10 +25,11 @@ The supported value depends on the shooting mode ([captureMode](capture_mode.md)
 | Shooting mode | Supported value |
 |:--|:--|
 | image | {"type": "jpeg","width": 6720,"height": 3360}<br>{"type": "raw+","width": 6720,"height": 3360} |
-| video | {"type": "mp4", "width": 3840, "height": 1920, "\_codec": "H.264/MPEG-4 AVC"}<br>{"type": "mp4", "width": 1920, "height": 960, "\_codec": "H.264/MPEG-4 AVC"}<br>{"type": "mp4","width": 3648,"height": 3648, "\_codec": "H.264/MPEG-4 AVC", "_frameRate": 2} \*2<br>{"type": "mp4","width": 3648,"height": 3648, "\_codec": "H.264/MPEG-4 AVC", "\_frameRate": 1} \*2<br>{"type": "mp4","width": 2688,"height": 2688, "\_codec": "H.264/MPEG-4 AVC", "\_frameRate": 2} \*2<br>{"type": "mp4","width": 2688,"height": 2688, "\_codec": "H.264/MPEG-4 AVC", "\_frameRate": 1} \*2 |
+| video | {"type": "mp4", "width": 3840, "height": 1920, "\_codec": "H.264/MPEG-4 AVC"}<br>{"type": "mp4", "width": 1920, "height": 960, "\_codec": "H.264/MPEG-4 AVC"}<br>{"type": "mp4","width": 3648,"height": 3648, "\_codec": "H.264/MPEG-4 AVC", "_frameRate": 2} \*2<br>{"type": "mp4","width": 3648,"height": 3648, "\_codec": "H.264/MPEG-4 AVC", "\_frameRate": 1} \*2<br>{"type": "mp4","width": 2688,"height": 2688, "\_codec": "H.264/MPEG-4 AVC", "\_frameRate": 2} \*2<br>{"type": "mp4","width": 2688,"height": 2688, "\_codec": "H.264/MPEG-4 AVC", "\_frameRate": 1} \*2<br>{"type": "mp4","width": 3648,"height": 3648, "\_codec": "H.264/MPEG-4 AVC", "_frameRate": 2, "_dualTrack": true} \*3<br>{"type": "mp4","width": 3648,"height": 3648, "\_codec": "H.264/MPEG-4 AVC", "\_frameRate": 1, "_dualTrack": true} \*3<br>{"type": "mp4","width": 2688,"height": 2688, "\_codec": "H.264/MPEG-4 AVC", "\_frameRate": 2, "_dualTrack": true} \*3<br>{"type": "mp4","width": 2688,"height": 2688, "\_codec": "H.264/MPEG-4 AVC", "\_frameRate": 1, "_dualTrack": true} \*3 |
 | \_liveStreaming | Not supported |
 
 \*2 RICOH THETA Z1 firmware v3.01.1 and later. This mode outputs two fisheye video for each lens. The MP4 file name ending with `_0` is the video file on the front lens, and `_1` is back lens. This mode does not record audio track to MP4 file.  
+\*3 RICOH THETA Z1 firmware v3.60.3 and later. This mode outputs one MP4 video file which contains two video tracks. First video track is for the front lens, and second video track is for the back lens.  
 
 #### For RICOH THETA V
 

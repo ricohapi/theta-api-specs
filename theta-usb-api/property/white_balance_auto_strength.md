@@ -9,7 +9,7 @@ This property can be set for photo mode and video mode separately. Also this pro
 |:-:|:-:|:-:|:-:|:-:|
 |   | ✓<sup>\*1</sup> |   |   |   |
 
-<sup>\*1</sup>THETA X firmware v2.20.3 and later
+<sup>\*1</sup>THETA Z1 firmware v2.20.3 and later
 
 | Field Order | Field Name | Size | Data Type | Description |
 |:-:|:--|:-:|:--|:--|

@@ -22,9 +22,9 @@ This setting is available in video recording mode on RICOH THETA V firmware v3.0
 | Value | Description |
 |:--|:--|
 | `0x0001` | Manual<br>Manually set the aperture via [`0x5007 F-number`](./f_number.md), the ISO sensitivity via [`0x500F ExposureIndex`](./exposure_index.md), and the shutter speed via [`0xD00F ShutterSpeed`](./shutter_speed.md) |
-| `0x0002` | Automatic<br>If [`0xD80B Filter`](./filter.md) is enabled, this value is overwritten automatically. |
-| `0x0003` | Aperture Priority<sup>\*1</sup><br>Manually set the aperture via [`0x5007 F-number`](./f_number.md).|
-| `0x0004` | Shutter Priority<br>Manually set the shutter speed via [`0xD00F ShutterSpeed`](./shutter_speed.md). |
-| `0x8003` | ISO Sensitivity Priority<br>Manually set the ISO sensitivity via [`0x500F ExposureIndex`](./exposure_index.md). |
+| `0x0002` | Normal program<br>If [`0xD80B Filter`](./filter.md) is enabled, this value is overwritten automatically. |
+| `0x0003` | Aperture priority<sup>\*1</sup><br>Manually set the aperture via [`0x5007 F-number`](./f_number.md).|
+| `0x0004` | Shutter priority<br>Manually set the shutter speed via [`0xD00F ShutterSpeed`](./shutter_speed.md). |
+| `0x8003` | ISO sensitivity priority<br>Manually set the ISO sensitivity via [`0x500F ExposureIndex`](./exposure_index.md). |
 
 <sup>\*1</sup>Supported by only THETA Z1.  
