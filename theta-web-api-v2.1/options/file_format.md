@@ -19,6 +19,7 @@ The supported value depends on the shooting mode ([captureMode](capture_mode.md)
 | \_liveStreaming | Not supported |
 
 \*1 RICOH THETA X firmware v2.50.2 and later. This mode outputs two fisheye video for each lens. The MP4 file name ending with `_0` is the video file on the front lens, and `_1` is back lens.  
+\*1 RICOH THETA X firmware v2.50.2 and later. This mode outputs two fisheye video for each lens. The MP4 file name ending with `_0` is the video file on the front lens, and `_1` is back lens.  
 
 #### For RICOH THETA Z1
 

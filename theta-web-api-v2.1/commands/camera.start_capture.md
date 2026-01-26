@@ -27,6 +27,14 @@ For movie shooting or interval shooting with no shot count specified, "state" fo
 | `moveInterval ` | Interval shooting (optimized <span class="mintext">*1</span>, Tripod stabilization Off) | --- | v1.50.1 and later | v3.40.1 and later | --- | --- |
 | `fixInterval ` | Interval shooting (optimized <span class="mintext">*1</span>, Tripod stabilization On) | --- | v1.50.1 and later | v3.40.1 and later | --- | --- |
 | `burst` | Burst shooting | --- | v2.10.1 and later | --- | --- | --- |
+| `interval`  | Interval shooting | All | All | All | All | v01.62 and later |
+| `bracket`   | Multi bracket shooting | All | All | All | v1.10 and later | v01.82 and later |
+| `composite` | Interval composite shooting | --- | All | --- | v1.10 and later | v01.82 and later |
+| `timeShift` | Time shift shooting | All | All | v3.00.1 and later | --- | --- |
+|| Movie shooting | All | All | All | All | v01.62 and later |
+| `moveInterval ` | Interval shooting (optimized <span class="mintext">*1</span>, Tripod stabilization Off) | --- | v1.50.1 and later | v3.40.1 and later | --- | --- |
+| `fixInterval ` | Interval shooting (optimized <span class="mintext">*1</span>, Tripod stabilization On) | --- | v1.50.1 and later | v3.40.1 and later | --- | --- |
+| `burst` | Burst shooting | --- | v2.10.1 and later | --- | --- | --- |
 | `continuous` | Continuous shooting | All | --- | --- | --- | --- |
 
 \*1 Top/bottom correction and stitching conditions are optimized.

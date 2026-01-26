@@ -1,9 +1,12 @@
 # THETA USB API v2
 
 Starting with RICOH THETA S firmware version 1.42, camera operations such as shooting via USB connection are supported. The communication protocol is based on the Media Transfer Protocol (MTP), with extensions specific to RICOH THETA.  
+Starting with RICOH THETA S firmware version 1.42, camera operations such as shooting via USB connection are supported. The communication protocol is based on the Media Transfer Protocol (MTP), with extensions specific to RICOH THETA.  
 
 The base specifications can be obtained from [MTP 1.1 Specifications Document](https://www.usb.org/document-library/media-transfer-protocol-v11-spec-and-mtp-v11-adopters-agreement).
+The base specifications can be obtained from [MTP 1.1 Specifications Document](https://www.usb.org/document-library/media-transfer-protocol-v11-spec-and-mtp-v11-adopters-agreement).
 
+### Operation
 ### Operation
 
 [0x1001 GetDeviceInfo](./operation/get_device_info.md)  
@@ -50,6 +53,17 @@ The base specifications can be obtained from [MTP 1.1 Specifications Document](h
 [0x99C2 GetEthernetProxy](./operation/get_ethernet_proxy.md)  
 [0x99C3 SetEthernetProxy](./operation/set_ethernet_proxy.md)  
 [0x99C4 SetEthernetProxyPassword](./operation/set_ethernet_proxy_password.md)  
+
+### Event
+
+[0x4002 ObjectAdded](./event/object_added.md)  
+[0x4006 DevicePropChanged](./event/device_prop_changed.md)  
+[0x4008 DeviceInfoChanged](./event/device_info_changed.md)  
+[0x400A StoreFull](./event/store_full.md)  
+[0x400C StorageInfoChanged](./event/storage_info_changed.md)  
+[0x400D CaptureComplete](./event/capture_complete.md)  
+
+### Property
 
 ### Event
 
@@ -121,6 +135,9 @@ The base specifications can be obtained from [MTP 1.1 Specifications Document](h
 [0xD834 Image Stitching](./property/image_stitching.md)  
 [0xD837 CameraMode](./property/camera_mode.md)  
 [0xD839 BurstOption](./property/burst_option.md)  
+[0xD83A WhiteBalanceAutoStrength](./property/white_balance_auto_strength.md)  
+[0xD83B WaterHousing](./property/water_housing.md)  
+[0xD83C WaterHousingStitching](./property/water_housing_stitching.md)  
 [0xD83A WhiteBalanceAutoStrength](./property/white_balance_auto_strength.md)  
 [0xD83B WaterHousing](./property/water_housing.md)  
 [0xD83C WaterHousingStitching](./property/water_housing_stitching.md)  

@@ -620,6 +620,8 @@ Supported characteristics are listed below.
 
 \*11 RICOH THETA V firmware v2.30.1 and later  
 \*12 RICOH THETA V firmware v3.00.1 and later  
+\*11 RICOH THETA V firmware v2.30.1 and later  
+\*12 RICOH THETA V firmware v3.00.1 and later  
 \*13 RICOH THETA V is not supported  
 \*21 RICOH THETA Z1 firmware v2.10.1 and later  
 \*22 RICOH THETA Z1 firmware v2.20.3 and later  
