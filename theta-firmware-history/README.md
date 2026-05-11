@@ -1,5 +1,9 @@
 # THETA Firmware History
 
+## THETA X firmware v2.91.0 (2026.05.12)
+
+No API Update
+
 ## THETA X firmware v2.90.4 (2026.03.03)
 
 No API Update
@@ -105,7 +109,7 @@ No API Update
 * [_hdrBracket](../theta-web-api-v2.1/options/_hdr_bracket.md) : New Added
 
 ### USB-API
-* [0x5003](../theta-usb-api/property/image_size.md) : Update new video mode
+* [0x5003 ImageSize](../theta-usb-api/property/image_size.md) : Update new video mode
 * [0xD81F Gain](../theta-usb-api/property/gain.md) : Update new value `mute`
 * [0xD840 hdrBracket](../theta-usb-api/property/hdr_bracket.md) : New Added
 
