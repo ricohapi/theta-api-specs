@@ -14,19 +14,11 @@ Can be acquired by [camera.getOptions](../commands/camera.get_options.md) and se
 
 ### Support value
 
-#### RICOH THETA X
-
 | Value | Description |
 |:--|:--|
-| OFF | Network is off. This value can be gotten only by plugin. (firmware v1.40.0 and later)|
-| AP | Direct mode |
-| CL | Client mode |
-
-#### RICOH THETA V, Z1
-
-| Value | Description |
-|:--|:--|
-| OFF | Network is off. This value can be gotten only by plugin.|
+| OFF \*1 | Network is off. This value cannot be set. |
 | AP | Direct mode |
 | CL | Client mode via WLAN, see also [camera.\_setAccessPoint](../commands/camera._set_access_point.md). |
-| ETHERNET | Client mode via Ethernet cable |
+| ETHERNET | Client mode via Ethernet cable. This value cannot be set. |
+
+\*1 RICOH THETA X firmware v1.40.0 and later

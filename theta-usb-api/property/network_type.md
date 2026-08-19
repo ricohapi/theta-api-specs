@@ -25,4 +25,4 @@ Returns or sets the current setting of the network type.
 | `1` | Direct mode (AP mode) |
 | `2` | Client mode (CL mode)<sup>\*1</sup> |
 
-<sup>\*1</sup>For THETA Z1/X, this mode can be enabled when an access point has been set using [`0x99A3 GetAccessPointHandles`](../operation/get_access_point_handles.md).  
+<sup>\*1</sup>For THETA V/Z1, this mode can be enabled when an access point has been set using [`0x99A5 SetAccessPoint`](../operation/set_access_point.md).  
