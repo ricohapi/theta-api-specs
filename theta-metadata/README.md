@@ -44,6 +44,7 @@ The first 2 bytes indicate the number of entries.
 | 0x0010 | SHORT | 1 | | | | | ✓ | | | | | Filter: Face mode<br>`0` OFF, `1` ON |
 | 0x0011 | SHORT | 1 | | | | | ✓ | | | | | Filter: Night View mode<br>`0` OFF, `1` ON |
 | 0x0012 | SHORT | 1 | | | | | ✓ | | | | | Filter: Lens-by-Lens Exposure mode<br>`0` OFF, `1` ON |
+| 0x0004 | RATIONAL | 1 | ✓ | ✓ | ✓ | ✓ | | | ✓ | | | Imaging Direction (`0.0`–`359.9`)<br>Direction in which the front lens is facing. Not recorded when the geomagnetic sensor requires calibration or when Single Lens mode is used. |
 | 0x0007 | SHORT | 1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | | | Zenith Correction<br>`0` Not applied, `1` Applied |
 | 0x0109 | SRATIONAL | 3 | ✓ | ✓ | ✓ | ✓ | ✓ | | | | | Zenith Direction (=Rotation Vector) (ax,ay,az) |
 | 0x010D | SHORT | 1 | | ✓ | | | | | | | | Water Housing Setting<br>`0` Not used, `1` Used underwater, `2` Used on-land |
