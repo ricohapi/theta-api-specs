@@ -1,5 +1,11 @@
 # THETA Firmware History
 
+## THETA Z1 firmware v3.70.2 (2026.09.08)
+
+### WebAPI
+
+* [offDelay](../theta-web-api-v2.1/options/off_delay.md) : Add `7200`, `14400`, and `28800` to the supported values
+
 ## THETA X firmware v2.93.1 (2026.08.25)
 
 No API Update

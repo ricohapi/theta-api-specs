@@ -26,11 +26,13 @@ You can also set any value between 600 and 172800 that is a multiple of 60.
 #### RICOH THETA V or Z1
 
 ```
-[0, 3600, 43200, 64800, 86400, 172800, 259200, 604800] (unit: seconds)
+[0, 3600, 7200(*1), 14400(*1), 28800(*1), 43200, 64800, 86400, 172800, 259200, 604800] (unit: seconds)
 ```
 
 Setting this value to either `0` or `65535` will not turn power OFF automatically.  
 You can also set any value between 600 and 604800 that is a multiple of 60.  
+
+\*1 THETA Z1 firmware v3.70.2 and later  
 
 #### RICOH THETA S or SC
 
