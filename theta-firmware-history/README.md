@@ -1,5 +1,9 @@
 # THETA Firmware History
 
+## THETA X firmware v2.94.0 (2026.09.17)
+
+No API Update
+
 ## THETA Z1 firmware v3.70.2 (2026.09.08)
 
 ### WebAPI
