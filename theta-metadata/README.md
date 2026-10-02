@@ -56,14 +56,14 @@ The first 2 bytes indicate the number of entries.
 | 0x1201 | SLONG | 1 | | ✓ | | | | | | | | Temperature of main board \*1 |
 | 0x1202 | SLONG | 1 | | ✓ | | | | | | | | Temperature of battery \*1 <br>`65535` is set when the battery is not inserted |
 
-\*1 : The values is 10 times of actual value. e.g. `250` means 25.0 degree C.
+\*1 : The values are 10 times the actual values. For example, `250` means 25.0 degrees C.
 
 ----
 
 ## Video Metadata
 
-RICOH THETA MP4 file have two types of metadata which stores IMU sensor data, GNSS sensor data, and related timestamp information.  
-Basic structure of RICOH THETA MP4 files is following, and vendor specified metadata is stored under `udta` box and in `CaMM` track.
+RICOH THETA MP4 files have two types of metadata that store IMU sensor data, GNSS sensor data, and related timestamp information.
+The basic structure of RICOH THETA MP4 files is as follows, and vendor-specified metadata is stored under the `udta` box and in the `CaMM` track.
 
 > * ftyp
 > * mdat
@@ -82,7 +82,7 @@ Basic structure of RICOH THETA MP4 files is following, and vendor specified meta
 >        * ....
 >    * [udta](#udta-box)
 >        * ....
-> * uuid `28F311E2-B791-4F6F-94E2-4F5DEACB3C01`
+> * [uuid](#spatial-audio) `28F311E2-B791-4F6F-94E2-4F5DEACB3C01` (spatial audio)
 
 \*1 : Spherical Video RFC v1.0. Refer to https://github.com/google/spatial-media/blob/master/docs/spherical-video-rfc.md for detail. This box is stored only when video is stitched as equirectangular format.  
 
@@ -90,7 +90,7 @@ Basic structure of RICOH THETA MP4 files is following, and vendor specified meta
 
 ## Axis Definition
 
-The side where the shutter button is located is defined as Rear, for all THETA model.  
+The side where the shutter button is located is defined as Rear for all THETA models.
 
 ![axis](assets/img/axis.png)
 
@@ -98,7 +98,7 @@ The side where the shutter button is located is defined as Rear, for all THETA m
 
 ## UDTA Box
 
-`udta` box has following child-boxes.
+The `udta` box has the following child boxes.
 
 | Name | ![A1](https://img.shields.io/badge/A1-maroon) | ![X](https://img.shields.io/badge/X-purple) | ![Z1](https://img.shields.io/badge/Z1-blue) | ![V](https://img.shields.io/badge/V-green) | ![SC2](https://img.shields.io/badge/SC2-yellow) | ![SC](https://img.shields.io/badge/SC-orange) | ![S](https://img.shields.io/badge/S-red) | ![m15](https://img.shields.io/badge/m15-lightgray) | ![THETA](https://img.shields.io/badge/THETA-gray) | Description |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
@@ -112,7 +112,7 @@ The side where the shutter button is located is defined as Rear, for all THETA m
 | RDTD | ✓ | ✓ | ✓ | ✓ |   |   |   |   |   | *Details Not Disclosed* |
 | [RDTG](#rdtg) | ✓ | ✓ | ✓ | ✓ | ✓ |   |   |   |   | Timestamp for each video frame |
 | [RDG2](#rdg2) |   |   | ✓<br> \*3 |   |   |   |   |   |   | Exposure control for each video frame |
-| RDTH |   |   |   |   | ✓ |   |   |   |   | Quarternion for each video frame |
+| RDTH |   |   |   |   | ✓ |   |   |   |   | Quaternion for each video frame |
 | RDTI | ✓ | ✓ | ✓ | ✓ |   |   |   |   |   | *Details Not Disclosed* |
 | [RDTL](#rdtl) | ✓ <br> \*1 | ✓ <br> \*1 |   |   |   |   |   |   |   | GNSS location |
 | [RDL2](#rdl2) |   | ✓ <br> \*1\*2 |   |   |   |   |   |   |   | GNSS location + accuracy |
@@ -144,8 +144,6 @@ The side where the shutter button is located is defined as Rear, for all THETA m
 \*1 :  
 RICOH THETA X firmware v2.40.0 and later puts the value of "timestamp" of 1st data packet as [msec] for RDTL.  
 RICOH THETA X firmware v2.61.0 and later puts the value of "timestamp" of 1st data packet as [msec] for RDL2.  
-RICOH THETA X firmware v2.40.0 and later puts the value of "timestamp" of 1st data packet as [msec] for RDTL.  
-RICOH THETA X firmware v2.61.0 and later puts the value of "timestamp" of 1st data packet as [msec] for RDL2.  
 
 ### Data Packet Format
 
@@ -159,7 +157,9 @@ RDTA stores Accelerometer sensor data.
 | y | `float` | 4 | [m/s^2] |
 | z | `float` | 4 | [m/s^2] |
 | reserve | `float` | 4 | |
-| timestamp | `uint64` | 8 | [nsec] |
+| timestamp | `uint64` | 8 | [nsec] \*1 |
+
+\*1 : For RICOH THETA SC2, the timestamp is in [μsec].
 
 #### RDTB
 
@@ -171,7 +171,9 @@ RDTB stores Gyroscope sensor data.
 | y | `float` | 4 | [rad/s] |
 | z | `float` | 4 | [rad/s] |
 | reserve | `float` | 4 | |
-| timestamp | `uint64` | 8 | [nsec] |
+| timestamp | `uint64` | 8 | [nsec] \*1 |
+
+\*1 : For RICOH THETA SC2, the timestamp is in [μsec].
 
 #### RDTC
 
@@ -192,7 +194,9 @@ This timestamp indicates the center of exposure considering with exposure time a
 
 | Data | Format | Bytes | Description |
 | :--- | :---: | :---: | :--- |
-| timestamp | `uint64` | 8 | [nsec] |
+| timestamp | `uint64` | 8 | [nsec] \*1 |
+
+\*1 : For RICOH THETA SC2, the timestamp is in [μsec].
 
 #### RDG2
 
@@ -271,8 +275,8 @@ D1 23 1E 41 00 00 00 00 80 64 B0 09 05 0A 00 00
 
 ## CaMM Track
 
-CaMM is *Camera Motion Metadata* defined by Google. Refer to [spec](https://developers.google.com/streetview/publish/camm-spec) for detail.  
-RICOH THETA MP4 file also have CaMM track in following modes. 
+CaMM is *Camera Motion Metadata* defined by Google. Refer to the [specification](https://developers.google.com/streetview/publish/camm-spec) for details.
+RICOH THETA MP4 files also have a CaMM track in the following modes.
 
 * RICOH360 THETA A1
     * 8K (7680x3840px) 10fps, 5fps, 2fps
@@ -300,11 +304,10 @@ RICOH THETA MP4 file also have CaMM track in following modes.
 
 \*1 : Serial number started with `AA12` or `YR12` (shipped to China) will not store this type data in any case.  
 \*2 : RICOH THETA X firmware v2.61.0 and later.  
-\*2 : RICOH THETA X firmware v2.61.0 and later.  
 
 ### Track Structure
 
-You can parse CaMM track to each data packet with using `stts`, `stsz`, and `co64` atoms' information.
+You can parse each data packet in the CaMM track using information from the `stts`, `stsz`, and `co64` atoms.
 
 > * trak (CaMM)
 >    * tkhd
@@ -340,7 +343,7 @@ You can parse CaMM track to each data packet with using `stts`, `stsz`, and `co6
 | :--- | :---: | :---: | :--- |
 | Size | `uint32` | 4 |  |
 | Type | `uint32` | 4 | `stts` |
-| Version | `uint32` | 1 | `0` |
+| Version | `uint8` | 1 | `0` |
 | Flags | ---- | 3 | `0x000000` |
 | Number of entries | `uint32` | 4 | The total number of recorded sensor data. <br> e.g. `N` = 10sec * (acc 200Hz + gyro 200Hz + gnss 1Hz) = 4010 |
 | Time-to-sample table | `uint32[2]*N` | Variable | Sample count 4 Byte + <br> Sample Duration 4 Byte |
@@ -353,10 +356,10 @@ Also refer to [Time-to-sample atom ('stts')](https://developer.apple.com/documen
 | :--- | :---: | :---: | :--- |
 | Size | `uint32` | 4 |  |
 | Type | `uint32` | 4 | `stsc` |
-| Version | `uint32` | 1 | `0` |
+| Version | `uint8` | 1 | `0` |
 | Flags | ---- | 3 | `0x000000` |
 | Number of entries | `uint32` | 4 | `N` = 1 |
-| Sample-to-chunk table | `uint16[3]*N` | Variable | First chunk 4 Byte + <br> Sample per chunk 4 Byte <br> Sample description ID 4 Byte |
+| Sample-to-chunk table | `uint32[3]*N` | Variable | First chunk 4 Byte + <br> Sample per chunk 4 Byte <br> Sample description ID 4 Byte |
 
 Also refer to [Sample-to-chunk atom ('stsc')](https://developer.apple.com/documentation/quicktime-file-format/sample-to-chunk_atom) in QuickTime File Format provided by Apple.
 
@@ -366,16 +369,17 @@ Also refer to [Sample-to-chunk atom ('stsc')](https://developer.apple.com/docume
 | :--- | :---: | :---: | :--- |
 | Size | `uint32` | 4 |  |
 | Type | `uint32` | 4 | `stsz` |
-| Version | `uint32` | 1 | `0` |
+| Version | `uint8` | 1 | `0` |
 | Flags | ---- | 3 | `0x000000` |
 | Sample size | `uint32` | 4 | `0x10` or `0x00` (*1) |
 | Number of entries | `uint32` | 4 | The total number of recorded sensor data. <br> e.g. `N` = 10sec * (acc 200Hz + gyro 200Hz + gnss 1Hz) = 4010 |
-| Sample size table | `uint16*N` | Variable | Sample size 4 Byte (*1) |
+| Sample size table | `uint32*N` | Variable | Sample size 4 Byte (*1) |
 
-(*1) If only `gyro` and `Accelerometer` are stored in CaMM track, Sample size will be `0x10` and Sample size table will be `0x00`. If GNSS location are also stored in CaMM strack, Sample size will be `0x00` and all data packet size information will be stored in Sample size table as array.  
-Because, data packet size of `gyto` and `Accelerometer` is `0x10` (16Byte), GNSS location is `0x1C` (28Byte).  
+(*1) If only `gyro` and `Accelerometer` are stored in the CaMM track, Sample size will be `0x10` and Sample size table will be `0x00`. If GNSS locations are also stored in the CaMM track, Sample size will be `0x00` and all data packet size information will be stored in Sample size table as an array.
 
-Also refer to [Sample-to-chunk atom ('stsz')](https://developer.apple.com/documentation/quicktime-file-format/sample_size_atom) in QuickTime File Format provided by Apple.
+The data packet size of `gyro` and `Accelerometer` is `0x10` (16 bytes), while that of a GNSS location is `0x1C` (28 bytes).
+
+Also refer to [Sample size atom ('stsz')](https://developer.apple.com/documentation/quicktime-file-format/sample_size_atom) in QuickTime File Format provided by Apple.
 
 #### Chunk Offset Atom
 
@@ -383,7 +387,7 @@ Also refer to [Sample-to-chunk atom ('stsz')](https://developer.apple.com/docume
 | :--- | :---: | :---: | :--- |
 | Size | `uint32` | 4 |  |
 | Type | `uint32` | 4 | `co64` |
-| Version | `uint32` | 1 | `0` |
+| Version | `uint8` | 1 | `0` |
 | Flags | ---- | 3 | `0x000000` |
 | Number of entries | `uint32` | 4 | The total number of recorded sensor data. <br> e.g. `N` = 10sec * (acc 200Hz + gyro 200Hz + gnss 1Hz) = 4010 |
 | Chunk offset table | `uint64*N` | Variable | Chunk offset 8 Byte |
@@ -392,7 +396,7 @@ Also refer to [Chunk-offset-atom ('stco')](https://developer.apple.com/documenta
 
 ### Sample How to Find Data Packet from CaMM Track
 
-STEP 1. Parse stts, stsz, and co64 box to get each information.
+STEP 1. Parse the stts, stsz, and co64 boxes to get the required information.
 
 ```
 stts
@@ -450,7 +454,7 @@ stsz
 00 00 00 10 00 00 00 10 00 00 00 1C 00 00 00 10
 ~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~ ~~~~~~~~~~~
 |           |           |           └ size[m+1] = 0x10(16)
-|           |           └ size[m] = 0x1C(24)
+|           |           └ size[m] = 0x1C(28)
 |           └ size[m-1] = 0x10(16)
 └ size[m-2] = 0x10(16)
 
@@ -462,7 +466,7 @@ co64
 |           |           |  └ Flag = 0x000000
 |           |           └ Version = 0x00
 |           └ Type = "co64"
-└ Size = 0x0005B738 (374584)
+└ Size = 0x0005B740 (374592)
 
 00 00 00 00 00 01 00 28 00 00 00 00 00 01 00 38
 ~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~
@@ -546,3 +550,64 @@ data_packet[m] 00 00 05 00 02 50 B2 C2 1A C8 41 40 0E 08 87 F1
 | m   | gps  | ( +35.563316, +139.536858, +36.1 ) | [deg],[m] | 5.018 | [msec] |
 | m+1 | gyro | (  +0.188,  +0.279,  +0.282 ) | [rad/s] | 0.000 | [msec] |
 | .... | .... | .... | .... | .... |
+
+----
+
+## Spatial Audio
+
+RICOH THETA V and Z1 store 360-degree spatial audio in the `uuid` box with UUID `28F311E2-B791-4F6F-94E2-4F5DEACB3C01` at the end of the MP4 file.
+
+### Box Structure
+
+> * uuid `28F311E2-B791-4F6F-94E2-4F5DEACB3C01`
+>    * RADT - Spatial audio data without a WAV header
+>    * RATR - Track metadata for the spatial audio data
+>        * tkhd
+>        * edts
+>            * elst
+>        * mdia
+>            * mdhd
+>            * hdlr
+>            * minf
+>                * smhd
+>                * hdlr
+>                * dinf
+>                    * dref
+>                        * url
+>                * stbl
+>                    * stsd
+>                        * sowt
+>                            * chan
+>                            * SA3D
+>                    * stts
+>                    * stsc
+>                    * stsz
+>                    * co64
+
+`RATR` describes the physical location and sample structure of the audio data in `RADT`, while also providing a track structure and metadata intended for conversion to AmbiX audio.
+
+`RADT` contains headerless 4-channel linear PCM audio. Its audio format and the related `SA3D` metadata are described below.
+
+| Property | Value |
+| :--- | :--- |
+| Audio format | Linear PCM (`sowt`) |
+| Channels | 4 |
+| Ambisonics type | Periphonic (full 3D) |
+| Ambisonics order | First order |
+| Stored channel sequence | W, X, Y, Z (FuMa channel order) |
+| Normalization | FuMa (MaxN with an additional 1/√2 scale factor applied to W) |
+| SA3D channel ordering | ACN |
+| SA3D normalization | SN3D |
+| SA3D channel map | `0, 2, 3, 1` (maps the stored W, X, Y, Z sequence to ACN W, Y, Z, X) |
+| Endian | Little endian |
+| Sample size | 16 bits |
+| Sample rate | 48 kHz |
+
+When converting this FuMa audio to AmbiX, the channels must be reordered from W, X, Y, Z to the ACN sequence W, Y, Z, X. The W channel must also be multiplied by √2 to convert the FuMa normalization to SN3D normalization.
+
+```text
+W_AmbiX = √2 × W_FuMa
+Y_AmbiX = Y_FuMa
+Z_AmbiX = Z_FuMa
+X_AmbiX = X_FuMa
+```
